@@ -21,6 +21,8 @@ public class User {
 	public Integer movie10;
 	public int ratingssize;
 	public int moviessize;
+	
+	public int userid;
 
     /*TESTING PURPOSE*/
 	public ArrayList<Integer> ratings = new ArrayList<Integer>();
@@ -96,6 +98,13 @@ public class User {
 	}
 	
 	
+	public void setUserID (int id){
+	    userid = id;
+	}
+	
+	public void setUserName (String name){
+	    username = name;
+	}
 	
 	public Integer getRating(int i){
 	    return ratings.get(i);

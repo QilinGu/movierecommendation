@@ -1,47 +1,13 @@
-New log file opened at Mon Mar 23 18:02:37 PDT 2015 by 2956@Thomass-MacBook-Pro.local
-Taking next connection to: 55199
-New client attempting to connect on port: 55200-55199
-  Address = /10.10.34.234:55199
-This client on port 55200 has uuid 599f39d7-e78d-4d12-9351-ce1d7fb0c873 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-599f39d7-e78d-4d12-9351-ce1d7fb0c873
-Taking next connection to: 55199
-New client attempting to connect on port: 55201-55199
-  Address = /10.10.34.234:55199
-Handshake exception on socket: 55201
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:189)
-	at java.net.SocketInputStream.read(SocketInputStream.java:121)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 55199
-New client attempting to connect on port: 55202-55199
-  Address = /10.10.34.234:55199
-This client on port 55202 has uuid fea18641-acc6-42e9-a984-e48a0ce850a1 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-599f39d7-e78d-4d12-9351-ce1d7fb0c873, activator-fea18641-acc6-42e9-a984-e48a0ce850a1
-Taking next connection to: 55199
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55199
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55199
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55199
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 55199
-New client attempting to connect on port: 56317-55199
-  Address = /10.10.34.234:55199
-Handshake exception on socket: 56317
+New log file opened at Mon Mar 23 18:18:30 PDT 2015 by 3048@Thomass-MacBook-Pro.local
+Taking next connection to: 56337
+New client attempting to connect on port: 56338-56337
+  Address = /10.10.34.234:56337
+This client on port 56338 has uuid 94ddf2c3-0382-4206-b31c-ad6289e9d808 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-94ddf2c3-0382-4206-b31c-ad6289e9d808
+Taking next connection to: 56337
+New client attempting to connect on port: 56339-56337
+  Address = /10.10.34.234:56337
+Handshake exception on socket: 56339
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -51,9 +17,69 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 55199
-New client attempting to connect on port: 56318-55199
-  Address = /10.10.34.234:55199
-This client on port 56318 has uuid fbc7a3ff-d64b-40be-b10e-9f745b5233e8 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-fea18641-acc6-42e9-a984-e48a0ce850a1, play-fork-run-fbc7a3ff-d64b-40be-b10e-9f745b5233e8
-Taking next connection to: 55199
+Taking next connection to: 56337
+New client attempting to connect on port: 56340-56337
+  Address = /10.10.34.234:56337
+This client on port 56340 has uuid 8ba2c01a-46f9-4fe0-ac1c-bbbce36d0dab configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-94ddf2c3-0382-4206-b31c-ad6289e9d808, activator-8ba2c01a-46f9-4fe0-ac1c-bbbce36d0dab
+Taking next connection to: 56337
+New client attempting to connect on port: 56341-56337
+  Address = /10.10.34.234:56337
+Handshake exception on socket: 56341
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 56337
+New client attempting to connect on port: 56342-56337
+  Address = /10.10.34.234:56337
+This client on port 56342 has uuid 0479c47b-5de1-42af-a105-cb3d6bd481fd configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-8ba2c01a-46f9-4fe0-ac1c-bbbce36d0dab, play-fork-run-0479c47b-5de1-42af-a105-cb3d6bd481fd
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 56337

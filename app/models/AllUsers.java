@@ -81,7 +81,8 @@ public class AllUsers {
 			while((line = input.readLine()) != null) {
 				String[] wordArray = line.split("[\t]+");
 				String user = wordArray[0];
-				allusers.put(user, new User());
+				User newuserdata = new User();
+				addToAll(user, newuserdata);
 				
 				for(int i = 1; i < wordArray.length; i++){
 					
@@ -106,10 +107,12 @@ public class AllUsers {
     
     public void addToAll(String username, User user){
         
-        
+        if(user.username == null){
+            user.setUserName(username);
+        }
+        user.setUserID(allusers.size()+1);
         allusers.put(username, user);  
-        System.out.println(user.userdata.toString());
-        
+
         
     }
     
