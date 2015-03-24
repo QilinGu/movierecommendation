@@ -150,12 +150,12 @@ public class AllUsers {
     
    // Added by Daniel  
     double xyStandarddeviation(double meanx,
-			double meany, int moviesize, int usersize, String user, int i) {
+			double meany, int moviesize, int usersize, String user, String otheruser) {
 		double sumx = 0;
 		double sumy = 0;
 		for (int j = 0; j < moviesize; j++) {
 			int x = CheckUserID(user,j);
-			int y = CheckUserID(Integer.toString(i),j);
+			int y = CheckUserID(otheruser,j);
 			double xx =x  - meanx;
 			sumx += xx * xx;
 			double yy = y - meany;
@@ -240,13 +240,13 @@ public class AllUsers {
 		//System.out.println(userMap);
 	    int usersize = allusers.size(); //neww
 	    int moviesize = allmovies.size(); //neww
-	    for (int i = 1; i <= usersize; i++) { //neww
+	    for(Entry<String, User>  entry : allusers.entrySet()) { //neww
 			double sumofx = 0;
 			double sumofy = 0;
 			double xy = 0;
 			for (int j = 0; j < moviesize; j++) {
 				int x = CheckUserID(user,j);
-				int y = CheckUserID(Integer.toString(i),j);
+				int y = CheckUserID(entry.getKey(),j);
 				sumofx += x;
 				sumofy += y;
 				xy += (x * y);
@@ -254,14 +254,14 @@ public class AllUsers {
 			double meanx = sumofx / (moviesize - 1);
 			double meany = sumofy / (moviesize - 1);
 			double sd = xyStandarddeviation(meanx, meany,
-					moviesize, usersize, user, i);
+					moviesize, usersize, user, entry.getKey());
 			double meanxy = meanx * meany;
 			meanxy = (moviesize - 1) * meanxy;
 			xy = xy - meanxy;
 			xy = xy / (moviesize - 2);
 			double pcc = xy / sd;
-			pearsonmap.put(Integer.toString(i),
-					new MovieObject(Integer.toString(i),pcc));	
+			pearsonmap.put(entry.getKey(),
+					new MovieObject(entry.getKey(),pcc));	
 		}
 	     updateMovies(pearsonmap,movies, user);
 	     
