@@ -6,7 +6,7 @@
 @main("Register") {
 
 	@helper.form(action = routes.Register.submit()){
-		<h2>Movies Recommended For You</h2>
+		<h2>Rate Ten Movies to Register</h2>
 		@inputRadioGroup(
           userForm("movie1"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
@@ -47,6 +47,8 @@
           userForm("movie10"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(9))
-          <input type="submit" class="btn primary" value="Send">
+        <br/>
+		<input type="submit" class="btn primary" value="Rate These Movies">
+		<em>(Will Load Ten More Movies If You Havn't Rated Ten Yet)</em>
     }
 }

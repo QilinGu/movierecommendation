@@ -46,7 +46,12 @@
           userForm("movie10"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(9))
-          <input type="submit" class="btn primary" value="Send">
+          <input type="submit" class="btn primary" value="Submit Ratings">
     }
+    
+    @helper.form(action = routes.Register.user()){
+        <input type="submit" class="btn primary" value="Go To User Page">
+    }
+    
     
 }

@@ -4,7 +4,8 @@
 
 # Home page
 GET     /                           controllers.Register.index()
-POST    /submit                     controllers.Register.submit()
+GET     /user                       controllers.Register.user()
+POST    /                           controllers.Register.submit()
 GET     /recommendations            controllers.Register.recommend()
 POST    /recommendations            controllers.Register.submitrec()
 

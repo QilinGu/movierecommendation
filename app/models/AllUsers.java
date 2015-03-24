@@ -113,6 +113,13 @@ public class AllUsers {
         
     }
     
+    public boolean hasUser(String username){
+        if(allusers.containsKey(username)){
+            return true;
+        }
+        return false;
+    }
+    
     public User getUserData(String username){
         return allusers.get(username);
     }
@@ -166,7 +173,7 @@ public class AllUsers {
 	
 	// Added by Daniel  
       public int CheckUserID(String userid, int movieindex){
-    	if (!allusers.get(userid).userdata.containsKey(movieindex)){
+    	if (allusers.get(userid).userdata.get(movieindex) == null){
 			return 0;
 		}
     	 return allusers.get(userid).userdata.get(movieindex) ;
@@ -227,7 +234,7 @@ public class AllUsers {
     
     // Added by Daniel  //implementing Apache
     public void checkForSimUsers(String user, ArrayList<Integer> movies){
-        
+
     	HashMap<String, MovieObject> pearsonmap = new HashMap<String, MovieObject>();
 		TreeMap<Integer, Integer> userMap = allusers.get(user).userdata;
 		//System.out.println(userMap);

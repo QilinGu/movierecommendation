@@ -1,0 +1,33 @@
+@(created: User)
+
+@main("User Page") {
+	
+	<p>Username: @created.username</p>
+	<p>Number of Movies Rated: @created.ratedMovies.size()</p>
+	<h1>LAST TEN MOVIES RATED</h1>
+
+
+    @if(created.ratedMovies.size() < 10){
+	
+	    <ul>    
+	    @for(i <- 0 to created.ratedMovies.size()-1){
+	
+            <li>@created.ratedMovies.get(i)</li>
+	    }
+        </ul>
+    } else {
+    
+        <ul>
+        @for(i <- 0 to 9){
+            
+            <li>@created.ratedMovies.get(i)</li>
+
+        }
+        </ul>
+    
+    }
+    
+    @helper.form(action = routes.Register.recommend()){
+        <input type="submit" class="btn primary" value="Find Recommendations">
+    }
+}

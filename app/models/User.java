@@ -27,6 +27,8 @@ public class User {
 	public ArrayList<Integer> movies = new ArrayList<Integer>();
 
 	public ArrayList<Integer> simmovies = new ArrayList<Integer>();
+	public ArrayList<String> ratedMovies = new ArrayList<String>();
+
 
 	/* TreeMap<MovieID, Ratings> */
 	public TreeMap<Integer, Integer> userdata = new TreeMap<Integer, Integer>();
@@ -104,29 +106,18 @@ public class User {
 	}
 	
 	
-	/*
-	public void addToUserdata(){
-	  
-	  userdata.put(movie1, rating1);
-	  userdata.put(movie2, rating2);
-	  userdata.put(movie3, rating3);
-	  userdata.put(movie4, rating4);
-	  userdata.put(movie5, rating5);
-	  userdata.put(movie6, rating6);
-	  userdata.put(movie7, rating7);
-	  userdata.put(movie8, rating8);
-	  userdata.put(movie9, rating9);
-	  userdata.put(movie10, rating10);
-	    
+	public void addData(int movie, int rating){
+	    userdata.put(movie, rating);
 	}
 	
-	public int getRating(int movie){
-	    return userdata.get(movie);
+	public void addRated(String movie, int i){
+	    ratedMovies.add(i, movie);
 	}
 	
-	public void changeRating(int movie, int newrating){
-	    userdata.get(movie) = newrating;
+	public boolean sizeright(){
+	    if(ratedMovies.size() >= 10){
+	        return true;
+	    }
+	    return false;
 	}
-	
-	*/
 }
