@@ -1,0 +1,36 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">JAVATAR</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/user">My Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            @content
+        </div>
+        <div id="footer" align="center">
+            <div class="container">
+                <p class="text-muted credit">Site Created By<br/>
+                <strong>Thomas Watts</strong> || <strong>Daniel Buraimo</strong> || <strong>Hui Jiang</strong></p>
+            </div>
+        </div>
+    </body>
+</html>

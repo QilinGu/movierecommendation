@@ -1,0 +1,48 @@
+@(userForm: Form[User], required: String)
+
+@import helper._
+
+@main("Homepage") {
+    
+@helper.form(action = routes.Register.signin()){
+	<div class="row">
+        <div class="col-md-8">
+        <h2>What Is Javatar?</h2>
+        <p><span class="tab"></span>Javatar is a movie recommendation site that is dedicated to the user. We use a collaborative filtering
+            algorithm in order to provide the best movie recommendations for every given user. To register as a user all you need to do is 
+            <strong>click on the register button ( top right )</strong>.
+        </p>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <p><br/></p>
+                <div class="page-header">
+                    <h3 align="center">Please Sign In</h3>
+                </div>
+                @if(required){
+                    <font color="red">Please Enter Valid Username & Password</font>
+                }
+                @helper.inputText(userForm("username"), '_label -> "Username:", 'size -> 40)
+                @helper.inputPassword(userForm("password"), '_label -> "Password:", 'size -> 40)
+                <!--<form role="form">
+                    <div class="form-group">
+                        <label for="usr">Username:</label>
+                        <input type="text" id="usr" class="form-control" placeholder="Username" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" class="form-control" placeholder="Password" required>
+                    </div>-->
+                    <hr/>
+                    <div align="center">
+                        <button class="btn btn-primary" type="submit">Sign in</button>
+                    </div>
+                    <p><br/></p>
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+           
+}
+
+}

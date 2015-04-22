@@ -2,11 +2,15 @@
 
 @import helper._
 
-@main("Recommendations") {
+@mainrec("Recommendations") {
 
-	@helper.form(action = routes.Register.submitrec()){
-		<h2>Movies Recommended For You</h2>
-		@inputRadioGroup(
+    @helper.form(action = routes.Register.submitrec()){
+		<h1>Movies Recommended For You</h1>
+		<p><br/></p>
+		
+    <div class="row">
+        <div class="col-md-6">
+        @inputRadioGroup(
           userForm("movie1"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(0))
@@ -26,7 +30,9 @@
           userForm("movie5"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(4))
-		@inputRadioGroup(
+        </div>
+        <div class="col-md-6">
+        @inputRadioGroup(
           userForm("movie6"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(5))
@@ -46,12 +52,14 @@
           userForm("movie10"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(9))
-          <input type="submit" class="btn primary" value="Submit Ratings">
-    }
+        </div>
+        
+    </div>
+    <p><br/></p>
     
-    @helper.form(action = routes.Register.user()){
-        <input type="submit" class="btn primary" value="Go To User Page">
+    <input type="submit" class="btn primary" value="Submit Ratings">
+	    <p><br/></p>
+
     }
-    
     
 }

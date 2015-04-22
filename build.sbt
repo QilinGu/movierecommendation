@@ -10,9 +10,11 @@ libraryDependencies ++= Seq(
   javaJdbc,
   javaEbean,
   cache,
-  javaWs
+  javaWs, 
+  "mysql" % "mysql-connector-java" % "5.1.27"
 )
 
+libraryDependencies += "org.webjars" % "bootstrap" % "3.0.2"
 
 fork in run := true
 

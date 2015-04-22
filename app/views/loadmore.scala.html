@@ -3,11 +3,14 @@
 @import helper._
 
 
-@main("Register") {
+@mainload("Register") {
 
 	@helper.form(action = routes.Register.submit()){
 		<h2>Rate Ten Movies to Register</h2>
-		@inputRadioGroup(
+		<div class="row">
+                <div class="col-md-6">
+                    
+                    @inputRadioGroup(
           userForm("movie1"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(0))
@@ -27,11 +30,17 @@
           userForm("movie5"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(4))
-		@inputRadioGroup(
+          <input type="submit" class="btn primary" value="Rate These Movies">
+		
+                    
+                    
+        </div>
+        <div class="col-md-6">
+        @inputRadioGroup(
           userForm("movie6"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
-          '_label -> recList.get(5))
-		@inputRadioGroup(
+          '_label -> recList.get(5))            
+    	@inputRadioGroup(
           userForm("movie7"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(6))
@@ -47,8 +56,11 @@
           userForm("movie10"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(9))
+                </div>
+        </div>
+		
+	
         <br/>
-		<input type="submit" class="btn primary" value="Rate These Movies">
-		<em>(Will Load Ten More Movies If You Havn't Rated Ten Yet)</em>
+		
     }
 }

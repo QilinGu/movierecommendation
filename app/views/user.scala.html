@@ -1,33 +1,40 @@
-@(created: User)
+@(username: String, recent: java.util.ArrayList[String], count: Integer)
 
-@main("User Page") {
+@mainuser("User Page") {
 	
-	<p>Username: @created.username</p>
-	<p>Number of Movies Rated: @created.ratedMovies.size()</p>
-	<h1>LAST TEN MOVIES RATED</h1>
+		<strong><span class="userhead">Username:</span></strong>
+		<span class="user_tab"><span class="userbox">@username</span></span>
+        <br/><br/>
+	    <strong><span class="userhead">Movies Rated:</span></strong> 
+	    <span class="user_tab"><span class="userbox">@count</span></span>
 
+	<hr/>
+    <p><br/></p>
 
-    @if(created.ratedMovies.size() < 10){
-	
-	    <ul>    
-	    @for(i <- 0 to created.ratedMovies.size()-1){
-	
-            <li>@created.ratedMovies.get(i)</li>
-	    }
-        </ul>
-    } else {
-    
-        <ul>
-        @for(i <- 0 to 9){
-            
-            <li>@created.ratedMovies.get(i)</li>
+    <div class="col-md-3">
+        
+    </div>
+    <div class="col-md-6">
+    <h1 align="center">LAST TEN MOVIES RATED</h1>
 
-        }
-        </ul>
-    
-    }
+        	<ul><ul>   
+    @for(i <- 0 to recent.size()-1){
+        <li>@recent.get(i)</li>
+	}
+    </ul></ul>
     
     @helper.form(action = routes.Register.recommend()){
-        <input type="submit" class="btn primary" value="Find Recommendations">
+        <div align="center"><input type="submit" class="btn btn primary" value="Find Recommendations"></div>
     }
+    <p><br/></p>
+    </div>
+    
+    <div class="col-md-1">
+        
+    </div>
+
+
+
+	
+
 }

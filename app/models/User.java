@@ -2,9 +2,13 @@ package models;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
-
 public class User {
+    
+	public int userid;
+    
 	public String username;
+	
+	
 	public String email;
 	public String password;
 	public String confirm_email;
@@ -21,8 +25,6 @@ public class User {
 	public Integer movie10;
 	public int ratingssize;
 	public int moviessize;
-	
-	public int userid;
 
     /*TESTING PURPOSE*/
 	public ArrayList<Integer> ratings = new ArrayList<Integer>();
@@ -34,6 +36,8 @@ public class User {
 
 	/* TreeMap<MovieID, Ratings> */
 	public TreeMap<Integer, Integer> userdata = new TreeMap<Integer, Integer>();
+	
+
 	
 	
 	public void addToRatings(ArrayList<Integer> ids){

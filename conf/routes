@@ -3,11 +3,14 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Register.index()
+GET     /                           controllers.Register.home()
+GET     /register                   controllers.Register.register()
 GET     /user                       controllers.Register.user()
-POST    /                           controllers.Register.submit()
 GET     /recommendations            controllers.Register.recommend()
+POST    /                           controllers.Register.signin()
+POST    /register                   controllers.Register.submit()
 POST    /recommendations            controllers.Register.submitrec()
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
