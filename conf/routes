@@ -10,6 +10,7 @@ GET     /recommendations            controllers.Register.recommend()
 POST    /                           controllers.Register.signin()
 POST    /register                   controllers.Register.submit()
 POST    /recommendations            controllers.Register.submitrec()
+GET     /logout                     controllers.Register.signout()
 
 
 # Map static resources from the /public folder to the /assets URL path

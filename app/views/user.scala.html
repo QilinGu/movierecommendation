@@ -1,30 +1,54 @@
 @(username: String, recent: java.util.ArrayList[String], count: Integer)
 
 @mainuser("User Page") {
+<!--
+	<div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">USERNAME</h3>
+        </div>
+        <div class="panel-body">
+            @username
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title">MOVIES RATED</h3>
+        </div>
+        <div class="panel-body">
+            @count
+        </div>
+    </div>
+-->
 	
-		<strong><span class="userhead">Username:</span></strong>
-		<span class="user_tab"><span class="userbox">@username</span></span>
-        <br/><br/>
-	    <strong><span class="userhead">Movies Rated:</span></strong> 
-	    <span class="user_tab"><span class="userbox">@count</span></span>
+	<strong><u><span class="userhead">Username:</span></u></strong>
+		<p class="list-group-item-text">
+		<span class="user_tab">@username</span>
+		</p>
+		
+        <br/>
+	    
+	    <strong><u><span class="userhead">Movies Rated:</span></u></strong> 
+	    <p class="list-group-item-text">
+	    <span class="user_tab">@count</span>
+	        
+	    </p>
 
 	<hr/>
-    <p><br/></p>
 
     <div class="col-md-3">
         
     </div>
     <div class="col-md-6">
-    <h1 align="center">LAST TEN MOVIES RATED</h1>
+    <h1 align="center" class="text-info"><u>LAST TEN MOVIES RATED</u></h1>
 
         	<ul><ul>   
     @for(i <- 0 to recent.size()-1){
         <li>@recent.get(i)</li>
 	}
     </ul></ul>
-    
+    <p><br/></p>
     @helper.form(action = routes.Register.recommend()){
-        <div align="center"><input type="submit" class="btn btn primary" value="Find Recommendations"></div>
+        <div align="center"><button class="btn btn-primary" type="submit">Find Recommendations</button></div>
     }
     <p><br/></p>
     </div>

@@ -39,6 +39,11 @@ public class User {
 	
 
 	
+	public void setUserPass(String u, String p){
+	    username = u;
+	    password = p;
+	}
+	
 	
 	public void addToRatings(ArrayList<Integer> ids){
 	    //Changed by Daniel

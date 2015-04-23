@@ -6,7 +6,7 @@
 @mainload("Register") {
 
 	@helper.form(action = routes.Register.submit()){
-		<h2>Rate Ten Movies to Register</h2>
+		<h2 class ="text-info">Rate Ten Movies to Register</h2>
 		<div class="row">
                 <div class="col-md-6">
                     
@@ -30,8 +30,9 @@
           userForm("movie5"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> recList.get(4))
-          <input type="submit" class="btn primary" value="Rate These Movies">
-		
+        
+        <button class="btn btn-primary" type="submit">Rate These Movies</button>
+
                     
                     
         </div>

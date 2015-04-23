@@ -5,7 +5,7 @@
 @mainrec("Recommendations") {
 
     @helper.form(action = routes.Register.submitrec()){
-		<h1>Movies Recommended For You</h1>
+		<h1 class="text-success">Movies Recommended For You</h1>
 		<p><br/></p>
 		
     <div class="row">
@@ -57,7 +57,7 @@
     </div>
     <p><br/></p>
     
-    <input type="submit" class="btn primary" value="Submit Ratings">
+    <button class="btn btn-primary" type="submit">Submit Ratings</button>
 	    <p><br/></p>
 
     }

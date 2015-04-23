@@ -59,6 +59,12 @@ public class Register extends Controller {
 
         return redirect("/user");
     }
+    
+    public static Result signout(){
+        username = null;
+        password = null;
+        return redirect("/");
+    }
 
     public static Result register() {
                 

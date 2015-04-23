@@ -6,7 +6,7 @@
 
 @mainreg("Register") {
 
-	<h1>Registration Form</h1>
+	<h1 class="text-info">Registration Form</h1>
     <hr class="gray"/>
 	@helper.form(action = routes.Register.submit()){
 	<div class="col-md-6">
@@ -24,7 +24,7 @@
 	    <p><br/></p>
 
 		<div class="col-md-6">
-		<h3>Rate Ten Movies</h3>
+		<h3 class="text-success">Rate Ten Movies</h3>
 		<span class="tab"><em>will load more movies if you don't rate 10 here</em></span>
 		<p><br/></p>
 		@inputRadioGroup(
@@ -47,7 +47,7 @@
           userForm("movie5"),
           options = options("0"->"0","1"->"1","2"->"2","3"->"3","4"->"4","5"->"5"),
           '_label -> movielist.get(4))
-        <input type="submit" class="btn primary" value="Rate These Movies">
+        <button class="btn btn-primary" type="submit">Rate These Movies</button>
         <p><br/></p>
 		</div>
 		<div class="col-md-6">
