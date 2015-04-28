@@ -29,6 +29,12 @@ import org.apache.mahout.cf.taste.recommender.UserBasedRecommender;
 import org.apache.mahout.cf.taste.similarity.ItemSimilarity;
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 
+//SVD
+import org.apache.mahout.math.DenseMatrix;
+import org.apache.mahout.math.Matrix;
+import org.apache.mahout.math.SingularValueDecomposition;
+import org.apache.mahout.math.SparseMatrix;
+
 //Database imports
 import play.db.*;
 import javax.sql.DataSource;
@@ -61,8 +67,7 @@ public class AllUsers{
 			input = new BufferedReader(new FileReader(moviefile));
 
 			while((line = input.readLine()) != null) {
-				String[] wordArray = line.split("[|]+");
-				allmovies.add(wordArray[1]);
+				allmovies.add(line);
 			}
 			
 		} catch(FileNotFoundException e) {
@@ -376,11 +381,20 @@ public class AllUsers{
         return allmovies.get(id-1);
     }
     
-    public ArrayList<Integer> getTenRandomIDS(){
+    public ArrayList<Integer> getTenRandomIDS(ArrayList baddummymovies){
         ArrayList<Integer> random = new ArrayList<Integer>();
-        for(int i = 0; i < 10; i++)
-        {
-          random.add((int)(Math.random() * allmovies.size()) + 1);  
+       // for(int i = 0; i < 10; i++)
+    //    {
+      //    random.add((int)(Math.random() * allmovies.size()) + 1);  
+    //    }
+        int i = 0;
+        int randy;
+        while (i<10){
+             randy = (int)(Math.random() * allmovies.size()) + 1;
+            if (!baddummymovies.contains(randy)){
+                random.add(randy);
+                i++;
+            }
         }
         makeRandomList(random);
         return random;
@@ -523,53 +537,54 @@ public class AllUsers{
     }
     
     // Added by Daniel  //implementing Apache
-    public void checkForSimUsers(String user, ArrayList<Integer> movies){
+    public void checkForSimUsers(String user, ArrayList<Integer> movies,Matrix V,ArrayList baddummymovies){
         
          //try {
            // Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
-    
+            DenseMatrix q = new DenseMatrix(1,3952);
         	HashMap<String, MovieObject> pearsonmap = new HashMap<String, MovieObject>();
 	    	//TreeMap<Integer, Integer> userMap = allusers.get(user).userdata;
 	    	
 		    TreeMap<Integer, Integer> userMap = tableGetMap(user);
-		
+		    for (Entry<Integer, Integer> t: userMap.entrySet()){
+            	q.setQuick(0,t.getKey()-1,t.getValue());
+            }
+          
 	        int usersize = allusers.size(); //neww
 	        int moviesize = allmovies.size(); //neww
-	    
+            Matrix  qV = q.times(V);
+            Matrix qVbyVT = qV.times(V.transpose());
+            
+              int  columns = qVbyVT.columnSize();
+             HashMap<Integer, Movie> map = new HashMap<Integer, Movie>();
+             for(int j = 0; j<columns; j++){
+	         map.put(j, new Movie(j, qVbyVT.get(0, j)));
+            }
+            ArrayList<Movie> finalsvd = new ArrayList<Movie>(
+			map.values());
+            Collections.sort(finalsvd);
+            int count = 0;
+            int j = 0;
+            while (count < 10){
+	          if (!userMap.containsKey(finalsvd.get(j).getID()+1) && !baddummymovies.contains(finalsvd.get(j).getID()+1)){
+             	 //System.out.println("User:  we want you to see movie with index " + (finalsvd.get(j).getID()+1)); //Because our movie index ratigns doesn't start from 0;
+                 movies.add(finalsvd.get(j).getID()+1);
+                 count++;
+                 j++;
+	             }
+	             else{
+		         j++;
+	             }
+            }
+        
+        
+        
+    }
 	        //ArrayList<String> usernames = loginGetUsers();
 	        //int usersize = usernames.size();
 	        //for(int i = 0; i < usersize-1; i++) {
-	    
-	        for(Entry<String, User>  entry : allusers.entrySet()) { //neww
-			    double sumofx = 0;
-			    double sumofy = 0;
-		    	double xy = 0;
-			        for (int j = 0; j < moviesize; j++) {
-			    	    int x = CheckUserID(userMap,j);
-			    	    //int y = CheckUserID(usernames.get(i), j, statement);
-			    	    int y = CheckUserID(entry.getKey(),j);
-			    	    sumofx += x;
-			    	    sumofy += y;
-			    	    xy += (x * y);
-			        }
-			        double meanx = sumofx / (moviesize - 1);
-			        double meany = sumofy / (moviesize - 1);
-			        
-			        //double sd = xyStandarddeviation(meanx, meany, moviesize, usersize, user, usernames.get(i), statement);
-		            double sd = xyStandarddeviation(meanx, meany,
-			        		moviesize, usersize, userMap, entry.getKey());
-			        double meanxy = meanx * meany;
-			        meanxy = (moviesize - 1) * meanxy;
-			        xy = xy - meanxy;
-			        xy = xy / (moviesize - 2);
-			        double pcc = xy / sd;
-			        //pearsonmap.put(usernames.get(i), new MovieObject(usernames.get(i), pcc));
-			        pearsonmap.put(entry.getKey(),
-				      	new MovieObject(entry.getKey(),pcc));	
-		    }
-	        updateMovies(pearsonmap, movies, userMap);
-        } 
-	     
+	        
+	        
 	     /*try{
 		 DataModel model = new FileDataModel(new File("data/dataset.csv")); //should be changed after every user submission
 		UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
@@ -593,6 +608,82 @@ public class AllUsers{
 }
 	     */
 	     
+public static Matrix readMatrix(String filename){
+		String line;
+		int rows;
+		int columns;
+		DenseMatrix newMatrix = null;
+
+		try {
+			BufferedReader input = null;
+			
+			try {
+			 input = new BufferedReader(new FileReader(filename));
+			 input.readLine();//done necessarily and intentionally to skip the one line documentation
+			 rows = Integer.parseInt(input.readLine());
+			 columns = Integer.parseInt(input.readLine());
+			 newMatrix = new DenseMatrix(rows,columns);
+			while ((line = input.readLine()) != null) {
+				if (!(line.isEmpty())) {
+					String lineArray[] = line.split(",");
+					if (lineArray.length == 3){
+						newMatrix.set(Integer.parseInt(lineArray[0]), Integer.parseInt(lineArray[1]), Double.parseDouble(lineArray[2]));
+				}
+				}
+			}
+		}
+		finally {
+			
+			input.close();
+			
+		}
+	} catch (FileNotFoundException e) {
+		System.out.println("Directory is invalid/Directory does not consist a file");
+	} catch (IOException e) {
+		System.out.println("Input/Output Exception");
+	}
+		catch(NullPointerException e){
+			System.out.println("An Error occured");
+		}
+		return newMatrix;
+		
+		
+	}
+
+public static ArrayList readArrayList(String filename){
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    String line;
+    
+
+		try {
+			BufferedReader input = null;
+			
+			try {
+		    input = new BufferedReader(new FileReader(filename));
+			while ((line = input.readLine()) != null) {
+				if (!(line.isEmpty())) {
+				
+				list.add(Integer.parseInt(line));
+						}
+			}
+		}
+		finally {
+			
+			input.close();
+			
+		}
+	} catch (FileNotFoundException e) {
+		System.out.println("Directory is invalid/Directory does not consist a file");
+	} catch (IOException e) {
+		System.out.println("Input/Output Exception");
+	}
+		catch(NullPointerException e){
+			System.out.println("An Error occured");
+		}
+    
+    
+    return list;
+}
 
     
         /*

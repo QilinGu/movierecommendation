@@ -16,6 +16,7 @@ import java.util.TreeMap;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import org.apache.mahout.math.Matrix;
 
 //Database imports
 import play.db.*;
@@ -33,10 +34,12 @@ public class Register extends Controller {
     static String password = null;
     final static ArrayList<Integer> simmovies = new ArrayList<Integer>();
     static int count = 0;
+    static Matrix V = allusers.readMatrix("VMatrixMillion6040reduced.txt");
+    static ArrayList<Integer> baddummymovies = allusers.readArrayList("badmoviesout.txt");
 
     public static Result home() throws IOException {
         if(count == 0){
-            File file = new File("conf/movies.txt");
+            File file = new File("conf/moviesout.txt");
             File userfile = new File("conf/users.txt");
             allusers.movieParse(file);
             allusers.userParse(userfile);
@@ -68,7 +71,7 @@ public class Register extends Controller {
 
     public static Result register() {
                 
-        movieIds = allusers.getTenRandomIDS();
+        movieIds = allusers.getTenRandomIDS(baddummymovies);//Daniel
         //allusers.loginPrint();
 
         return ok(regpage.render(userForm, allusers.shortlist, null, null));
@@ -112,7 +115,7 @@ public class Register extends Controller {
                     movieIds.clear();
                 }
                 allusers.shortlist.clear();
-                movieIds = allusers.getTenRandomIDS();
+                movieIds = allusers.getTenRandomIDS(baddummymovies);
                 return ok(loadmore.render(userForm, allusers.shortlist));
             }
         }
@@ -133,7 +136,7 @@ public class Register extends Controller {
                     movieIds.clear();
                 }
                 allusers.shortlist.clear();
-                movieIds = allusers.getTenRandomIDS();
+                movieIds = allusers.getTenRandomIDS(baddummymovies);//Daniel
                 return ok(loadmore.render(userForm, allusers.shortlist));
             }
         }
@@ -158,7 +161,7 @@ public class Register extends Controller {
         if(simmovies.size() >= 10){
             simmovies.clear();
         }
-        allusers.checkForSimUsers(username, simmovies);
+        allusers.checkForSimUsers(username, simmovies, V,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
         //System.out.println(simmovies.size());
         
@@ -192,7 +195,7 @@ public class Register extends Controller {
         outw.close();
     	simmovies.clear();
     	movieIds.clear();
-    	allusers.checkForSimUsers(username, simmovies);
+    	allusers.checkForSimUsers(username, simmovies, V,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
         for(int i = 0; i < simmovies.size(); i++)
         {

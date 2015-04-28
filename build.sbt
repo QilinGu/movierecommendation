@@ -19,3 +19,5 @@ libraryDependencies += "org.webjars" % "bootstrap" % "3.0.2"
 fork in run := true
 
 fork in run := true
+
+fork in run := true
