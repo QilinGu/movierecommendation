@@ -5,12 +5,15 @@
 # Home page
 GET     /                           controllers.Register.home()
 GET     /register                   controllers.Register.register()
-GET     /user                       controllers.Register.user()
-GET     /recommendations            controllers.Register.recommend()
+GET     /user/:username             controllers.Register.user(username)
+GET     /recommendations/:user      controllers.Register.recommend(user)
 POST    /                           controllers.Register.signin()
 POST    /register                   controllers.Register.submit()
-POST    /recommendations            controllers.Register.submitrec()
+POST    /register/:user             controllers.Register.addMovies(user)
+POST    /recommendations/:user      controllers.Register.submitrec(user)
 GET     /logout                     controllers.Register.signout()
+
+
 
 
 # Map static resources from the /public folder to the /assets URL path

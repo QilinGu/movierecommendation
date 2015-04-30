@@ -350,6 +350,31 @@ public class AllUsers{
         return null;
     }
     
+    public boolean checkUser(int movieid, String username){
+
+        try{
+            Connection conn = DB.getConnection("default");
+            
+            String query = "SELECT * FROM "+username+"Table;";
+            
+            PreparedStatement preparedStatement = conn.prepareStatement(query);
+            ResultSet resultset = preparedStatement.executeQuery();
+            
+            while (resultset.next()) {
+                if(resultset.getInt("movie") == movieid){
+                    conn.close();
+                    return true;
+                }
+            }
+            
+            conn.close();
+        } catch (SQLException ex){
+            System.out.println("THERE HAS BEEN AN SQLEXCEPTION");
+        } 
+        
+        return false;
+    }
+    
     /** END TO SQL CODE **/
     
     public void addToAll(String username, User user){
@@ -395,6 +420,20 @@ public class AllUsers{
                 random.add(randy);
                 i++;
             }
+        }
+        makeRandomList(random);
+        return random;
+    }
+    
+    public ArrayList<Integer> getTenRandomIDS(String username, ArrayList baddummymovies){
+        ArrayList<Integer> random = new ArrayList<Integer>();
+        while(random.size() != 10)
+        {
+            int randomMovie = ((int)(Math.random() * allmovies.size()) + 1);
+            if(!checkUser(randomMovie, username) && !baddummymovies.contains(randomMovie)){
+                random.add(randomMovie); 
+            }
+             
         }
         makeRandomList(random);
         return random;

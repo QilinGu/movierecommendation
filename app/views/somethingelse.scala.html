@@ -1,10 +1,20 @@
-@(userForm: Form[User], recList: java.util.ArrayList[String])
+@(userForm: Form[User], recList: java.util.ArrayList[String], username: String)
 
 @import helper._
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">JAVATAR</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                     <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
 
 @mainrec("Recommendations") {
 
-    @helper.form(action = routes.Register.submitrec()){
+    @helper.form(action = routes.Register.submitrec(username)){
 		<h1 class="text-success">Movies Recommended For You</h1>
 		<p><br/></p>
 		
@@ -61,5 +71,11 @@
 	    <p><br/></p>
 
     }
+        @helper.form(action = routes.Register.user(username)){
+            <button class="btn btn-primary" type="submit">My Profile</button>
+        }
+        <p><br/></p>
+    
+
     
 }
