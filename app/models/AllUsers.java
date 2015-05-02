@@ -42,18 +42,24 @@ import javax.sql.DataSource;
 import java.sql.*;
 
 public class AllUsers{
+    public ArrayList<String> shortlist;
+    TreeMap<String, User> allusers;
+     ArrayList<String> allmovies;
+     ArrayList<String> allgenres;
+     Matrix V;
+     Connection connection;
     
+    public AllUsers(){
     /*TreeMap<Username, Userdata>*/
-    TreeMap<String, User> allusers = new TreeMap<String, User>();
+    allusers = new TreeMap<String, User>();
     /*ArrayList<MovieTitles> index would be movieID*/
-    ArrayList<String> allmovies = new ArrayList<String>();
+    allmovies = new ArrayList<String>();
     /*ArrayList<genres> index would be movieID*/
-    ArrayList<String> allgenres = new ArrayList<String>();
-    
-    Connection connection = DB.getConnection("default");
-
-    
-    public ArrayList<String> shortlist = new ArrayList<String>();
+   allgenres = new ArrayList<String>();
+    V = readMatrix("VMatrixMillion6040reduced.txt");
+    connection = DB.getConnection("default");
+    shortlist = new ArrayList<String>();
+    }
     
     public int getSizeOfAll(){
         return allusers.size();
@@ -577,7 +583,7 @@ public class AllUsers{
     }
     
     // Added by Daniel  //implementing Apache
-    public void checkForSimUsers(String user, ArrayList<Integer> movies,Matrix V,ArrayList baddummymovies){
+    public void checkForSimUsers(String user, ArrayList<Integer> movies,ArrayList baddummymovies){
         
          //try {
            // Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);

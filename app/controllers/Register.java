@@ -34,7 +34,6 @@ public class Register extends Controller {
     static String password = null;
     final static ArrayList<Integer> simmovies = new ArrayList<Integer>();
     static int count = 0;
-    static Matrix V = allusers.readMatrix("VMatrixMillion6040reduced.txt");
     static ArrayList<Integer> baddummymovies = allusers.readArrayList("badmoviesout.txt");
 
 
@@ -186,7 +185,7 @@ public class Register extends Controller {
         if(simmovies.size() >= 10){
             simmovies.clear();
         }
-        allusers.checkForSimUsers(user, simmovies, V,baddummymovies);
+        allusers.checkForSimUsers(user, simmovies,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
         //System.out.println(simmovies.size());
         
@@ -222,7 +221,7 @@ public class Register extends Controller {
         outw.close();
     	simmovies.clear();
     	movieIds.clear();
-    	allusers.checkForSimUsers(user, simmovies, V,baddummymovies);
+    	allusers.checkForSimUsers(user, simmovies,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
         for(int i = 0; i < simmovies.size(); i++)
         {

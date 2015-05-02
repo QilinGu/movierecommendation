@@ -1,1 +1,100 @@
-New log file opened at Fri May 01 11:20:33 PDT 2015 by 28247@Thomass-MacBook-Pro.local
+New log file opened at Fri May 01 17:42:36 PDT 2015 by 11172@BASHTOP
+Taking next connection to: 51702
+New client attempting to connect on port: 51703-51702
+  Address = /169.254.247.139:51702
+This client on port 51703 has uuid 89b87ec8-42b9-48d4-beb6-bf64097e461e configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-89b87ec8-42b9-48d4-beb6-bf64097e461e
+Taking next connection to: 51702
+New client attempting to connect on port: 51704-51702
+  Address = /169.254.247.139:51702
+Handshake exception on socket: 51704
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51702
+New client attempting to connect on port: 51705-51702
+  Address = /169.254.247.139:51702
+This client on port 51705 has uuid dc22dbc9-557f-4d0c-8f01-178a64beeb1a configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-89b87ec8-42b9-48d4-beb6-bf64097e461e, activator-dc22dbc9-557f-4d0c-8f01-178a64beeb1a
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+New client attempting to connect on port: 52011-51702
+  Address = /169.254.247.139:51702
+Handshake exception on socket: 52011
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 51702
+New client attempting to connect on port: 52012-51702
+  Address = /169.254.247.139:51702
+This client on port 52012 has uuid cf1230c6-625c-42f1-8733-d9c03ca92c4e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-89b87ec8-42b9-48d4-beb6-bf64097e461e, activator-dc22dbc9-557f-4d0c-8f01-178a64beeb1a, play-fork-run-cf1230c6-625c-42f1-8733-d9c03ca92c4e
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51702
