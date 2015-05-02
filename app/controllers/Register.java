@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.TreeMap;
 
 //Added by Daniel
+import java.io.FileNotFoundException;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.PrintWriter;
@@ -218,8 +219,18 @@ public class Register extends Controller {
     	        outw.println(user + "," + newdata.movies.get(i) + "," + newdata.ratings.get(i)+".0");
 
     	    }
-    	}finally{
+    	} catch(FileNotFoundException e){
+
+			System.out.println("File Not Found");
+
+		} catch (IOException e) {
+
+			System.out.println("File is not readable");
+
+		} finally{
+		    
     	    outw.close();
+    
     	}
     	//Added by Daniel
         

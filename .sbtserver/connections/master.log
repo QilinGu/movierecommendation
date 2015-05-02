@@ -1,13 +1,13 @@
-New log file opened at Sat May 02 00:45:50 PDT 2015 by 29209@Thomass-MacBook-Pro.local
-Taking next connection to: 57289
-New client attempting to connect on port: 57290-57289
-  Address = /192.168.1.4:57289
-This client on port 57290 has uuid 27c6d592-e489-4bf4-970b-c3ed1f5097dd configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-27c6d592-e489-4bf4-970b-c3ed1f5097dd
-Taking next connection to: 57289
-New client attempting to connect on port: 57292-57289
-  Address = /192.168.1.4:57289
-Handshake exception on socket: 57292
+New log file opened at Sat May 02 00:53:31 PDT 2015 by 29285@Thomass-MacBook-Pro.local
+Taking next connection to: 57371
+New client attempting to connect on port: 57372-57371
+  Address = /192.168.1.4:57371
+This client on port 57372 has uuid 9916d95b-793e-4957-9131-38e261a8cdde configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-9916d95b-793e-4957-9131-38e261a8cdde
+Taking next connection to: 57371
+New client attempting to connect on port: 57373-57371
+  Address = /192.168.1.4:57371
+Handshake exception on socket: 57373
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,9 +17,12 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 57289
-New client attempting to connect on port: 57293-57289
-  Address = /192.168.1.4:57289
-This client on port 57293 has uuid 81ea5dad-337c-4746-be80-83ce19ff9153 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-27c6d592-e489-4bf4-970b-c3ed1f5097dd, play-fork-run-81ea5dad-337c-4746-be80-83ce19ff9153
-Taking next connection to: 57289
+Taking next connection to: 57371
+New client attempting to connect on port: 57374-57371
+  Address = /192.168.1.4:57371
+This client on port 57374 has uuid d3d79afb-e904-4433-be8b-e995e99fb903 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-9916d95b-793e-4957-9131-38e261a8cdde, activator-d3d79afb-e904-4433-be8b-e995e99fb903
+Taking next connection to: 57371
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57371
