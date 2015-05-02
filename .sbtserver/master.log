@@ -1,13 +1,13 @@
-New log file opened at Sat May 02 10:26:33 PDT 2015 by 29563@Thomass-MacBook-Pro.local
-jvm 29563@Thomass-MacBook-Pro.local
+New log file opened at Sat May 02 10:42:04 PDT 2015 by 29646@Thomass-MacBook-Pro.local
+jvm 29646@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
+Waiting for sbt command engine
 Command engine arguments=List()
 Command engine baseDirectory=/Users/Tommie/movierecommendation
-Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@661503c8, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5f46e547, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,107 @@ Set current project to actiontest (in build file:/Users/Tommie/movierecommendati
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5e269d09, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f54d911, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 3 s, completed May 2, 2015 10:42:17 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@14d555d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 2, 2015 10:42:19 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1f2cd326, check cycles: false
+Total time: 0 s, completed May 2, 2015 10:42:19 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@6fbd9afd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 2, 2015 10:42:20 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@64b60813, check cycles: false
+Total time: 0 s, completed May 2, 2015 10:42:20 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@5d67040f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 2, 2015 10:42:21 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3dc0b186, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -86,116 +186,44 @@ All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/con
 
 Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
 Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@1cee509a directly...
+Attempting to call com.sun.tools.javac.api.JavacTool@255b3b22 directly...
 Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
 /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
 Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
 /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 1.059779268 s
-Java analysis took 0.345112592 s
-Java compile + analysis took 1.431652368 s
+Java compilation took 1.328860229 s
+Java analysis took 0.394603793 s
+Java compile + analysis took 1.739706627 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 5 s, completed May 2, 2015 10:26:49 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@53437bef, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 2 s, completed May 2, 2015 10:26:51 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1fce094, check cycles: false
-Total time: 0 s, completed May 2, 2015 10:26:51 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@27a121cc, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 2, 2015 10:26:53 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2826b14a, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 2, 2015 10:26:58 AM
+Total time: 3 s, completed May 2, 2015 10:43:24 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@1cf34da4, check cycles: false
-Total time: 0 s, completed May 2, 2015 10:27:05 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@6e5e10b8, check cycles: false
+Total time: 0 s, completed May 2, 2015 10:43:44 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/movierecommendation/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@224e9fc7, check cycles: false
-Total time: 1 s, completed May 2, 2015 10:27:09 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@3db2a626, check cycles: false
+Total time: 1 s, completed May 2, 2015 10:43:48 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@673a6056, check cycles: false
-Total time: 0 s, completed May 2, 2015 10:27:11 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@19724d4b, check cycles: false
+Total time: 0 s, completed May 2, 2015 10:43:49 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6e0fb37a, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@650f10c1, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -214,10 +242,75 @@ All initially invalidated sources: Set()
 
 Copy resource mappings: 
 	(/Users/Tommie/movierecommendation/conf/application.conf,/Users/Tommie/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/movierecommendation/conf/dataset.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/movierecommendation/conf/dataset2.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
 	(/Users/Tommie/movierecommendation/conf/movies.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/movies.txt)
 	(/Users/Tommie/movierecommendation/conf/moviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/moviesout.txt)
 	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
 	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
-Total time: 1 s, completed May 2, 2015 10:27:14 AM
+Total time: 1 s, completed May 2, 2015 10:43:54 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@123979, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/movierecommendation/conf/application.conf,/Users/Tommie/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/movierecommendation/conf/dataset.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/movierecommendation/conf/dataset2.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/movierecommendation/conf/movies.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/movierecommendation/conf/moviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
+Total time: 1 s, completed May 2, 2015 10:44:13 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@3238bf34, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/movierecommendation/conf/application.conf,/Users/Tommie/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/movierecommendation/conf/dataset.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/movierecommendation/conf/dataset2.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/movierecommendation/conf/movies.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/movierecommendation/conf/moviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
+Total time: 1 s, completed May 2, 2015 10:44:44 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
