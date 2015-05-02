@@ -473,27 +473,12 @@ public class AllUsers{
 	
 	// Added by Daniel  
       public int CheckUserID(String userid, int movieindex){
-        /*ResultSet rs = statement.executeQuery("SELECT * FROM " + userid +"Table WHERE movie='" + movieindex +"'");
-        
-        
-        if(rs.absolute(1)){
-            System.out.println(movieindex);
-            return rs.getInt("rating");
-        }
-        else{
-            return 0;
-        }
-           
-      }*/
         
     	if (allusers.get(userid).userdata.get(movieindex) == null){
 			return 0;
 		}
     	return allusers.get(userid).userdata.get(movieindex) ;
       }
-    
-    
-    // Added by Daniel  
     
     
     // Added by Daniel  //implementing Apache

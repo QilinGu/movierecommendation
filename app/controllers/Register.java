@@ -204,7 +204,7 @@ public class Register extends Controller {
         //Added by Daniel
         PrintWriter outw = null;
         try{
-            outw = new PrintWriter(new BufferedWriter(new FileWriter("data/dataset.csv", true)));
+            outw = new PrintWriter(new FileWriter("data/dataset.csv", true));
 
             Form<User> filledForm = userForm.bindFromRequest();
     	    User newdata = filledForm.get();
