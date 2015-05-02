@@ -171,7 +171,6 @@ public class Register extends Controller {
     
 
     public static Result user(String name) {
-        System.out.println(name);
         ArrayList<String> recentmovies = allusers.getLastTen(name);
         int moviesrated = allusers.tableSize(name);
         return ok(user.render(name, recentmovies, moviesrated));
@@ -202,23 +201,28 @@ public class Register extends Controller {
     
     public static Result submitrec(String user) throws IOException {
         //Added by Daniel
-        PrintWriter outw = new PrintWriter(new BufferedWriter(new FileWriter("data/dataset.csv", true)));
+        PrintWriter outw = null;
+        try{
+            outw = new PrintWriter(new BufferedWriter(new FileWriter("data/dataset.csv", true)));
 
-        Form<User> filledForm = userForm.bindFromRequest();
-    	User newdata = filledForm.get();
+            Form<User> filledForm = userForm.bindFromRequest();
+    	    User newdata = filledForm.get();
 
-    	newdata.addToRatings(movieIds);
+    	    newdata.addToRatings(movieIds);
         
-    	for(int i = 0; i < newdata.ratingssize; i++)
-    	{
-      	    allusers.tableInsert(user, newdata.movies.get(i), newdata.ratings.get(i));
+    	    for(int i = 0; i < newdata.ratingssize; i++)
+    	    {
+      	        allusers.tableInsert(user, newdata.movies.get(i), newdata.ratings.get(i));
 
-    	    //Added by Daniel
-    	    outw.println(user + "," + newdata.movies.get(i) + "," + newdata.ratings.get(i)+".0");
+    	        //Added by Daniel
+    	        outw.println(user + "," + newdata.movies.get(i) + "," + newdata.ratings.get(i)+".0");
 
+    	    }
+    	}finally{
+    	    outw.close();
     	}
     	//Added by Daniel
-        outw.close();
+        
     	simmovies.clear();
     	movieIds.clear();
     	allusers.checkForSimUsers(user, simmovies,baddummymovies);
