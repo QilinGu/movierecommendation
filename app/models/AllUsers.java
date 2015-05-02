@@ -461,28 +461,7 @@ public class AllUsers{
         }
     }
     
-   // Added by Daniel  
-    double xyStandarddeviation(double meanx,
-			double meany, int moviesize, int usersize, TreeMap<Integer, Integer> userMap, String otheruser) {
-		double sumx = 0;
-		double sumy = 0;
-		for (int j = 0; j < moviesize; j++) {
-			int x = CheckUserID(userMap, j);
-			int y = CheckUserID(otheruser, j);
-			double xx =x  - meanx;
-			sumx += xx * xx;
-			double yy = y - meany;
-			sumy += yy * yy;
-
-		}
-		sumx = sumx / (moviesize - 2);
-		sumy = sumy / (moviesize - 2);
-		sumx = Math.sqrt(sumx);
-		sumy = Math.sqrt(sumy);
-		//System.out.println("sx for user "+id + "is " + sumx  + "sy for user "+i +"is "+sumy );
-		return sumx * sumy;
-
-	}	
+   
 	
 	public int CheckUserID(TreeMap<Integer, Integer> usermap, int movieindex){
 	    
@@ -515,83 +494,22 @@ public class AllUsers{
     
     
     // Added by Daniel  
-    public void suggestMovies(TreeMap<Integer, Integer> userMap, String recommender,
-			ArrayList<Integer> suggest,int random) {
     
-        
-		int size = allmovies.size();
-		//System.out.println(size);
-		for (int i = 1; i <= size; i++) {
-            //ResultSet checkRec = statement.executeQuery("SELECT * FROM " + recommender +"Table WHERE movie = '" + i +"'");
-            //ResultSet checkUser = statement.executeQuery("SELECT * FROM " + user +"Table WHERE movie = '" + i +"'");
-		    //if (random >= 2 && checkRec.absolute(1) && !checkUser.absolute(1) && !suggest.contains(i)) {
-			if (random >=2 && allusers.get(recommender).userdata.containsKey(i)
-				//	&& auserIndex.movieIndex.get(id).get(i) == 0
-					&& !userMap.containsKey(i)
-					&& !suggest.contains(i)) {
-            //    String query = "SELECT * FROM "+recommender+"Table WHERE movie = '" +i+"';";
-            //    ResultSet resultset = statement.executeQuery(query);
-            //    int recRating = resultset.getInt("rating");			
-			//	if (recRating == 5){	    
-				if (allusers.get(recommender).userdata.get(i) == 5){
-				    suggest.add(i);
-				    return;
-				}
-			}
-		}for (int i = 1; i <= size; i++) {
-		    //ResultSet checkRec = statement.executeQuery("SELECT * FROM " + recommender +"Table WHERE movie = '" + i +"'");
-            //ResultSet checkUser = statement.executeQuery("SELECT * FROM " + user +"Table WHERE movie = '" + i +"'");
-		    //if (random >= 2 && checkRec.absolute(1) && !checkUser.absolute(1) && !suggest.contains(i)) {
-			if (random >=2 && allusers.get(recommender).userdata.containsKey(i)
-					//	&& auserIndex.movieIndex.get(id).get(i) == 0
-						&& !userMap.containsKey(i)
-						&& !suggest.contains(i)) {
-				//String query = "SELECT * FROM "+recommender+"Table WHERE movie = '" +i+"';";
-                //ResultSet resultset = statement.executeQuery(query);
-                //int recRating = resultset.getInt("rating");		
-				//if (recRating > 3){	    
-				if (allusers.get(recommender).userdata.get(i) >3){
-			        suggest.add(i);
-			        return;
-				}
-			}
-		}
-	}
-
-    
-    
-    
-    // Added by Daniel  
-    public void updateMovies(HashMap<String, MovieObject> pearsonmap,ArrayList<Integer> movies, TreeMap<Integer,Integer> usermap){
-        ArrayList<MovieObject> finalResults = new ArrayList<MovieObject>(pearsonmap.values());
- 	    Collections.sort(finalResults);
-        int t = 10;
-        //System.out.println("Index 0 is " + finalResults.get(0).getID());
-		for (int j = 1; j <= t; j++) {
-			//Random rand = new Random();
-			//int random = rand.nextInt(4);//incase we implement backward and forward traversal
-			//random = 2;// debugging
-			
-			MovieObject i = finalResults.get(j);
-	        suggestMovies(usermap, i.getID(), movies,2);
-	        
-	        //System.out.println(movies);
-	        //Logger.debug("message: %s, movies);
-		}
-
- 	
-    }
     
     // Added by Daniel  //implementing Apache
     public void checkForSimUsers(String user, ArrayList<Integer> movies,ArrayList baddummymovies){
         
          //try {
            // Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
-            DenseMatrix q = new DenseMatrix(1,3952);
+           
+           
+           int randy;
         	HashMap<String, MovieObject> pearsonmap = new HashMap<String, MovieObject>();
+        	TreeMap<Integer, Integer> userMap = tableGetMap(user);
+        	int count = 0;
 	    	//TreeMap<Integer, Integer> userMap = allusers.get(user).userdata;
-	    	
-		    TreeMap<Integer, Integer> userMap = tableGetMap(user);
+	    	/*
+	    	DenseMatrix q = new DenseMatrix(1,3952);
 		    for (Entry<Integer, Integer> t: userMap.entrySet()){
             	q.setQuick(0,t.getKey()-1,t.getValue());
             }
@@ -622,37 +540,25 @@ public class AllUsers{
 		         j++;
 	             }
             }
+         }
+            */
+            while (count<10){
+             randy = (int)(Math.random() * allmovies.size()) + 1;
+             if (!userMap.containsKey(randy) && !baddummymovies.contains(randy)){
+             	 //System.out.println("User:  we want you to see movie with index " + (finalsvd.get(j).getID()+1)); //Because our movie index ratigns doesn't start from 0;
+                 movies.add(randy);
+                 count++;
+
+	             }
+           
+        }
+            
+            
         
         
         
     }
-	        //ArrayList<String> usernames = loginGetUsers();
-	        //int usersize = usernames.size();
-	        //for(int i = 0; i < usersize-1; i++) {
 	        
-	        
-	     /*try{
-		 DataModel model = new FileDataModel(new File("data/dataset.csv")); //should be changed after every user submission
-		UserSimilarity similarity = new PearsonCorrelationSimilarity(model);
-		UserNeighborhood neighborhood = new ThresholdUserNeighborhood(0.1, similarity, model);
-		UserBasedRecommender recommender = new GenericUserBasedRecommender(model, neighborhood, similarity);
-		//GenericUserBasedRecommender recommender = new GenericUserBasedRecommender(model,similarity);
-		int ouruser = Integer.parseInt(user);
-		List<RecommendedItem> recommendations = recommender.recommend(ouruser, 10);
-		
-		//long[] users = recommender.mostSimilarUserIDs(user, 5);
-		for (RecommendedItem recommendation : recommendations) {
-		  System.out.println(recommendation);
-		  movies.add((int)recommendation.getItemID());
-		  
-		}
-		}
-		catch (IOException | TasteException e) {
-			// TODO Auto-generated catch block
-			System.out.println("I/O or Taste Exception");
-		}
-}
-	     */
 	     
 public static Matrix readMatrix(String filename){
 		String line;
