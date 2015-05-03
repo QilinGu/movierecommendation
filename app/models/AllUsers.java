@@ -491,9 +491,9 @@ public class AllUsers{
            int randy;
         	HashMap<String, MovieObject> pearsonmap = new HashMap<String, MovieObject>();
         	TreeMap<Integer, Integer> userMap = tableGetMap(user);
-        	int count = 0;
+        	//int count = 0;
 	    	//TreeMap<Integer, Integer> userMap = allusers.get(user).userdata;
-	    	/*
+	    	
 	    	DenseMatrix q = new DenseMatrix(1,3952);
 		    for (Entry<Integer, Integer> t: userMap.entrySet()){
             	q.setQuick(0,t.getKey()-1,t.getValue());
@@ -526,8 +526,8 @@ public class AllUsers{
 	             }
             }
          }
-            */
-            while (count<10){
+            
+/*            while (count<10){
              randy = (int)(Math.random() * allmovies.size()) + 1;
              if (!userMap.containsKey(randy) && !baddummymovies.contains(randy)){
              	 //System.out.println("User:  we want you to see movie with index " + (finalsvd.get(j).getID()+1)); //Because our movie index ratigns doesn't start from 0;
@@ -543,7 +543,7 @@ public class AllUsers{
         
         
     }
-	        
+	        */
 	     
 public static Matrix readMatrix(String filename){
 		String line;
