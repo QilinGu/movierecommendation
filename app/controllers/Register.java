@@ -29,14 +29,12 @@ public class Register extends Controller {
     
 	final static Form<User> userForm = Form.form(User.class);
 	final static AllUsers allusers = new AllUsers();
-    static ArrayList<Integer> movieIds = new ArrayList<Integer>();
     final static ArrayList<String> lastTen = new ArrayList<String>();
-    static String username = null;
-    static String password = null;
     final static ArrayList<Integer> simmovies = new ArrayList<Integer>();
-    static int count = 0;
-    static ArrayList<Integer> baddummymovies = allusers.readArrayList("conf/badmoviesout.txt");
+    final static ArrayList<Integer> baddummymovies = allusers.readArrayList("conf/badmoviesout.txt");
 
+    static ArrayList<Integer> movieIds = new ArrayList<Integer>();
+    static int count = 0;
 
     public static Result home() throws IOException {
         if(count == 0){
@@ -54,26 +52,23 @@ public class Register extends Controller {
         Form<User> filledForm = userForm.bindFromRequest();
         User created = filledForm.get();
         
-        if(!allusers.loginCheck(created.username, created.password)){
+        if(!allusers.loginCheck(created.username, created.password)) {
+    
             return ok(home.render(userForm, "true"));
+        
         }
         
-        //username = created.username;
-        //password = created.password;
-
         return redirect(controllers.routes.Register.user(created.username));
     }
     
-    public static Result signout(){
-        //username = null;
-        //password = null;
+    public static Result signout() {
+
         return redirect("/");
     }
 
     public static Result register() {
                 
         movieIds = allusers.getTenRandomIDS(baddummymovies);//Daniel
-        //allusers.loginPrint();
 
         return ok(regpage.render(userForm, allusers.shortlist, null, null));
     }
@@ -82,86 +77,68 @@ public class Register extends Controller {
         
         Form<User> filledForm = userForm.bindFromRequest();
         User created = filledForm.get();
-        //if(username == null || password == null){
+
+        if(created.username.length() == 0 || created.password.length() == 0) {
+    
+            return ok(regpage.render(userForm, allusers.shortlist, "true", "true"));
+    
+        }
+
+        if(allusers.loginInsert(created.username, created.password)) {
+    
+            allusers.tableCreate(created.username);
+
+        } else {
+    
+            return ok(regpage.render(userForm, allusers.shortlist, "true", "true"));
             
-            if(created.username.length() == 0 || created.password.length() == 0){
-                return ok(regpage.render(userForm, allusers.shortlist, "true", "true"));
-            }
-
-            //password = created.password;
-            //username = created.username;
-            if(allusers.loginInsert(created.username, created.password)){
-                allusers.tableCreate(created.username);
-            }else{
-                return ok(regpage.render(userForm, allusers.shortlist, "true", "true"));
-            }
-
-        //}
+        }
         
         created.addToRatings(movieIds);
 
-        /*if(!allusers.hasUser(username)){
-    	    for(int i = 0; i < created.ratingssize; i++){
-    
-                allusers.tableInsert(username, created.movies.get(i), created.ratings.get(i)); 
+        for(int i = 0; i < created.ratingssize; i++) {
 
-    	        //created.addRated(allusers.findMovie(created.movies.get(i)), i);
+            allusers.tableInsert(created.username, created.movies.get(i), created.ratings.get(i));
     	        
-    	    }
-    
-            //allusers.addToAll(username, created);
-            int size = allusers.tableSize(username);
-            if(size < 10){
-                if(!movieIds.isEmpty()){
-                    movieIds.clear();
-                }
-                allusers.shortlist.clear();
-                movieIds = allusers.getTenRandomIDS(baddummymovies);
-                return ok(loadmore.render(userForm, allusers.shortlist));
-            }
-        }*/
-        
-        //else{
-            //User olddata = allusers.getUserData(username);
+    	}
+    	    
+    	int size = allusers.tableSize(created.username);
+    	    
+        if(size < 10) {
             
-            for(int i = 0; i < created.ratingssize; i++)
-    	    {
-    	        allusers.tableInsert(created.username, created.movies.get(i), created.ratings.get(i));
-    	        
-    	        //olddata.addData(created.movies.get(i), created.ratings.get(i));
-    	        //olddata.addRated(allusers.findMovie(created.movies.get(i)), i);
-    	    }
-    	    int size = allusers.tableSize(created.username);
-    	    if(size < 10){
-                if(!movieIds.isEmpty()){
-                    movieIds.clear();
-                }
-                allusers.shortlist.clear();
-                movieIds = allusers.getTenRandomIDS(created.username, baddummymovies);//Daniel
-                return ok(loadmore.render(userForm, allusers.shortlist, created.username));
+            if(!movieIds.isEmpty()) {
+                    
+                movieIds.clear();
             }
-        //}
-        
-        //allusers.tablePrint(username);      
+            
+            allusers.shortlist.clear();
+            movieIds = allusers.getTenRandomIDS(created.username, baddummymovies);//Daniel
+            return ok(loadmore.render(userForm, allusers.shortlist, created.username));
+        }
         
         return redirect(controllers.routes.Register.user(created.username));
     }
     
-    public static Result addMovies(String username){
+    public static Result addMovies(String username) {
+        
         Form<User> filledForm = userForm.bindFromRequest();
         User created = filledForm.get();
         
         created.addToRatings(movieIds);
         
-        for(int i = 0; i < created.ratingssize; i++)
-    	{
+        for(int i = 0; i < created.ratingssize; i++) {
+    	    
     	    allusers.tableInsert(username, created.movies.get(i), created.ratings.get(i));
     	}
+    	
     	int size = allusers.tableSize(username);
-    	if(size < 10){
-            if(!movieIds.isEmpty()){
+    	if(size < 10) {
+    	    
+            if(!movieIds.isEmpty()) {
+                
                 movieIds.clear();
             }
+            
             allusers.shortlist.clear();
             movieIds = allusers.getTenRandomIDS(username, baddummymovies);//Daniel
             return ok(loadmore.render(userForm, allusers.shortlist, username));
@@ -172,26 +149,29 @@ public class Register extends Controller {
     
 
     public static Result user(String name) {
+        
         ArrayList<String> recentmovies = allusers.getLastTen(name);
         int moviesrated = allusers.tableSize(name);
         return ok(user.render(name, recentmovies, moviesrated));
-        
     }
     
     public static Result recommend(String user) {
-        if(!movieIds.isEmpty()){
+        
+        if(!movieIds.isEmpty()) {
+            
             movieIds.clear();
         }
-        if(simmovies.size() >= 10){
+        
+        if(simmovies.size() >= 10) {
+            
             simmovies.clear();
         }
+        
         allusers.checkForSimUsers(user, simmovies,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
-        //System.out.println(simmovies.size());
-        
-        for(int i = 0; i < simmovies.size(); i++)
-        {
-            //System.out.println("movie id : " + simmovies.get(i));
+
+        for(int i = 0; i < simmovies.size(); i++) {
+
             String movie = allusers.findMovie(simmovies.get(i));
             movieIds.add(simmovies.get(i));
             recMovies.add(movie);
@@ -201,9 +181,12 @@ public class Register extends Controller {
     }
     
     public static Result submitrec(String user) throws IOException {
+        
         //Added by Daniel
         PrintWriter outw = null;
-        try{
+        
+        try {
+            
             outw = new PrintWriter(new FileWriter("conf/dataset.csv", true));
 
             Form<User> filledForm = userForm.bindFromRequest();
@@ -211,15 +194,16 @@ public class Register extends Controller {
 
     	    newdata.addToRatings(movieIds);
         
-    	    for(int i = 0; i < newdata.ratingssize; i++)
-    	    {
+    	    for(int i = 0; i < newdata.ratingssize; i++) {
+    	        
       	        allusers.tableInsert(user, newdata.movies.get(i), newdata.ratings.get(i));
 
     	        //Added by Daniel
     	        outw.println(user + "," + newdata.movies.get(i) + "," + newdata.ratings.get(i)+".0");
 
     	    }
-    	} catch(FileNotFoundException e){
+    	    
+    	} catch(FileNotFoundException e) {
 
 			System.out.println("File Not Found");
 
@@ -227,7 +211,7 @@ public class Register extends Controller {
 
 			System.out.println("File is not readable");
 
-		} finally{
+		} finally {
 		    
     	    outw.close();
     
@@ -238,8 +222,9 @@ public class Register extends Controller {
     	movieIds.clear();
     	allusers.checkForSimUsers(user, simmovies,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
-        for(int i = 0; i < simmovies.size(); i++)
-        {
+        
+        for(int i = 0; i < simmovies.size(); i++) {
+            
             String movie = allusers.findMovie(simmovies.get(i));
             movieIds.add(simmovies.get(i));
             recMovies.add(movie);

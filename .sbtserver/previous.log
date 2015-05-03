@@ -1,5 +1,5 @@
-New log file opened at Sun May 03 08:03:55 PDT 2015 by 29850@Thomass-MacBook-Pro.local
-jvm 29850@Thomass-MacBook-Pro.local
+New log file opened at Sun May 03 08:19:43 PDT 2015 by 29939@Thomass-MacBook-Pro.local
+jvm 29939@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4b0c6d44, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3baafbca, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,45 +67,7 @@ Set current project to actiontest (in build file:/Users/Tommie/movierecommendati
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2505870e, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2b959cbd directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 1.293422505 s
-Java analysis took 0.542810744 s
-Java compile + analysis took 1.870040045 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 6 s, completed May 3, 2015 8:04:12 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@24a27dd7, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7dc2109a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -122,18 +84,40 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed May 3, 2015 8:04:13 AM
+Total time: 3 s, completed May 3, 2015 8:20:01 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@76f34a46, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 2 s, completed May 3, 2015 8:20:03 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@4e5bdd18, check cycles: false
-Total time: 0 s, completed May 3, 2015 8:04:13 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@1bb12190, check cycles: false
+Total time: 0 s, completed May 3, 2015 8:20:03 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@58c99557, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@2f3bbb13, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -150,116 +134,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed May 3, 2015 8:04:14 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@549f88f4, check cycles: false
-Total time: 0 s, completed May 3, 2015 8:04:14 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@217c2f03, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 3, 2015 8:04:15 AM
+Total time: 1 s, completed May 3, 2015 8:20:05 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@70f8f7d7, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@3c68d38 directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.27993832 s
-Java analysis took 0.702459116 s
-Java compile + analysis took 0.99215607 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed May 3, 2015 8:05:39 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7f5de076, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@1ae6b3a6 directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.319319125 s
-Java analysis took 0.221445549 s
-Java compile + analysis took 0.549228525 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed May 3, 2015 8:06:04 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@10b75643, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@196d489c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -278,40 +158,294 @@ All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/mod
 
 Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
 Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@60030815 directly...
-Java compilation took 0.305278261 s
-Java analysis took 0.030475341 s
-Java compile + analysis took 0.343089763 s
+Attempting to call com.sun.tools.javac.api.JavacTool@29e981de directly...
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:530: illegal start of type
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:530: illegal start of type
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:530: illegal start of type
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:530: illegal start of type
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:530: <identifier> expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:530: <identifier> expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:530: ')' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:530: ')' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:530: ';' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:530: ';' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: illegal start of type
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: illegal start of type
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: <identifier> expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: <identifier> expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: ';' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: ';' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: illegal start of type
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: illegal start of type
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: <identifier> expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: <identifier> expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: ';' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: ';' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: illegal start of type
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: illegal start of type
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:531: ';' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:531: ';' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:532: illegal start of type
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:532: illegal start of type
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:532: illegal start of type
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:532: illegal start of type
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:532: ')' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:532: ')' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:532: ';' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:532: ';' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:532: invalid method declaration; return type required
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:532: invalid method declaration; return type required
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:532: <identifier> expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:532: <identifier> expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:532: ';' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:532: ';' expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:545: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:545: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:548: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:548: class, interface, or enum expected
+Read from stdout: public static 
+public static 
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:550: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:550: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:551: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:551: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:552: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:552: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:554: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:554: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:557: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:557: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:559: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:559: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:560: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:560: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:561: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:561: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:562: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:562: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:563: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:563: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:566: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:566: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:568: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:568: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:576: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:576: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:579: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:579: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:581: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:581: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:584: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:584: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:588: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:588: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:590: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:590: class, interface, or enum expected
+Read from stdout: public static 
+public static 
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:592: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:592: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:595: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:595: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:598: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:598: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:600: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:600: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:604: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:604: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:611: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:611: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:614: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:614: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:616: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:616: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:619: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:619: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:623: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:623: class, interface, or enum expected
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 2 s, completed May 3, 2015 8:20:20 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@10fba0e3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@ac6fb04 directly...
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:548: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:548: class, interface, or enum expected
+Read from stdout: public static 
+public static 
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:550: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:550: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:551: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:551: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:552: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:552: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:554: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:554: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:557: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:557: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:559: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:559: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:560: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:560: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:561: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:561: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:562: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:562: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:563: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:563: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:566: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:566: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:568: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:568: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:576: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:576: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:579: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:579: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:581: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:581: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:584: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:584: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:588: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:588: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:590: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:590: class, interface, or enum expected
+Read from stdout: public static 
+public static 
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:592: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:592: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:595: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:595: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:598: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:598: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:600: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:600: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:604: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:604: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:611: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:611: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:614: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:614: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:616: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:616: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:619: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:619: class, interface, or enum expected
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:623: class, interface, or enum expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:623: class, interface, or enum expected
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 3, 2015 8:20:38 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@60a3227e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5f0c1152 directly...
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:515: variable count is already defined in method checkForSimUsers(java.lang.String,java.util.ArrayList<java.lang.Integer>,java.util.ArrayList)
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:515: variable count is already defined in method checkForSimUsers(java.lang.String,java.util.ArrayList<java.lang.Integer>,java.util.ArrayList)
+Read from stdout: int count = 0;
+int count = 0;
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 3, 2015 8:20:58 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ba84bf2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@520f33a4 directly...
+Java compilation took 0.456798318 s
+Java analysis took 0.152359308 s
+Java compile + analysis took 0.617998333 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed May 3, 2015 8:06:19 AM
+Total time: 2 s, completed May 3, 2015 8:21:20 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@5807edb9, check cycles: false
-Total time: 0 s, completed May 3, 2015 8:06:33 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@37194ebb, check cycles: false
+Total time: 0 s, completed May 3, 2015 8:21:25 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/movierecommendation/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@1462bcfe, check cycles: false
-Total time: 1 s, completed May 3, 2015 8:06:37 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@1912644, check cycles: false
+Total time: 1 s, completed May 3, 2015 8:21:28 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@5a6e3704, check cycles: false
-Total time: 0 s, completed May 3, 2015 8:06:39 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@651b850b, check cycles: false
+Total time: 0 s, completed May 3, 2015 8:21:30 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@6d34a0de, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@535bb59d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -339,46 +473,6 @@ Copy resource mappings:
 	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
 	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
 	(/Users/Tommie/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
-Total time: 2 s, completed May 3, 2015 8:06:45 AM
+Total time: 1 s, completed May 3, 2015 8:21:34 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2ddabd40, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/Tommie/movierecommendation/conf/application.conf,/Users/Tommie/movierecommendation/target/scala-2.11/classes/application.conf)
-	(/Users/Tommie/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
-	(/Users/Tommie/movierecommendation/conf/dataset.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset.csv)
-	(/Users/Tommie/movierecommendation/conf/dataset2.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset2.csv)
-	(/Users/Tommie/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
-	(/Users/Tommie/movierecommendation/conf/movies.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/movies.txt)
-	(/Users/Tommie/movierecommendation/conf/moviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/moviesout.txt)
-	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
-	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
-	(/Users/Tommie/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
-Total time: 1 s, completed May 3, 2015 8:07:08 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 29850@Thomass-MacBook-Pro.local logs at Sun May 03 08:09:37 PDT 2015, goodbye.

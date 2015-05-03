@@ -41,83 +41,100 @@ import play.db.*;
 import javax.sql.DataSource;
 import java.sql.*;
 
-public class AllUsers{
-    public ArrayList<String> shortlist;
-    TreeMap<String, User> allusers;
-     ArrayList<String> allmovies;
-     ArrayList<String> allgenres;
-     Matrix V;
-     Connection connection;
+public class AllUsers {
     
-    public AllUsers(){
-    /*TreeMap<Username, Userdata>*/
-    allusers = new TreeMap<String, User>();
-    /*ArrayList<MovieTitles> index would be movieID*/
-    allmovies = new ArrayList<String>();
-    /*ArrayList<genres> index would be movieID*/
-   allgenres = new ArrayList<String>();
-    V = readMatrix("conf/VMatrixMillion6040reduced.txt");
-    connection = DB.getConnection("default");
-    shortlist = new ArrayList<String>();
+    public ArrayList<String> shortlist;
+    private TreeMap<String, User> allusers;
+    private ArrayList<String> allmovies;
+    private ArrayList<String> allgenres;
+    private Matrix V;
+    private Connection connection;
+    
+    public AllUsers() {
+        
+        /*TreeMap<Username, Userdata>*/
+        allusers = new TreeMap<String, User>();
+        
+        /*ArrayList<MovieTitles> index would be movieID*/
+        allmovies = new ArrayList<String>();
+        
+        /*ArrayList<genres> index would be movieID*/
+        allgenres = new ArrayList<String>();
+        
+        V = readMatrix("conf/VMatrixMillion6040reduced.txt");
+        connection = DB.getConnection("default");
+        shortlist = new ArrayList<String>();
     }
     
-    public int getSizeOfAll(){
+    public int getSizeOfAll() {
+        
         return allusers.size();
     }
     
     
-    public void movieParse(File moviefile) throws IOException{
+    public void movieParse(File moviefile) throws IOException {
+        
 		String line;
 		BufferedReader input = null;
 
 		try {
+		    
 			input = new BufferedReader(new FileReader(moviefile));
 
 			while((line = input.readLine()) != null) {
+			    
 				allmovies.add(line);
 			}
 			
 		} catch(FileNotFoundException e) {
+		    
 			System.out.println("File Not Found");
-
+			
 		} catch (IOException e) {
+		    
 			System.out.println("File is not readable");
-			
+		
 		} finally {
+		    
 			input.close();
-			
 		}
 	}
 	
-	public void userParse(File userfile) throws IOException{
+	public void userParse(File userfile) throws IOException {
+	    
 	    String line;
 		BufferedReader input = null;
 
 		try {
+		    
 			input = new BufferedReader(new FileReader(userfile));
 
 			while((line = input.readLine()) != null) {
+			    
 				String[] wordArray = line.split("[\t]+");
 				String user = wordArray[0];
 				User newuserdata = new User();
 				addToAll(user, newuserdata);
 				newuserdata.setUserName(user);
 				
-				for(int i = 1; i < wordArray.length; i++){
+				for(int i = 1; i < wordArray.length; i++) {
+				    
 						String[] rating = wordArray[i].split("[,]");
 						allusers.get(user).userdata.put(Integer.parseInt(rating[0]), Integer.parseInt(rating[1]));
-					}
+				}
 			}
 
 		} catch(FileNotFoundException e) {
+			
 			System.out.println("File Not Found");
-
+			
 		} catch (IOException e) {
+		    
 			System.out.println("File is not readable");
-			
+		
 		}finally {
+		    
 			input.close();
-			
 		}
 	}
     
@@ -147,13 +164,17 @@ public class AllUsers{
      *      Testing purposes.
      * 
      * */
-    public boolean loginInsert(String username, String password){
+    public boolean loginInsert(String username, String password) {
         
-        try{
+        try {
+            
             Connection conn = DB.getConnection("default");
-            if(loginCheck(username, password)){
+            
+            if(loginCheck(username, password)) {
+            
                 return false;
             }
+            
             String query = " insert into loginInfo (username, password)"
         + " values (?, PASSWORD(?))";
             
@@ -163,15 +184,17 @@ public class AllUsers{
             preparedStatement.execute();
             
             conn.close();
-        }   catch (SQLException ex){
-                System.out.println("THERE HAS BEEN AN SQLEXCEPTION");
+        } catch (SQLException ex) {
+            System.out.println("THERE HAS BEEN AN SQLEXCEPTION");
         }
         return true;
         
     }
     
-    public boolean loginCheck(String username, String password){
-        try{
+    public boolean loginCheck(String username, String password) {
+        
+        try {
+            
             Connection conn = DB.getConnection("default");
             
             String query = "SELECT * from loginInfo WHERE username = '"+username+"' AND password = PASSWORD('"+password+"');";
@@ -179,15 +202,16 @@ public class AllUsers{
             PreparedStatement preparedStatement = conn.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
 
-            if (!rs.next()){
+            if (!rs.next()) {
                 conn.close();
                 return false;   
             }
-            else{
+            else {
                 conn.close();
             }
-        }   catch (SQLException sql){
-                System.out.println("exception");
+            
+        } catch (SQLException sql) {
+            System.out.println("exception");
         }
         return true;
     }
