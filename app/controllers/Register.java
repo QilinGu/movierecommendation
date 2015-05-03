@@ -35,7 +35,7 @@ public class Register extends Controller {
     static String password = null;
     final static ArrayList<Integer> simmovies = new ArrayList<Integer>();
     static int count = 0;
-    static ArrayList<Integer> baddummymovies = allusers.readArrayList("badmoviesout.txt");
+    static ArrayList<Integer> baddummymovies = allusers.readArrayList("conf/badmoviesout.txt");
 
 
     public static Result home() throws IOException {
@@ -204,7 +204,7 @@ public class Register extends Controller {
         //Added by Daniel
         PrintWriter outw = null;
         try{
-            outw = new PrintWriter(new FileWriter("data/dataset.csv", true));
+            outw = new PrintWriter(new FileWriter("conf/dataset.csv", true));
 
             Form<User> filledForm = userForm.bindFromRequest();
     	    User newdata = filledForm.get();
