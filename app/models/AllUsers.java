@@ -61,7 +61,7 @@ public class AllUsers {
         /*ArrayList<genres> index would be movieID*/
         allgenres = new ArrayList<String>();
         
-        V = readMatrix("conf/VMatrixMillion6040reduced.txt");
+        V = readMatrix("conf/VMatrixMillion6040reducent.txt");
         connection = DB.getConnection("default");
         shortlist = new ArrayList<String>();
     }
