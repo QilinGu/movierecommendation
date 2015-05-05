@@ -231,6 +231,9 @@ public class AllUsers {
                 users.add(resultset.getString("username"));
             }
             
+            /*for(int i = 0; i < users.size(); i++){
+                System.out.println(users.get(i) + " --> " + tableSize(users.get(i)));
+            }*/
             conn.close();
         } catch (SQLException ex){
             System.out.println("THERE HAS BEEN AN SQLEXCEPTION");
@@ -439,14 +442,10 @@ public class AllUsers {
     
     public ArrayList<Integer> getTenRandomIDS(ArrayList baddummymovies){
         ArrayList<Integer> random = new ArrayList<Integer>();
-       // for(int i = 0; i < 10; i++)
-    //    {
-      //    random.add((int)(Math.random() * allmovies.size()) + 1);  
-    //    }
         int i = 0;
         int randy;
         while (i<10){
-             randy = (int)(Math.random() * allmovies.size()) + 1;
+            randy = (int)(Math.random() * allmovies.size()) + 1;
             if (!baddummymovies.contains(randy)){
                 random.add(randy);
                 i++;

@@ -44,6 +44,7 @@ public class Register extends Controller {
             allusers.userParse(userfile);
             count++;
         }
+        allusers.loginGetUsers();
         return ok(home.render(userForm, null));
     }
     

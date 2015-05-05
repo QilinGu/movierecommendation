@@ -1,22 +1,22 @@
-New log file opened at Sun May 03 14:02:43 PDT 2015 by 1288@BASHTOP
-jvm 1288@BASHTOP
-jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.40-b25
+New log file opened at Mon May 04 18:12:48 PDT 2015 by 31068@Thomass-MacBook-Pro.local
+jvm 31068@Thomass-MacBook-Pro.local
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
-Waiting for sbt command engine
 Command engine arguments=List()
-Command engine baseDirectory=C:\Users\BASHBABA\Desktop\OLGA\movierecommendation
+Command engine baseDirectory=/Users/Tommie/movierecommendation
+Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
 > onFailure load-failed
 > boot
 > reload
-[Loading] Scanning directory C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\project
+[Loading] Scanning directory /Users/Tommie/movierecommendation/project
 [Loading] Found non-root projects 
-[Loading] Done in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\project, returning: ()
+[Loading] Done in /Users/Tommie/movierecommendation/project, returning: ()
 deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
 sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
@@ -25,9 +25,9 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
-[Loading] Done in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\project, returning: (movierecommendation-build)
-Loading project definition from C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@76d12bce, check cycles: false
+[Loading] Done in /Users/Tommie/movierecommendation/project, returning: (movierecommendation-build)
+Loading project definition from /Users/Tommie/movierecommendation/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6cf00fbd, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -46,7 +46,7 @@ All initially invalidated sources: Set()
 
 Copy resource mappings: 
 	
-[Loading] Scanning directory C:\Users\BASHBABA\Desktop\OLGA\movierecommendation
+[Loading] Scanning directory /Users/Tommie/movierecommendation
 [Loading] Found root project root w/ remaining 
 deducing auto plugins based on known facts Set(Atom(play.PlayJava), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.Play),Set(Atom(com.typesafe.sbt.webdriver.SbtWebDriver))), Clause(Atom(play.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.PlayJava),Set(Atom(play.Play))), Clause(Atom(play.PlayScala),Set(Atom(play.Play))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.webdriver.SbtWebDriver),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.webdriver.SbtWebDriver))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,play.PlayJava,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,com.typesafe.sbt.jse.SbtJsTask,play.twirl.sbt.SbtTwirl,com.typesafe.sbt.webdriver.SbtWebDriver,com.typesafe.sbt.jshint.SbtJSHint,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.digest.SbtDigest,play.sbt.forkrun.PlayForkRun)
@@ -58,16 +58,16 @@ sorting: ns: List(sbt.plugins.CorePlugin, play.PlayJava, sbt.plugins.Interaction
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play) not found List(play.PlayJava, play.sbt.forkrun.PlayForkRun)
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play, play.PlayJava, play.sbt.forkrun.PlayForkRun) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.web.SbtWeb, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.webdriver.SbtWebDriver, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, sbt.plugins.JvmPlugin, com.typesafe.sbt.jse.SbtJsTask, play.twirl.sbt.SbtTwirl, com.typesafe.sbt.jshint.SbtJSHint, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, play.Play, play.PlayJava, play.sbt.forkrun.PlayForkRun)
-[Loading] Done in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation, returning: (root)
-Set current project to actiontest (in build file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/)
+[Loading] Done in /Users/Tommie/movierecommendation, returning: (root)
+Set current project to actiontest (in build file:/Users/Tommie/movierecommendation/)
 Reapplying settings...
-Set current project to actiontest (in build file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/)
+Set current project to actiontest (in build file:/Users/Tommie/movierecommendation/)
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@5a53fc35, check cycles: false
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@272f098a, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -84,18 +84,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 5 s, completed May 3, 2015 2:02:57 PM
+Total time: 2 s, completed May 4, 2015 6:13:00 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1e60b600, check cycles: false
-Total time: 0 s, completed May 3, 2015 2:02:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:discoveredMainClasses
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@6f6d1bd, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@2e9c8dae, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -112,70 +106,183 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed May 3, 2015 2:02:59 PM
+Total time: 1 s, completed May 4, 2015 6:13:01 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:mainClass
+> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@34c4704f, check cycles: false
-Total time: 0 s, completed May 3, 2015 2:02:59 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@24361a58, check cycles: false
+Total time: 0 s, completed May 4, 2015 6:13:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d8f7c9d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 4, 2015 6:13:02 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@5674a003, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 4, 2015 6:13:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@747a5706, check cycles: false
+Total time: 0 s, completed May 4, 2015 6:13:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@eefeb9e, check cycles: false
+Total time: 0 s, completed May 4, 2015 6:17:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@2f4130dd, check cycles: false
+Total time: 1 s, completed May 4, 2015 6:17:51 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@855dddb, check cycles: false
+Total time: 0 s, completed May 4, 2015 6:17:52 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4ac77581, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/movierecommendation/conf/application.conf,/Users/Tommie/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/dataset.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/movierecommendation/conf/dataset2.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/movierecommendation/conf/movies.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/movierecommendation/conf/moviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/movierecommendation/conf/VMatrixMillion6040reducent.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reducent.txt)
+Total time: 2 s, completed May 4, 2015 6:17:57 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7aa3af10, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@54260d9d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+	modified: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
 
-Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@59e49aad directly...
-Java compilation took 1.759804276 s
-Java analysis took 0.14114757 s
-Java compile + analysis took 1.919090012 s
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@14a4767d directly...
+Read from stdout: /Users/Tommie/movierecommendation/app/models/AllUsers.java:236: ')' expected
+/Users/Tommie/movierecommendation/app/models/AllUsers.java:236: ')' expected
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 2 s, completed May 4, 2015 6:20:26 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@57278a1a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@72ece852 directly...
+Java compilation took 0.735655969 s
+Java analysis took 0.150268369 s
+Java compile + analysis took 0.895693441 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed May 3, 2015 2:08:25 PM
+Total time: 2 s, completed May 4, 2015 6:20:58 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@383243a2, check cycles: false
-Total time: 1 s, completed May 3, 2015 2:08:32 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@6ed9f5f9, check cycles: false
-Total time: 1 s, completed May 3, 2015 2:08:37 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@188bd9f1, check cycles: false
-Total time: 0 s, completed May 3, 2015 2:08:38 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/*:playForkReload
+> {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@78418b7f, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@73622165, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -193,101 +300,50 @@ Sources indirectly invalidated by:
 All initially invalidated sources: Set()
 
 Copy resource mappings: 
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\application.conf,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\application.conf)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\badmoviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\badmoviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset2.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset2.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\datasetcopyme.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\datasetcopyme.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\movies.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\movies.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\moviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\moviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\routes,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\routes)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\users.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\users.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\VMatrixMillion6040reducent.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\VMatrixMillion6040reducent.txt)
-Total time: 3 s, completed May 3, 2015 2:08:44 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 1
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@4eb8a8c6, check cycles: false
-Total time: 0 s, completed May 3, 2015 2:16:20 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@74a9af5e, check cycles: false
-Total time: 1 s, completed May 3, 2015 2:23:44 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@289df0e0, check cycles: false
-Total time: 1 s, completed May 3, 2015 2:23:49 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@14a5e999, check cycles: false
-Total time: 0 s, completed May 3, 2015 2:23:50 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@2e6df90c, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\application.conf,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\application.conf)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\badmoviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\badmoviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset2.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset2.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\datasetcopyme.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\datasetcopyme.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\movies.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\movies.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\moviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\moviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\routes,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\routes)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\users.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\users.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\VMatrixMillion6040reducent.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\VMatrixMillion6040reducent.txt)
-Total time: 3 s, completed May 3, 2015 2:23:59 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 2
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@3e7b3ddc, check cycles: false
-Total time: 7 s, completed May 3, 2015 3:02:24 PM
+	(/Users/Tommie/movierecommendation/conf/application.conf,/Users/Tommie/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/dataset.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/movierecommendation/conf/dataset2.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/movierecommendation/conf/movies.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/movierecommendation/conf/moviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/movierecommendation/conf/VMatrixMillion6040reducent.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reducent.txt)
+Total time: 1 s, completed May 4, 2015 6:21:13 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@517e62f4, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@257c441c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/models/AllUsers.java)
 
-Total time: 12 s, completed May 3, 2015 3:15:47 PM
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@34008701 directly...
+Java compilation took 0.334980681 s
+Java analysis took 0.042855813 s
+Java compile + analysis took 0.385640148 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 4, 2015 6:23:12 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
