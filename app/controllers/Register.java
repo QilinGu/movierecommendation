@@ -85,13 +85,14 @@ public class Register extends Controller {
     
         }
 
-        if(allusers.loginInsert(created.username, created.password)) {
-    
-            allusers.tableCreate(created.username);
+        if(!allusers.loginInsert(created.username, created.password)) {
+            
+            return ok(regpage.render(userForm, allusers.shortlist, "true", "true"));
+            
 
         } else {
     
-            return ok(regpage.render(userForm, allusers.shortlist, "true", "true"));
+            allusers.tableCreate(created.username);
             
         }
         

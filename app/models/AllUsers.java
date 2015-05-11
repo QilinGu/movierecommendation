@@ -170,8 +170,7 @@ public class AllUsers {
             
             Connection conn = DB.getConnection("default");
             
-            if(loginCheck(username, password)) {
-            
+            if(loginCheck(username, password) || loginCheck(username)) {
                 return false;
             }
             
@@ -185,7 +184,7 @@ public class AllUsers {
             
             conn.close();
         } catch (SQLException ex) {
-            System.out.println("THERE HAS BEEN AN SQLEXCEPTION");
+            System.out.println("loginUser Exception");
         }
         return true;
         
@@ -207,6 +206,33 @@ public class AllUsers {
                 return false;   
             }
             else {
+                
+                conn.close();
+            }
+            
+        } catch (SQLException sql) {
+            System.out.println("exception");
+        }
+        return true;
+    }
+    
+    public boolean loginCheck(String username) {
+        
+        try {
+            
+            Connection conn = DB.getConnection("default");
+            
+            String query = "SELECT * from loginInfo WHERE username = '"+username+"';";
+            
+            PreparedStatement preparedStatement = conn.prepareStatement(query);
+            ResultSet rs = preparedStatement.executeQuery();
+
+            if (!rs.next()) {
+                conn.close();
+                return false;   
+            }
+            else {
+                
                 conn.close();
             }
             
@@ -231,9 +257,6 @@ public class AllUsers {
                 users.add(resultset.getString("username"));
             }
             
-            /*for(int i = 0; i < users.size(); i++){
-                System.out.println(users.get(i) + " --> " + tableSize(users.get(i)));
-            }*/
             conn.close();
         } catch (SQLException ex){
             System.out.println("THERE HAS BEEN AN SQLEXCEPTION");
@@ -263,7 +286,7 @@ public class AllUsers {
         }
     }
     
-    public void tableCreate(String username){
+    public Boolean tableCreate(String username){
         try{
             Connection conn = DB.getConnection("default");
             
@@ -274,8 +297,10 @@ public class AllUsers {
             
             conn.close();
         }catch(SQLException ex){
-            System.out.println("THERE HAS BEEN AN SQLEXCEPTION");
+            System.out.println("tableCreate exception");
+            return false;
         }
+        return true;
     }
     
     public void tableInsert(String username, int movie, int rating){
