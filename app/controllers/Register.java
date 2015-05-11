@@ -68,7 +68,13 @@ public class Register extends Controller {
     }
 
     public static Result register() {
-                
+        if(movieIds.size() > 0){
+            movieIds.clear();
+        } 
+        
+        if(allusers.shortlist.size() > 0){
+            allusers.shortlist.clear();
+        }
         movieIds = allusers.getTenRandomIDS(baddummymovies);//Daniel
 
         return ok(regpage.render(userForm, allusers.shortlist, null, null));

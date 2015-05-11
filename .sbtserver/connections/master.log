@@ -1,37 +1,13 @@
-New log file opened at Sun May 10 23:15:09 PDT 2015 by 12822@Thomass-MacBook-Pro.local
-Taking next connection to: 58525
-New client attempting to connect on port: 58526-58525
-  Address = /172.16.218.11:58525
-This client on port 58526 has uuid 7c3aa4d0-3466-4fb9-aa6f-a8e58d9fdb5d configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-7c3aa4d0-3466-4fb9-aa6f-a8e58d9fdb5d
-Taking next connection to: 58525
-New client attempting to connect on port: 58527-58525
-  Address = /172.16.218.11:58525
-Handshake exception on socket: 58527
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 58525
-New client attempting to connect on port: 58528-58525
-  Address = /172.16.218.11:58525
-This client on port 58528 has uuid 93934a14-3565-4ade-8574-20507e37d1e3 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-7c3aa4d0-3466-4fb9-aa6f-a8e58d9fdb5d, activator-93934a14-3565-4ade-8574-20507e37d1e3
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-New client attempting to connect on port: 58569-58525
-  Address = /172.16.218.11:58525
-Handshake exception on socket: 58569
+New log file opened at Mon May 11 08:33:41 PDT 2015 by 13101@Thomass-MacBook-Pro.local
+Taking next connection to: 60277
+New client attempting to connect on port: 60278-60277
+  Address = /10.0.0.10:60277
+This client on port 60278 has uuid 71a8d789-993c-4f1f-9a74-e48a54bfc3fa configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-71a8d789-993c-4f1f-9a74-e48a54bfc3fa
+Taking next connection to: 60277
+New client attempting to connect on port: 60279-60277
+  Address = /10.0.0.10:60277
+Handshake exception on socket: 60279
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -45,39 +21,36 @@ Caused by: java.net.SocketException: Connection reset
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 58525
-New client attempting to connect on port: 58570-58525
-  Address = /172.16.218.11:58525
-This client on port 58570 has uuid f807a9cc-853d-4549-90d3-dc17b4bb32d8 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-93934a14-3565-4ade-8574-20507e37d1e3, play-fork-run-f807a9cc-853d-4549-90d3-dc17b4bb32d8
-Taking next connection to: 58525
+Taking next connection to: 60277
+New client attempting to connect on port: 60280-60277
+  Address = /10.0.0.10:60277
+This client on port 60280 has uuid 2291e301-c4c2-4526-866f-6daad42815db configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-71a8d789-993c-4f1f-9a74-e48a54bfc3fa, activator-2291e301-c4c2-4526-866f-6daad42815db
+Taking next connection to: 60277
+New client attempting to connect on port: 60282-60277
+  Address = /10.0.0.10:60277
+Handshake exception on socket: 60282
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 60277
+New client attempting to connect on port: 60283-60277
+  Address = /10.0.0.10:60277
+This client on port 60283 has uuid 36a26f67-886d-472d-bd48-22a3d4f876c7 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-2291e301-c4c2-4526-866f-6daad42815db, play-fork-run-36a26f67-886d-472d-bd48-22a3d4f876c7
+Taking next connection to: 60277
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
+Taking next connection to: 60277
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
+Taking next connection to: 60277
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 58525
+Taking next connection to: 60277
