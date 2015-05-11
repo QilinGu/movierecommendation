@@ -157,7 +157,6 @@ public class Register extends Controller {
     
 
     public static Result user(String name) {
-        
         ArrayList<String> recentmovies = allusers.getLastTen(name);
         int moviesrated = allusers.tableSize(name);
         return ok(user.render(name, recentmovies, moviesrated));

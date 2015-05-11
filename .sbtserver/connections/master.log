@@ -1,13 +1,13 @@
-New log file opened at Mon May 11 08:47:18 PDT 2015 by 13184@Thomass-MacBook-Pro.local
-Taking next connection to: 60418
-New client attempting to connect on port: 60419-60418
-  Address = /10.0.0.10:60418
-This client on port 60419 has uuid 8963fd0c-4989-4cec-b051-5234e14015a5 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-8963fd0c-4989-4cec-b051-5234e14015a5
-Taking next connection to: 60418
-New client attempting to connect on port: 60420-60418
-  Address = /10.0.0.10:60418
-Handshake exception on socket: 60420
+New log file opened at Mon May 11 09:47:21 PDT 2015 by 13377@Thomass-MacBook-Pro.local
+Taking next connection to: 60764
+New client attempting to connect on port: 60765-60764
+  Address = /10.0.0.10:60764
+This client on port 60765 has uuid 102360e3-7285-4ea1-b529-8fb3d3bb1708 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-102360e3-7285-4ea1-b529-8fb3d3bb1708
+Taking next connection to: 60764
+New client attempting to connect on port: 60766-60764
+  Address = /10.0.0.10:60764
+Handshake exception on socket: 60766
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,15 +17,15 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 60418
-New client attempting to connect on port: 60421-60418
-  Address = /10.0.0.10:60418
-This client on port 60421 has uuid 10b0e099-21cc-43f0-be46-dc6096b8301b configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-8963fd0c-4989-4cec-b051-5234e14015a5, activator-10b0e099-21cc-43f0-be46-dc6096b8301b
-Taking next connection to: 60418
-New client attempting to connect on port: 60424-60418
-  Address = /10.0.0.10:60418
-Handshake exception on socket: 60424
+Taking next connection to: 60764
+New client attempting to connect on port: 60767-60764
+  Address = /10.0.0.10:60764
+This client on port 60767 has uuid 15e63bc8-fddb-45db-b262-0fb20c7f45a2 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-102360e3-7285-4ea1-b529-8fb3d3bb1708, activator-15e63bc8-fddb-45db-b262-0fb20c7f45a2
+Taking next connection to: 60764
+New client attempting to connect on port: 60770-60764
+  Address = /10.0.0.10:60764
+Handshake exception on socket: 60770
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -35,9 +35,9 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 60418
-New client attempting to connect on port: 60425-60418
-  Address = /10.0.0.10:60418
-This client on port 60425 has uuid 09ceb2c4-6822-4041-8d8e-7fa0ccccd13d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-10b0e099-21cc-43f0-be46-dc6096b8301b, play-fork-run-09ceb2c4-6822-4041-8d8e-7fa0ccccd13d
-Taking next connection to: 60418
+Taking next connection to: 60764
+New client attempting to connect on port: 60771-60764
+  Address = /10.0.0.10:60764
+This client on port 60771 has uuid 90789c1c-6716-4108-9f36-e6823b515557 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-15e63bc8-fddb-45db-b262-0fb20c7f45a2, play-fork-run-90789c1c-6716-4108-9f36-e6823b515557
+Taking next connection to: 60764
