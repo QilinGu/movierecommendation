@@ -45,6 +45,7 @@ public class Register extends Controller {
             count++;
         }
         allusers.loginGetUsers();
+        allusers.updateSVDsmall();
         return ok(home.render(userForm, null));
     }
     

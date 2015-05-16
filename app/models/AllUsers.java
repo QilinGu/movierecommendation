@@ -13,6 +13,11 @@ import java.util.HashMap;
 import java.util.Collections;
 import java.util.List;
 import java.util.NavigableMap;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.PrintWriter;
+
+
 
 
 import org.apache.mahout.cf.taste.common.TasteException;
@@ -61,7 +66,8 @@ public class AllUsers {
         /*ArrayList<genres> index would be movieID*/
         allgenres = new ArrayList<String>();
         
-        V = readMatrix("conf/VMatrixMillion6040reducent.txt");
+        //V = readMatrix("conf/VMatrixMillion6040reduced.txt");
+         V = readMatrix("conf/Vmatrix3users.txt");
         connection = DB.getConnection("default");
         shortlist = new ArrayList<String>();
     }
@@ -592,8 +598,28 @@ public class AllUsers {
         
     }
 	        */
-	     
-public static Matrix readMatrix(String filename){
+	  
+public static void writeMatrix(Matrix inputM, String filename, String title) throws IOException
+	{
+		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
+		
+		int rows = inputM.numRows();
+		int columns = inputM.numCols();
+		double value;
+		out.println(title);
+		out.println(rows);
+		out.println(columns);
+		for (int i = 0; i<rows; i++){
+			for (int j = 0; j < columns; j++){
+				if ((value = inputM.getQuick(i, j)) !=0){
+					out.println(i + "," + j + "," +value );
+				}
+			}
+		}
+		out.close();
+	}
+	  
+	  public static Matrix readMatrix(String filename){
 		String line;
 		int rows;
 		int columns;
@@ -670,91 +696,139 @@ public static ArrayList readArrayList(String filename){
     return list;
 }
 
-    
-        /*
-    Hui's Code
-    
-    public void checkForSimUsers(String user, ArrayList<Integer> movies){
-		
-		TreeMap<Integer, Integer> userMap = allusers.get(user).userdata;
-	
-	    ArrayList<String> userList = new ArrayList<String>();
-	    
-	    pearson(user, userMap, userList);
-		
-		
-		for(int i = 0; i < userList.size(); i++){
-			User u = allusers.get(userList.get(i));
-			for (int m : u.userdata.keySet()) {
-				if (u.userdata.get(m) == 5 && !movies.contains(m) && movies.size() < 10) {
-					movies.add(m);
-				}
-			}
-		}
-		
-					
-	}
-	
-   public void pearson(String user, TreeMap<Integer, Integer> userMap, 
-			ArrayList<String> userList) {
-		double avg = 0, top = 0, bottom_x = 0,bottom_y = 0, similarity = 0;
-		double[] averages = new double[allusers.keySet().size()];
-		double[] x_values = new double[allmovies.size()];
-		double[] y_values;
-		TreeMap<Double, String> similarities = new TreeMap<Double, String>();
+public static DenseMatrix readM(String filename, int newrow) {
+        BufferedReader reader = null;
+        DenseMatrix m = null;
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            String line;
+            try {
+                int row = Integer.parseInt(reader.readLine());
+                int column = Integer.parseInt(reader.readLine());
+                m = new DenseMatrix(newrow, column);
+                line = reader.readLine();
+                int i = 0;
+                while (line != null && i < newrow) {// don't forget to change this after debugging
+                    String[] numbers = line.split(",");
+                    for (int j = 0; j < numbers.length; j++) {
+                        m.setQuick(i, j, Double.parseDouble(numbers[j]));
+                    }
+ 
+                    line = reader.readLine();
+                    i++;
+                }
+            } catch (IOException e) {
+                //ignored
+            }
+        } catch (FileNotFoundException e) {
+            //ignored
+        } finally {
+            try {
+                reader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }   
+        return m;
+    }
 
-		
-		for (String u : allusers.keySet()) {
-			for (int m : allusers.get(u).userdata.keySet()) {
-				avg += allusers.get(u).userdata.get(m);
-			}
-			avg = avg / allmovies.size();
-			averages[allusers.get(u).userid - 1] = avg;
-		}
-
-		for (int i = 1; i <= allmovies.size(); i++) {
-			if (allusers.get(user).userdata.containsKey(i)) {
-				x_values[i-1] = allusers.get(user).userdata.get(i) - averages[allusers.get(user).userid - 1];
-			} else {
-				x_values[i-1] = 0 - averages[allusers.get(user).userid - 1];
-			}
-		}
-		
-		for (String uid : allusers.keySet()) {
-			y_values = new double[allmovies.size()];
-			similarity = 0;
+public static Matrix reduceMatrixV(String filename,double percentkept){
+		String line;
+		int rows;
+		int columns;
+		DenseMatrix newMatrix = null;
+		try {
+			BufferedReader input = null;
 			
-			for (int i = 1; i < allmovies.size(); i++) {
-				if (allusers.get(uid).userdata.containsKey(i)) {
-					y_values[i-1] = allusers.get(uid).userdata.get(i) - averages[allusers.get(uid).userid -1];
-				} else {
-					y_values[i-1] = 0 - averages[allusers.get(uid).userid - 1];
+			try {
+			 input = new BufferedReader(new FileReader(filename));
+			 input.readLine();//done necessarily and intentionally to skip the one line documentation
+			 rows = Integer.parseInt(input.readLine());
+			 columns = Integer.parseInt(input.readLine());
+			 int newcolumns = (int) ((percentkept/100) * columns); 
+			 newMatrix = new DenseMatrix(rows,newcolumns);
+			while ((line = input.readLine()) != null) {
+				if (!(line.isEmpty())) {
+					String lineArray[] = line.split(",");
+					if (lineArray.length == 3 && Integer.parseInt(lineArray[1]) < newcolumns){
+						newMatrix.set(Integer.parseInt(lineArray[0]), Integer.parseInt(lineArray[1]), Double.parseDouble(lineArray[2]));
+				}
 				}
 			}
-						
-			for (int j = 0; j < allmovies.size(); j++) {
-				top += x_values[j]*y_values[j];
-				bottom_x += x_values[j] * x_values[j];
-				bottom_y += y_values[j]*y_values[j];
-			}
-			similarity = top/(Math.sqrt(bottom_x) * Math.sqrt(bottom_y));
-			similarities.put(similarity, uid);
-
-			top = 0;
-			bottom_x = 0;
-			bottom_y = 0;
 		}
-		
-		NavigableMap<Double,String> nmap = similarities.descendingMap();
-		int count = 10;
-		for (double i : nmap.keySet()) {
-			if  (count > 0 && !user.equals(nmap.get(i))) {
-				userList.add(nmap.get(i).toString());
-				count -- ;
-			}
+		finally {
+			
+			input.close();
+			
 		}
-		
-
+	} catch (FileNotFoundException e) {
+		System.out.println("Directory is invalid/Directory does not consist a file");
+	} catch (IOException e) {
+		System.out.println("Input/Output Exception");
 	}
-   */ 
+		catch(NullPointerException e){
+			System.out.println("An Error occured");
+		}
+		
+		return newMatrix;
+	}
+
+
+public void updateSVD()throws IOException{
+
+    int count= 6040;
+    ArrayList<String> users = loginGetUsers();
+    int usercount = 6040 + users.size();
+    DenseMatrix M = readM("conf/M.txt",usercount);
+    System.out.println("Grouplens DONE");
+    for (String user: users){
+       TreeMap<Integer, Integer> userMap = tableGetMap(user);
+      for (Entry<Integer, Integer> t: userMap.entrySet()){
+            	M.setQuick(count,t.getKey()-1,t.getValue());
+            }
+            count++;
+    }
+    	 System.out.println("Calculating SVD");
+	     long start_time = System.currentTimeMillis();
+		SingularValueDecomposition t = new SingularValueDecomposition(M);
+		System.out.println("SVD Done");
+		long end_time = System.currentTimeMillis();
+		long time = end_time-start_time;
+		 time = time/1000;
+		System.out.println("The time of SVD in seconds is " + time);
+		
+		writeMatrix(t.getV(),"conf/VmatrixMillion6040full.txt","This is a result of SVD recalculation");
+		Matrix newV = reduceMatrixV("conf/VmatrixMillion6040full.txt",20);
+	//we need to delete the matrix because it is very large and useless at this point
+	File f = new File("conf/VmatrixMillion6040full.txt");
+				System.out.println("Was the file deleted? " + f.delete());//we need to delete the matrix because it is very large and useless at this point
+		writeMatrix(newV,"conf/VMatrixMillion6040reduced.txt","(SVD Recalculation)This the reduced matrix of the original centered Million ratings");
+        V = readMatrix("conf/VMatrixMillion6040reduced.txt");	
+		System.out.println("SVD UPDATE IS COMPLETE");
+		
+}
+
+public void updateSVDsmall()throws IOException{
+    DenseMatrix M = readM("conf/M.txt",3);
+    System.out.println("SMALL Grouplens DONE");
+   
+    	 System.out.println("Calculating SVD");
+	     long start_time = System.currentTimeMillis();
+		SingularValueDecomposition t = new SingularValueDecomposition(M);
+		System.out.println("SVD Done");
+		long end_time = System.currentTimeMillis();
+		long time = end_time-start_time;
+		 time = time/1000;
+		System.out.println("The time of SVD in seconds is " + time);
+		writeMatrix(t.getV(),"conf/Vmatrix3usersfull.txt","This is a result of SVD 3 recalculation");
+        Matrix newV = reduceMatrixV("conf/Vmatrix3usersfull.txt",100);
+     	File f = new File("conf/Vmatrix3usersfull.txt");
+		System.out.println("Was the file deleted? " + f.delete());//we need to delete the matrix because it is very large and useless at this point
+		writeMatrix(newV,"conf/Vmatrix3users.txt","(SVD Recalculation)This the reduced matrix of the original centered Million ratings");
+        V = readMatrix("conf/Vmatrix3users.txt");	
+		System.out.println("SVD UPDATE IS COMPLETE"); 
+}
+
+
+     
 }

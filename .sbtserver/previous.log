@@ -1,5 +1,5 @@
-New log file opened at Mon May 11 09:02:14 PDT 2015 by 13260@Thomass-MacBook-Pro.local
-jvm 13260@Thomass-MacBook-Pro.local
+New log file opened at Mon May 11 09:47:21 PDT 2015 by 13377@Thomass-MacBook-Pro.local
+jvm 13377@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5c82c556, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@7066946b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,107 +67,7 @@ Set current project to actiontest (in build file:/Users/Tommie/movierecommendati
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@74735652, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 3 s, completed May 11, 2015 9:02:32 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@72e17566, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 2 s, completed May 11, 2015 9:02:34 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@5dd53171, check cycles: false
-Total time: 0 s, completed May 11, 2015 9:02:34 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@7dafecfe, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 11, 2015 9:02:35 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@12cdb0d4, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 11, 2015 9:02:37 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@711affcd, check cycles: false
-Total time: 0 s, completed May 11, 2015 9:02:37 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@486be419, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6b8b8095, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -186,295 +86,7 @@ All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/con
 
 Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
 Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@323d4113 directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:160: cannot find symbol
-Read from stdout: symbol:   method current()
-Read from stdout: location: class play.mvc.Http.Request
-/Users/Tommie/movierecommendation/app/controllers/Register.java:160: cannot find symbol
-  symbol:   method current()
-  location: class play.mvc.Http.Request
-Read from stdout: Http.Request.current
-Http.Request.current
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 2 s, completed May 11, 2015 9:03:06 AM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@235a3490, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@5dee3656 directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:160: non-static method username() cannot be referenced from a static context
-/Users/Tommie/movierecommendation/app/controllers/Register.java:160: non-static method username() cannot be referenced from a static context
-Read from stdout: Http.Request.username
-Http.Request.username
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 1 s, completed May 11, 2015 9:06:56 AM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@450eb6be, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@4c57bb22 directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:160: non-static method headers() cannot be referenced from a static context
-/Users/Tommie/movierecommendation/app/controllers/Register.java:160: non-static method headers() cannot be referenced from a static context
-Read from stdout: Http.Request.headers
-Http.Request.headers
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 1 s, completed May 11, 2015 9:08:44 AM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6f5caada, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@74fbb8ee directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.301449613 s
-Java analysis took 0.293327295 s
-Java compile + analysis took 0.605678319 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed May 11, 2015 9:08:58 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@3766bb56, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@8cbe764 directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:160: cannot find symbol
-Read from stdout: symbol:   method Request()
-Read from stdout: location: class play.mvc.Http
-/Users/Tommie/movierecommendation/app/controllers/Register.java:160: cannot find symbol
-  symbol:   method Request()
-  location: class play.mvc.Http
-Read from stdout: Http.Request
-Http.Request
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 0 s, completed May 11, 2015 9:09:23 AM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@68881d94, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed May 11, 2015 9:09:39 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@339f89aa, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@725201ad directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:160: cannot find symbol
-Read from stdout: symbol:   method withUsername(java.lang.String)
-Read from stdout: location: class play.mvc.Http.Request
-/Users/Tommie/movierecommendation/app/controllers/Register.java:160: cannot find symbol
-  symbol:   method withUsername(java.lang.String)
-  location: class play.mvc.Http.Request
-Read from stdout: Http.Request.withUsername
-Http.Request.withUsername
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 0 s, completed May 11, 2015 9:11:37 AM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@45504899, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2b5b81a1 directly...
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:160: non-static method setUsername(java.lang.String) cannot be referenced from a static context
-/Users/Tommie/movierecommendation/app/controllers/Register.java:160: non-static method setUsername(java.lang.String) cannot be referenced from a static context
-Read from stdout: Http.Request.setUsername
-Http.Request.setUsername
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
-Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 0 s, completed May 11, 2015 9:12:08 AM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@b2ec480, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
-
-Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@66915769 directly...
+Attempting to call com.sun.tools.javac.api.JavacTool@6f23d452 directly...
 Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
 /Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
 Read from stdout: Http.Request.setUsername
@@ -485,7 +97,225 @@ Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.jav
 /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
 Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
 (compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 0 s, completed May 11, 2015 9:13:52 AM
+Total time: 4 s, completed May 11, 2015 9:47:37 AM
 > server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@30a03c6c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2938ea76 directly...
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
+/Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
+Read from stdout: Http.Request.setUsername
+Http.Request.setUsername
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 2 s, completed May 11, 2015 9:47:39 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1099ad3c, check cycles: false
+Total time: 0 s, completed May 11, 2015 9:47:39 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@a31dc8c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5b97f7b3 directly...
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
+/Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
+Read from stdout: Http.Request.setUsername
+Http.Request.setUsername
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 2 s, completed May 11, 2015 9:47:41 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@3f675a22, check cycles: false
+Total time: 0 s, completed May 11, 2015 9:47:41 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@391add7b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@421280a9 directly...
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
+/Users/Tommie/movierecommendation/app/controllers/Register.java:166: non-static method setUsername(java.lang.String) cannot be referenced from a static context
+Read from stdout: Http.Request.setUsername
+Http.Request.setUsername
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/movierecommendation/app/controllers/Register.java: /Users/Tommie/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 2 s, completed May 11, 2015 9:47:44 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@254cfd9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 11, 2015 9:47:49 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@72644188, check cycles: false
+Total time: 0 s, completed May 11, 2015 9:48:27 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@56aa00f5, check cycles: false
+Total time: 0 s, completed May 11, 2015 9:48:31 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@384999bd, check cycles: false
+Total time: 0 s, completed May 11, 2015 9:48:32 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5e0f71fe, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/movierecommendation/target/scala-2.11/twirl/main/views/html/mainreg.template.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/movierecommendation/target/scala-2.11/twirl/main/views/html/mainreg.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/movierecommendation/target/scala-2.11/twirl/main/views/html/mainreg.template.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/Tommie/movierecommendation/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 6de2ce3b, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/classes:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/Users/Tommie/movierecommendation/target/scala-2.11/classes:/Users/Tommie/movierecommendation/lib/commons-math3-3.4.1.jar:/Users/Tommie/movierecommendation/lib/guava-18.0.jar:/Users/Tommie/movierecommendation/lib/mahout-core-0.9.jar:/Users/Tommie/movierecommendation/lib/mahout-integration-0.9.jar:/Users/Tommie/movierecommendation/lib/mahout-math-0.9.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/Users/Tommie/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/Tommie/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/Users/Tommie/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/io.netty/netty/bundles/netty-3.9.3.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/Tommie/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/Users/Tommie/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/Tommie/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/Tommie/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/Users/Tommie/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/Users/Tommie/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/Users/Tommie/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/Users/Tommie/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/Tommie/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/Tommie/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/Users/Tommie/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/Tommie/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/Users/Tommie/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/Tommie/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/Users/Tommie/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/Users/Tommie/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.15.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/Tommie/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/Tommie/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.27.jar:/Users/Tommie/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.2.jar:/Users/Tommie/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar
+Scala compilation took 5.240663794 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(/Users/Tommie/movierecommendation/conf/application.conf,/Users/Tommie/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/dataset.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/movierecommendation/conf/dataset2.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/movierecommendation/conf/movies.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/movierecommendation/conf/moviesout.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/movierecommendation/conf/routes,/Users/Tommie/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/movierecommendation/conf/users.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/movierecommendation/conf/VMatrixMillion6040reducent.txt,/Users/Tommie/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reducent.txt)
+Total time: 8 s, completed May 11, 2015 9:48:42 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
