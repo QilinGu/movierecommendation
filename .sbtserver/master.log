@@ -167,3 +167,124 @@ Total time: 2 s, completed May 18, 2015 1:11:06 AM
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e2898e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@11d78cc2 directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 1:13:10 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@49906811, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@4bb57c91 directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 1:13:14 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@39d07116, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5ee7ed2a directly...
+Java compilation took 1.597342325 s
+Java analysis took 0.203300807 s
+Java compile + analysis took 1.81586287 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+
+Canceling execution...
+Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@5c9a7535 rejected from java.util.concurrent.ThreadPoolExecutor@3f38ad8d[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 114]
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@5c9a7535 rejected from java.util.concurrent.ThreadPoolExecutor@3f38ad8d[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 114]
+Use 'last' for the full log.
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@18b8007b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 18, 2015 1:13:30 AM
+> server-post-command-cleanup
+> server-handle-next-server-request

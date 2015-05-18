@@ -29,3 +29,6 @@ New client attempting to connect on port: 63535-63532
 This client on port 63535 has uuid dd01728f-4c87-4f54-b38c-e4be1cf53860 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
 Connected Clients: activator-6aca7278-b725-4570-b535-8fa04172ea92, activator-dd01728f-4c87-4f54-b38c-e4be1cf53860
 Taking next connection to: 63532
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 63532
