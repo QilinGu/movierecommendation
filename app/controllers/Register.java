@@ -210,6 +210,10 @@ public class Register extends Controller {
     }
     
     public static Result recommend(String user) {
+        Map<String, String> map = r.getHeaders();
+        if(!map.containsKey("curr") || !map.containsValue(user)){
+            return redirect(controllers.routes.Register.home());
+        }
         if(allusers.updating){
             return redirect(controllers.routes.Register.updating());
         } 

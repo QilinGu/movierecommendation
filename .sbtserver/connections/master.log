@@ -1,13 +1,13 @@
-New log file opened at Mon May 18 11:35:41 PDT 2015 by 7867@Thomass-MacBook-Pro.local
-Taking next connection to: 63387
-New client attempting to connect on port: 63388-63387
-  Address = /10.0.0.10:63387
-This client on port 63388 has uuid 7b0844c2-c1ec-4c00-a9fe-91566fb2006c configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-7b0844c2-c1ec-4c00-a9fe-91566fb2006c
-Taking next connection to: 63387
-New client attempting to connect on port: 63389-63387
-  Address = /10.0.0.10:63387
-Handshake exception on socket: 63389
+New log file opened at Mon May 18 11:54:15 PDT 2015 by 7970@Thomass-MacBook-Pro.local
+Taking next connection to: 63587
+New client attempting to connect on port: 63588-63587
+  Address = /10.0.0.10:63587
+This client on port 63588 has uuid 4c9cb439-a08f-4ad7-bebb-bc8605b1ec4c configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-4c9cb439-a08f-4ad7-bebb-bc8605b1ec4c
+Taking next connection to: 63587
+New client attempting to connect on port: 63589-63587
+  Address = /10.0.0.10:63587
+Handshake exception on socket: 63589
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,15 +17,15 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 63387
-New client attempting to connect on port: 63390-63387
-  Address = /10.0.0.10:63387
-This client on port 63390 has uuid 40dafc00-deca-474a-9db8-cf5967e78cac configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-7b0844c2-c1ec-4c00-a9fe-91566fb2006c, activator-40dafc00-deca-474a-9db8-cf5967e78cac
-Taking next connection to: 63387
-New client attempting to connect on port: 63405-63387
-  Address = /10.0.0.10:63387
-Handshake exception on socket: 63405
+Taking next connection to: 63587
+New client attempting to connect on port: 63590-63587
+  Address = /10.0.0.10:63587
+This client on port 63590 has uuid d9f2b66b-02b2-4983-8de6-d8d4e0e12189 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-4c9cb439-a08f-4ad7-bebb-bc8605b1ec4c, activator-d9f2b66b-02b2-4983-8de6-d8d4e0e12189
+Taking next connection to: 63587
+New client attempting to connect on port: 63600-63587
+  Address = /10.0.0.10:63587
+Handshake exception on socket: 63600
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -35,18 +35,9 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 63387
-New client attempting to connect on port: 63406-63387
-  Address = /10.0.0.10:63387
-This client on port 63406 has uuid 334eb939-2e9a-4045-ac5e-02af32c56766 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-40dafc00-deca-474a-9db8-cf5967e78cac, play-fork-run-334eb939-2e9a-4045-ac5e-02af32c56766
-Taking next connection to: 63387
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63387
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63387
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63387
+Taking next connection to: 63587
+New client attempting to connect on port: 63601-63587
+  Address = /10.0.0.10:63587
+This client on port 63601 has uuid 89d5f614-7e56-4043-9bcf-21f44f3094ba configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-d9f2b66b-02b2-4983-8de6-d8d4e0e12189, play-fork-run-89d5f614-7e56-4043-9bcf-21f44f3094ba
+Taking next connection to: 63587
