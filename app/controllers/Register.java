@@ -12,9 +12,7 @@ import java.util.Map.Entry;
 import java.util.List;
 import java.util.TreeMap;
 import play.mvc.Http.Response;
-import play.mvc.Http.Cookie;
 import java.util.Map;
-import java.lang.*;
 
 //Added by Daniel
 import java.io.FileNotFoundException;
@@ -62,7 +60,7 @@ public class Register extends Controller {
             System.out.println("THIS IS A NEW INSTANCE");
             File file = new File("conf/moviesout.txt");
             allusers.movieParse(file);
-            //allusers.updateSVDsmall();
+            allusers.updateSVDsmall();
             count++;
         }
 
@@ -86,7 +84,6 @@ public class Register extends Controller {
             return ok(home.render(userForm, "true"));
         
         }
-        r.setCookie("User", created.username);
         r.setHeader(created.username, created.username);
         return redirect(controllers.routes.Register.user(created.username));
     }
@@ -200,10 +197,7 @@ public class Register extends Controller {
     
 
     public static Result user(String name) {
-        Iterable<Http.Cookie> c = r.cookies();
-        
-        System.out.println(c.iterator().next().value());
-        
+
         Map<String, String> map = r.getHeaders();
         if(!map.containsKey(name) || !map.containsValue(name)){
             return redirect(controllers.routes.Register.home());

@@ -55,6 +55,40 @@ public class Update extends TimerTask {
     } catch (IOException e){
         //do nothing
     }
+    
+    /*try{
+        int count= 6040;
+    ArrayList<String> users = loginGetUsers();
+    int usercount = 6040 + users.size();
+    DenseMatrix M = readM("conf/M.txt",usercount);
+    System.out.println("Grouplens DONE");
+    for (String user: users){
+       TreeMap<Integer, Integer> userMap = tableGetMap(user);
+      for (Entry<Integer, Integer> t: userMap.entrySet()){
+            	M.setQuick(count,t.getKey()-1,t.getValue());
+            }
+            count++;
+    }
+    	 System.out.println("Calculating SVD");
+	     long start_time = System.currentTimeMillis();
+		SingularValueDecomposition t = new SingularValueDecomposition(M);
+		System.out.println("SVD Done");
+		//long end_time = System.currentTimeMillis();
+		//long time = end_time-start_time;
+		 //time = time/1000;
+		//System.out.println("The time of SVD in seconds is " + time);
+		
+		writeMatrix(t.getV(),"conf/VmatrixMillion6040full.txt","This is a result of SVD recalculation");
+		Matrix newV = reduceMatrixV("conf/VmatrixMillion6040full.txt",20);
+	//we need to delete the matrix because it is very large and useless at this point
+	File f = new File("conf/VmatrixMillion6040full.txt");
+				System.out.println("Was the file deleted? " + f.delete());//we need to delete the matrix because it is very large and useless at this point
+		writeMatrix(newV,"conf/VMatrixMillion6040reduced.txt","(SVD Recalculation)This the reduced matrix of the original centered Million ratings");
+        V = readMatrix("conf/VMatrixMillion6040reduced.txt");	
+		System.out.println("SVD UPDATE IS COMPLETE");
+    } catch(IOException e){
+        //do nothing
+    }*/
   }
 
 }

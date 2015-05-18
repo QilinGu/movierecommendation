@@ -795,35 +795,23 @@ public static Matrix reduceMatrixV(String filename,double percentkept){
 
 public void updateSVD()throws IOException{
 
-    int count= 6040;
-    ArrayList<String> users = loginGetUsers();
-    int usercount = 6040 + users.size();
-    DenseMatrix M = readM("conf/M.txt",usercount);
-    System.out.println("Grouplens DONE");
-    for (String user: users){
-       TreeMap<Integer, Integer> userMap = tableGetMap(user);
-      for (Entry<Integer, Integer> t: userMap.entrySet()){
-            	M.setQuick(count,t.getKey()-1,t.getValue());
-            }
-            count++;
-    }
-    	 System.out.println("Calculating SVD");
-	     long start_time = System.currentTimeMillis();
-		SingularValueDecomposition t = new SingularValueDecomposition(M);
-		System.out.println("SVD Done");
-		//long end_time = System.currentTimeMillis();
-		//long time = end_time-start_time;
-		 //time = time/1000;
-		//System.out.println("The time of SVD in seconds is " + time);
-		
-		writeMatrix(t.getV(),"conf/VmatrixMillion6040full.txt","This is a result of SVD recalculation");
-		Matrix newV = reduceMatrixV("conf/VmatrixMillion6040full.txt",20);
-	//we need to delete the matrix because it is very large and useless at this point
-	File f = new File("conf/VmatrixMillion6040full.txt");
-				System.out.println("Was the file deleted? " + f.delete());//we need to delete the matrix because it is very large and useless at this point
-		writeMatrix(newV,"conf/VMatrixMillion6040reduced.txt","(SVD Recalculation)This the reduced matrix of the original centered Million ratings");
-        V = readMatrix("conf/VMatrixMillion6040reduced.txt");	
-		System.out.println("SVD UPDATE IS COMPLETE");
+    Timer timer = new Timer();
+        Calendar date = Calendar.getInstance();
+        date.set(
+          Calendar.DAY_OF_WEEK,
+          Calendar.MONDAY
+        );
+        date.set(Calendar.HOUR, 5);
+        date.set(Calendar.MINUTE, 0);
+        date.set(Calendar.SECOND, 0);
+        date.set(Calendar.MILLISECOND, 0);
+        System.out.println(date.getTime());
+        // Schedule to run every Sunday in 11 PM
+        timer.schedule(
+          new Update(),
+          date.getTime(),
+          1000 * 60 * 60 * 24 * 7
+        );
 		
 }
 
@@ -835,19 +823,17 @@ public void updateSVDsmall()throws IOException{
           Calendar.DAY_OF_WEEK,
           Calendar.MONDAY
         );
-        date.set(Calendar.HOUR, 6);
-        date.set(Calendar.MINUTE, 45);
+        date.set(Calendar.HOUR, 23);
+        date.set(Calendar.MINUTE, 0);
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 0);
         System.out.println(date.getTime());
         // Schedule to run every Sunday in 10 PM
         timer.schedule(
           new Update(),
-          date.getTime()//,
-          //1000 * 60 * 60 * 24 * 7
-        
+          date.getTime(),
         //every 5 minutes
-        //1000 * 60 * 5
+          1000 * 60 * 5
         );
 }
 
