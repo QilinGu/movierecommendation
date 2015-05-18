@@ -8,6 +8,7 @@ import org.apache.mahout.math.Matrix;
 import org.apache.mahout.math.SingularValueDecomposition;
 import org.apache.mahout.math.SparseMatrix;
 import models.AllUsers;
+import controllers.Register;
 import java.io.File;
 import java.io.IOException;
 
@@ -19,9 +20,10 @@ public class Update extends TimerTask {
 
     try {
         AllUsers.updateNow();
+        System.out.println("Usercount is currently " + Register.getusercount());
+        DenseMatrix M = AllUsers.readM("conf/M.txt",Register.getusercount());
         
-        DenseMatrix M = AllUsers.readM("conf/M.txt",750);
-    
+
         System.out.println("SMALL Grouplens DONE");
     
         System.out.println("Calculating SVD");

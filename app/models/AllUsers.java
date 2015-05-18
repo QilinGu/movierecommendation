@@ -835,16 +835,16 @@ public void updateSVDsmall()throws IOException{
           Calendar.DAY_OF_WEEK,
           Calendar.MONDAY
         );
-        date.set(Calendar.HOUR, 5);
-        date.set(Calendar.MINUTE, 40);
+        date.set(Calendar.HOUR, 6);
+        date.set(Calendar.MINUTE, 45);
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 0);
         System.out.println(date.getTime());
         // Schedule to run every Sunday in midnight
         timer.schedule(
           new Update(),
-          date.getTime()//,
-          //1000 * 60 //* 60 * 24 * 7
+          date.getTime(),
+          1000 * 60 //* 60 * 24 * 7
         );
 }
 

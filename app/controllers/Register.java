@@ -35,7 +35,12 @@ public class Register extends Controller {
 
     static ArrayList<Integer> movieIds = new ArrayList<Integer>();
     static int count = 0;
-
+    static int usercount = 300;
+    
+    public static int getusercount(){
+        return usercount;
+    }
+    
     public static Result home() throws IOException {
         
         if(allusers.updating){
@@ -52,6 +57,9 @@ public class Register extends Controller {
                 System.out.println("FALSE");
             }
             allusers.updateSVDsmall();
+            if (usercount< 800){
+            usercount = usercount + 20;
+            }
             if(allusers.updating == true){
                 System.out.println("TRUE");
             }
