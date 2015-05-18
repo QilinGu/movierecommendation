@@ -15,7 +15,8 @@ import java.io.IOException;
 public class Update extends TimerTask {
 
   public void run() {
-    try {
+      System.out.println("running");
+    /*try {
         DenseMatrix M = AllUsers.readM("conf/M.txt",30);
     
         System.out.println("SMALL Grouplens DONE");
@@ -46,7 +47,7 @@ public class Update extends TimerTask {
 	    
     } catch (IOException e){
         //do nothing
-    }
+    }*/
   }
 
 }

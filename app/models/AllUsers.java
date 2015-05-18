@@ -861,7 +861,7 @@ public void updateSVDsmall()throws IOException{
         timer.schedule(
           new Update(),
           date.getTime()
-          //1000 * 60 //* 60 * 24 * 7
+          1000 * 60 //* 60 * 24 * 7
         );
 }
 
