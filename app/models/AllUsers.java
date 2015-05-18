@@ -850,10 +850,10 @@ public void updateSVDsmall()throws IOException{
         Calendar date = Calendar.getInstance();
         date.set(
           Calendar.DAY_OF_WEEK,
-          Calendar.SUNDAY
+          Calendar.MONDAY
         );
-        date.set(Calendar.HOUR, 9);
-        date.set(Calendar.MINUTE, 33);
+        date.set(Calendar.HOUR, 4);
+        date.set(Calendar.MINUTE, 50);
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 0);
         System.out.println(date.getTime());

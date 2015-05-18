@@ -1,5 +1,5 @@
-New log file opened at Sun May 17 21:34:15 PDT 2015 by 6505@Thomass-MacBook-Pro.local
-jvm 6505@Thomass-MacBook-Pro.local
+New log file opened at Sun May 17 21:37:38 PDT 2015 by 6602@Thomass-MacBook-Pro.local
+jvm 6602@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/Desktop/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/Desktop/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@53394472, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@504f1966, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to actiontest (in build file:/Users/Tommie/Desktop/moviereco
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@5685893a, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7dbad8f7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -86,72 +86,167 @@ All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation
 
 Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
 Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@510ee900 directly...
-Java compilation took 1.442254921 s
-Java analysis took 0.158758759 s
-Java compile + analysis took 1.614406747 s
+Attempting to call com.sun.tools.javac.api.JavacTool@506a316d directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 4 s, completed May 17, 2015 9:37:53 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@3f91ea8b, check cycles: false
+Total time: 0 s, completed May 17, 2015 9:37:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@3be47090, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1c8d2d29 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 2 s, completed May 17, 2015 9:37:55 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@250014cc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@42209c50 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 17, 2015 9:37:57 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@68e4fdb2, check cycles: false
+Total time: 0 s, completed May 17, 2015 9:37:57 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1972b1be, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2b3d813c directly...
+Java compilation took 1.051806061 s
+Java analysis took 0.174690131 s
+Java compile + analysis took 1.239621394 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed May 17, 2015 9:34:32 PM
+Total time: 3 s, completed May 17, 2015 9:38:34 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3fcb90af, check cycles: false
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4ed35f, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
 
-Total time: 2 s, completed May 17, 2015 9:34:33 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@34d36c64, check cycles: false
-Total time: 0 s, completed May 17, 2015 9:34:34 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@25f565d2, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 17, 2015 9:34:35 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@1007ce83, check cycles: false
-Total time: 0 s, completed May 17, 2015 9:34:35 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@dab88f2 directly...
+Java compilation took 0.544704398 s
+Java analysis took 0.06123561 s
+Java compile + analysis took 0.616012075 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
