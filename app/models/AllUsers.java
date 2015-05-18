@@ -856,11 +856,11 @@ public void updateSVDsmall()throws IOException{
         date.set(Calendar.MINUTE, 33);
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 0);
-        
+        System.out.println(date.getTime());
         // Schedule to run every Sunday in midnight
         timer.schedule(
           new Update(),
-          date.getTime()
+          date.getTime(),
           1000 * 60 //* 60 * 24 * 7
         );
 }

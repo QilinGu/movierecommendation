@@ -1,13 +1,13 @@
-New log file opened at Sun May 17 21:34:15 PDT 2015 by 6505@Thomass-MacBook-Pro.local
-Taking next connection to: 59901
-New client attempting to connect on port: 59902-59901
-  Address = /172.16.218.20:59901
-This client on port 59902 has uuid bf2e8fac-71c4-4748-9ae8-e4839b211cf3 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-bf2e8fac-71c4-4748-9ae8-e4839b211cf3
-Taking next connection to: 59901
-New client attempting to connect on port: 59903-59901
-  Address = /172.16.218.20:59901
-Handshake exception on socket: 59903
+New log file opened at Sun May 17 21:37:38 PDT 2015 by 6602@Thomass-MacBook-Pro.local
+Taking next connection to: 59925
+New client attempting to connect on port: 59926-59925
+  Address = /172.16.218.20:59925
+This client on port 59926 has uuid 8f1c1b52-b9fe-4785-9814-953029a318c6 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-8f1c1b52-b9fe-4785-9814-953029a318c6
+Taking next connection to: 59925
+New client attempting to connect on port: 59927-59925
+  Address = /172.16.218.20:59925
+Handshake exception on socket: 59927
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,9 +17,9 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 59901
-New client attempting to connect on port: 59904-59901
-  Address = /172.16.218.20:59901
-This client on port 59904 has uuid 6bfcdd13-341b-4295-b5cc-75e4ef365cf0 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-bf2e8fac-71c4-4748-9ae8-e4839b211cf3, activator-6bfcdd13-341b-4295-b5cc-75e4ef365cf0
-Taking next connection to: 59901
+Taking next connection to: 59925
+New client attempting to connect on port: 59928-59925
+  Address = /172.16.218.20:59925
+This client on port 59928 has uuid 66007c96-da1f-4c1d-b352-9624fcba2b84 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-8f1c1b52-b9fe-4785-9814-953029a318c6, activator-66007c96-da1f-4c1d-b352-9624fcba2b84
+Taking next connection to: 59925
