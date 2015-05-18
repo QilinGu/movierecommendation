@@ -41,6 +41,12 @@ public class Register extends Controller {
         return usercount;
     }
     
+    public static void setusercount(){
+        if (usercount < 800){
+        usercount = usercount + 20;
+        }
+    }
+    
     public static Result home() throws IOException {
         
         if(allusers.updating){
@@ -52,9 +58,6 @@ public class Register extends Controller {
             File file = new File("conf/moviesout.txt");
             allusers.movieParse(file);
             allusers.updateSVDsmall();
-            if (usercount< 800){
-            usercount = usercount + 20;
-            }
             if(allusers.updating == true){
                 System.out.println("TRUE");
             }

@@ -29,3 +29,18 @@ New client attempting to connect on port: 62760-62757
 This client on port 62760 has uuid afba94e4-6bb4-4d41-acef-6f4c3b525ff7 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
 Connected Clients: activator-d0eaf7e0-44b7-4b65-b21a-cabdd1cef655, activator-afba94e4-6bb4-4d41-acef-6f4c3b525ff7
 Taking next connection to: 62757
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62757
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62757
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62757
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62757
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62757

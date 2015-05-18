@@ -49,6 +49,7 @@ public class Update extends TimerTask {
         AllUsers.setV(AllUsers.readMatrix("conf/Vmatrix3users.txt"));	
 	
 	    System.out.println("SVD UPDATE IS COMPLETE"); 
+	    Register.setusercount();
 	    AllUsers.updateFinish();
 	    
     } catch (IOException e){
