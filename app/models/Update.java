@@ -13,11 +13,14 @@ import java.io.IOException;
 
 
 public class Update extends TimerTask {
-
+    
+    
   public void run() {
-      System.out.println("running");
-    /*try {
-        DenseMatrix M = AllUsers.readM("conf/M.txt",30);
+
+    try {
+        AllUsers.updateNow();
+        
+        DenseMatrix M = AllUsers.readM("conf/M.txt",750);
     
         System.out.println("SMALL Grouplens DONE");
     
@@ -44,10 +47,11 @@ public class Update extends TimerTask {
         AllUsers.setV(AllUsers.readMatrix("conf/Vmatrix3users.txt"));	
 	
 	    System.out.println("SVD UPDATE IS COMPLETE"); 
+	    AllUsers.updateFinish();
 	    
     } catch (IOException e){
         //do nothing
-    }*/
+    }
   }
 
 }

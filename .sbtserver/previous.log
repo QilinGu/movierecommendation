@@ -1,5 +1,5 @@
-New log file opened at Sun May 17 21:37:38 PDT 2015 by 6602@Thomass-MacBook-Pro.local
-jvm 6602@Thomass-MacBook-Pro.local
+New log file opened at Sun May 17 21:51:23 PDT 2015 by 6741@Thomass-MacBook-Pro.local
+jvm 6741@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/Desktop/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/Desktop/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@504f1966, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@599eb7b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,161 +67,359 @@ Set current project to actiontest (in build file:/Users/Tommie/Desktop/moviereco
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@7dbad8f7, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1f444a5c, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@506a316d directly...
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 4 s, completed May 17, 2015 9:37:53 PM
-> server-post-command-error-handler
+Total time: 2 s, completed May 17, 2015 9:51:37 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@3f91ea8b, check cycles: false
-Total time: 0 s, completed May 17, 2015 9:37:53 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@399098c0, check cycles: false
+Total time: 0 s, completed May 17, 2015 9:51:37 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3be47090, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@9708fcb, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@1c8d2d29 directly...
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 2 s, completed May 17, 2015 9:37:55 PM
-> server-post-command-error-handler
+Total time: 1 s, completed May 17, 2015 9:51:39 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@250014cc, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@5001cfe4, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@42209c50 directly...
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:863: ')' expected
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: illegal start of expression
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:864: ';' expected
-Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
-/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:865: illegal start of expression
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:31mcompileIncremental0m) javac returned nonzero exit code
-Total time: 1 s, completed May 17, 2015 9:37:57 PM
-> server-post-command-error-handler
+Total time: 1 s, completed May 17, 2015 9:51:40 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@68e4fdb2, check cycles: false
-Total time: 0 s, completed May 17, 2015 9:37:57 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@551714e0, check cycles: false
+Total time: 0 s, completed May 17, 2015 9:51:40 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1972b1be, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@56118c27, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
 
-Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2b3d813c directly...
-Java compilation took 1.051806061 s
-Java analysis took 0.174690131 s
-Java compile + analysis took 1.239621394 s
+Read from stdout: Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3136a67c directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 1.933308055 s
+Java analysis took 0.360551538 s
+Java compile + analysis took 2.321176818 s
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+The /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java source file has the following regular definitions changed:
+	updateSVDsmall.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/models/Update.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/models/Update.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+The /Users/Tommie/Desktop/movierecommendation/app/models/Update.java source file has the following regular definitions changed:
+	check, <init>.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/Update.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+The /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java source file has the following regular definitions changed:
+	updateRunning.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala. This dependency is not being considered for invalidation.
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed May 17, 2015 9:38:34 PM
+Total time: 4 s, completed May 17, 2015 9:56:52 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@4ed35f, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@485dc7df, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@38f091f1 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java:50: updating has private access in models.AllUsers
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java:50: updating has private access in models.AllUsers
+Read from stdout: allusers.updating
+allusers.updating
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java:54: updating has private access in models.AllUsers
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java:54: updating has private access in models.AllUsers
+Read from stdout: allusers.updating
+allusers.updating
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/Update.java:19: non-static method updateNow() cannot be referenced from a static context
+/Users/Tommie/Desktop/movierecommendation/app/models/Update.java:19: non-static method updateNow() cannot be referenced from a static context
+Read from stdout: AllUsers.updateNow
+AllUsers.updateNow
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 17, 2015 10:00:30 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@781309ba, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@83e1bfa directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/Update.java:19: non-static method updateNow() cannot be referenced from a static context
+/Users/Tommie/Desktop/movierecommendation/app/models/Update.java:19: non-static method updateNow() cannot be referenced from a static context
+Read from stdout: AllUsers.updateNow
+AllUsers.updateNow
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 17, 2015 10:00:44 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@61a7c8ce, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7235b1cd directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:84: non-static variable updating cannot be referenced from a static context
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:84: non-static variable updating cannot be referenced from a static context
+Read from stdout: updating
+updating
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 17, 2015 10:00:57 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c2f66d7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@397c4c01 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.284366188 s
+Java analysis took 0.163038199 s
+Java compile + analysis took 0.454265074 s
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+The /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java source file has the following regular definitions changed:
+	updating, updateNow, updateSVDsmall.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/Update.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/models/Update.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/models/Update.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+The /Users/Tommie/Desktop/movierecommendation/app/models/Update.java source file has the following regular definitions changed:
+	check, <init>.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/Update.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java
+New invalidations:
+	Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala by /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/user.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/regpage.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/home.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainuser.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/submit.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/index.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/app/controllers/Application.java by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/index.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/submitrec.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/somethingelse.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainrec.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainload.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/loadmore.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainload.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainreg.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala by /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:01:09 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@4e3dff45, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:01:21 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@3fa5a6d3, check cycles: false
+Total time: 1 s, completed May 17, 2015 10:01:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@5277729f, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:01:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d9d008e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -240,13 +438,1378 @@ All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation
 
 Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
 Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@dab88f2 directly...
-Java compilation took 0.544704398 s
-Java analysis took 0.06123561 s
-Java compile + analysis took 0.616012075 s
+Attempting to call com.sun.tools.javac.api.JavacTool@27f0bf1b directly...
+Java compilation took 0.337292596 s
+Java analysis took 0.047230465 s
+Java compile + analysis took 0.396305273 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:01:33 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@34db9251, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed May 17, 2015 10:01:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4cb772e4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:01:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4d03f07c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7e02a803 directly...
+Java compilation took 0.161604358 s
+Java analysis took 0.030695581 s
+Java compile + analysis took 0.20104507 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:02:37 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@e1b4ee4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:02:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@78fb7622, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7b40ee01 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:871: illegal start of expression
+/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java:871: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 17, 2015 10:04:19 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@10509876, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@1a67a92e directly...
+Java compilation took 0.175053246 s
+Java analysis took 0.038822572 s
+Java compile + analysis took 0.223075197 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:04:26 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@71f4056c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@4e432a3d directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/models/Update.java:50: cannot find symbol
+Read from stdout: symbol:   method updateFinish()
+Read from stdout: location: class models.AllUsers
+/Users/Tommie/Desktop/movierecommendation/app/models/Update.java:50: cannot find symbol
+  symbol:   method updateFinish()
+  location: class models.AllUsers
+Read from stdout: AllUsers.updateFinish
+AllUsers.updateFinish
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 17, 2015 10:04:59 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@79a1c8a1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java, /Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3aa11bd2 directly...
+Java compilation took 0.169520825 s
+Java analysis took 0.038846987 s
+Java compile + analysis took 0.216534571 s
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+The /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java source file has the following regular definitions changed:
+	updateFinish.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/Update.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+New invalidations:
+	Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Including /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java by /Users/Tommie/Desktop/movierecommendation/app/models/Update.java
+Including /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java by /Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala by /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/user.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/regpage.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/home.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainuser.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/submit.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/index.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/app/controllers/Application.java by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/index.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/submitrec.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/somethingelse.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainrec.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainload.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/loadmore.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainload.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainreg.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala by /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Read from stdout: Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 3 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3aa11bd2 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.199572134 s
+Java analysis took 0.108751042 s
+Java compile + analysis took 0.315727524 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:05:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@16d48f3c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2e2918af directly...
+Java compilation took 0.059902592 s
+Java analysis took 0.02617844 s
+Java compile + analysis took 0.093673976 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:05:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@48d9f64f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5a4d8923 directly...
+Java compilation took 0.052924755 s
+Java analysis took 0.014564388 s
+Java compile + analysis took 0.073793633 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:05:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3aa98c9f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala)
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Scala source and 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Scala source and 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler b4cc717, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/classes:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes:/Users/Tommie/Desktop/movierecommendation/lib/commons-math3-3.4.1.jar:/Users/Tommie/Desktop/movierecommendation/lib/guava-18.0.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-core-0.9.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-integration-0.9.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-math-0.9.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/Users/Tommie/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/Tommie/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/Users/Tommie/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/io.netty/netty/bundles/netty-3.9.3.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/Tommie/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/Users/Tommie/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/Tommie/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/Tommie/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/Users/Tommie/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/Users/Tommie/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/Users/Tommie/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/Users/Tommie/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/Tommie/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/Tommie/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/Users/Tommie/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/Tommie/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/Users/Tommie/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/Tommie/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/Users/Tommie/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/Users/Tommie/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.15.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/Tommie/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/Tommie/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.27.jar:/Users/Tommie/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.2.jar:/Users/Tommie/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar
+Scala compilation took 5.314540625 s
+Attempting to call com.sun.tools.javac.api.JavacTool@33f3d12a directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.080547707 s
+Java analysis took 0.086243704 s
+Java compile + analysis took 0.171930372 s
+Invalidating /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala)
+The /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/update.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, update, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+The /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java source file has the following regular definitions changed:
+	updating.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed May 17, 2015 10:07:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4cc2194e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7e4513d7 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java:42: cannot find symbol
+Read from stdout: symbol:   method updating()
+Read from stdout: location: variable Register of type controllers.ReverseRegister
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java:42: cannot find symbol
+  symbol:   method updating()
+  location: variable Register of type controllers.ReverseRegister
+Read from stdout: controllers.routes.Register.updating
+controllers.routes.Register.updating
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 17, 2015 10:07:22 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@205e498a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler d195e00, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/classes:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes:/Users/Tommie/Desktop/movierecommendation/lib/commons-math3-3.4.1.jar:/Users/Tommie/Desktop/movierecommendation/lib/guava-18.0.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-core-0.9.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-integration-0.9.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-math-0.9.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/Users/Tommie/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/Tommie/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/Users/Tommie/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/io.netty/netty/bundles/netty-3.9.3.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/Tommie/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/Users/Tommie/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/Tommie/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/Tommie/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/Users/Tommie/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/Users/Tommie/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/Users/Tommie/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/Users/Tommie/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/Tommie/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/Tommie/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/Users/Tommie/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/Tommie/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/Users/Tommie/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/Tommie/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/Users/Tommie/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/Users/Tommie/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.15.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/Tommie/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/Tommie/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.27.jar:/Users/Tommie/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.2.jar:/Users/Tommie/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/conf/routes:15: value update is not a member of object controllers.Register
+/Users/Tommie/Desktop/movierecommendation/conf/routes:15: value update is not a member of object controllers.Register
+Read from stdout: GET     /updating                   controllers.Register.update()
+GET     /updating                   controllers.Register.update()
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/conf/routes:15: value update is not a member of object controllers.Register
+/Users/Tommie/Desktop/movierecommendation/conf/routes:15: value update is not a member of object controllers.Register
+Read from stdout: GET     /updating                   controllers.Register.update()
+GET     /updating                   controllers.Register.update()
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:31mcompileIncremental0m) Compilation failed
+Total time: 5 s, completed May 17, 2015 10:07:56 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@41ffc6e6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala, /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 2 Scala sources and 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 2 Scala sources and 2 Java sources to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.1
+Other repositories:
+Default repositories:
+Running cached compiler 72b9b89e, interfacing (CompilerInterface) with Scala compiler version 2.11.1
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/jre/classes:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.1.jar
+	-classpath
+	/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes:/Users/Tommie/Desktop/movierecommendation/lib/commons-math3-3.4.1.jar:/Users/Tommie/Desktop/movierecommendation/lib/guava-18.0.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-core-0.9.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-integration-0.9.jar:/Users/Tommie/Desktop/movierecommendation/lib/mahout-math-0.9.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.0.2.jar:/Users/Tommie/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/Tommie/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.3.jar:/Users/Tommie/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.6.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.3.2.jar:/Users/Tommie/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.3.2.jar:/Users/Tommie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.1.jar:/Users/Tommie/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/Tommie/.ivy2/cache/io.netty/netty/bundles/netty-3.9.3.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar:/Users/Tommie/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.6.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.1.jar:/Users/Tommie/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.4.jar:/Users/Tommie/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar:/Users/Tommie/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/Tommie/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/Tommie/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java_2.11/jars/play-java_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.13.jar:/Users/Tommie/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.0.3.Final.jar:/Users/Tommie/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar:/Users/Tommie/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar:/Users/Tommie/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.2.0.Final.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-context/jars/spring-context-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-core/jars/spring-core-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.springframework/spring-beans/jars/spring-beans-4.0.3.RELEASE.jar:/Users/Tommie/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/Tommie/.ivy2/cache/org.reflections/reflections/jars/reflections-0.9.8.jar:/Users/Tommie/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar:/Users/Tommie/.ivy2/cache/dom4j/dom4j/jars/dom4j-1.6.1.jar:/Users/Tommie/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.3.jar:/Users/Tommie/.ivy2/cache/org.apache.tomcat/tomcat-servlet-api/jars/tomcat-servlet-api-8.0.5.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-jdbc_2.11/jars/play-java-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-jdbc_2.11/jars/play-jdbc_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.jolbox/bonecp/bundles/bonecp-0.8.0.RELEASE.jar:/Users/Tommie/.ivy2/cache/com.h2database/h2/jars/h2-1.3.175.jar:/Users/Tommie/.ivy2/cache/tyrex/tyrex/jars/tyrex-1.0.1.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ebean_2.11/jars/play-java-ebean_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm/jars/avaje-ebeanorm-3.3.4.jar:/Users/Tommie/.ivy2/cache/org.avaje.ebeanorm/avaje-ebeanorm-agent/jars/avaje-ebeanorm-agent-3.2.2.jar:/Users/Tommie/.ivy2/cache/org.hibernate.javax.persistence/hibernate-jpa-2.0-api/jars/hibernate-jpa-2.0-api-1.0.1.Final.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-cache_2.11/jars/play-cache_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/net.sf.ehcache/ehcache-core/jars/ehcache-core-2.6.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-java-ws_2.11/jars/play-java-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.3.8.jar:/Users/Tommie/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.15.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/Tommie/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/Tommie/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/Tommie/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.27.jar:/Users/Tommie/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-3.0.2.jar:/Users/Tommie/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar
+Scala compilation took 6.579952605 s
+Attempting to call com.sun.tools.javac.api.JavacTool@795111f1 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.142327803 s
+Java analysis took 0.120086285 s
+Java compile + analysis took 0.275312264 s
+Invalidating /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+The /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala source file has the following regular definitions changed:
+	updating.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/user.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/regpage.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/home.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainuser.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/somethingelse.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainrec.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainload.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/loadmore.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainreg.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+New invalidations:
+	Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java, /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/user.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/controllers/routes.java
+Including /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/user.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala by /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/regpage.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/home.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainuser.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/submit.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/index.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/app/controllers/Application.java by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/index.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/submitrec.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/main.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/somethingelse.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainrec.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainload.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/loadmore.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainload.template.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/twirl/main/views/html/mainreg.template.scala by /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala
+Including /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala by /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 7 s, completed May 17, 2015 10:08:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@63967527, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:08:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@4b647d06, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:10:36 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e0bc2cb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@322b7221 directly...
+Java compilation took 0.05142624 s
+Java analysis took 0.013930458 s
+Java compile + analysis took 0.070678298 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed May 17, 2015 10:11:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@ccd6139, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@40214231 directly...
+Java compilation took 0.041479198 s
+Java analysis took 0.012106224 s
+Java compile + analysis took 0.057461146 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed May 17, 2015 10:11:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@91b0035, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed May 17, 2015 10:11:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@35a6e7c8, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:11:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@4710e11e, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:11:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@3e598340, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:11:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@63d24168, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:11:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2e56b563, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@64e9b098 directly...
+Java compilation took 0.127270265 s
+Java analysis took 0.027786369 s
+Java compile + analysis took 0.163217571 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:12:36 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2226be19, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:12:39 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@310dc414, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@76c3a46a directly...
+Java compilation took 0.034948073 s
+Java analysis took 0.010072429 s
+Java compile + analysis took 0.050634678 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed May 17, 2015 10:13:22 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@49327e9f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/Vmatrix3users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/Vmatrix3users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:13:25 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 2
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@4ba4463c, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:13:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3bb1ce25, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7b0f4ff1 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.08496202 s
+Java analysis took 0.082161959 s
+Java compile + analysis took 0.171563296 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed May 17, 2015 10:14:42 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@67e409b1, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:14:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@737d3c77, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:14:49 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@6b1590cd, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:14:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@61250174, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/Vmatrix3users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/Vmatrix3users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:14:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@27310035, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@34808261 directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.156485295 s
+Java analysis took 0.096768345 s
+Java compile + analysis took 0.262380756 s
+Invalidating /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java...
+Invalidating (transitively) by inheritance from /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java...
+Initial set of included nodes: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Invalidated by transitive inheritance dependency: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+The /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java source file has the following regular definitions changed:
+	updateRunning.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/src_managed/main/routes_routing.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:17:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4df3f505, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/Vmatrix3users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/Vmatrix3users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:17:08 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 3
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@3e71f005, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:17:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@190d4552, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:17:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@fef0191, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:17:38 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@2c7c7cc5, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:17:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b22bd05, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/Vmatrix3users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/Vmatrix3users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:17:42 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@66d1ad9a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7fb4455e directly...
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Desktop/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.175003757 s
+Java analysis took 0.115704132 s
+Java compile + analysis took 0.302039234 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:28:35 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d3110e7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Desktop/movierecommendation/conf/application.conf,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Desktop/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/dataset2.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Desktop/movierecommendation/conf/M.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/movies.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/moviesout.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/routes,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Desktop/movierecommendation/conf/users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/Vmatrix3users.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/Vmatrix3users.txt)
+	(/Users/Tommie/Desktop/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 17, 2015 10:29:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7ab63c7a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@20716e1 directly...
+Java compilation took 0.198563849 s
+Java analysis took 0.036358697 s
+Java compile + analysis took 0.249005005 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:30:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@23a374dc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@13d153b3 directly...
+Java compilation took 0.082916806 s
+Java analysis took 0.013148408 s
+Java compile + analysis took 0.10662315 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 0 s, completed May 17, 2015 10:30:23 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@57d578a7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@71878d0 directly...
+Java compilation took 0.127142869 s
+Java analysis took 0.033198212 s
+Java compile + analysis took 0.168146301 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 17, 2015 10:30:46 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

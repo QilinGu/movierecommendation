@@ -12,6 +12,7 @@ POST    /register                   controllers.Register.submit()
 POST    /register/:user             controllers.Register.addMovies(user)
 POST    /recommendations/:user      controllers.Register.submitrec(user)
 GET     /logout                     controllers.Register.signout()
+GET     /updating                   controllers.Register.updating()
 
 
 

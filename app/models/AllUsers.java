@@ -60,6 +60,7 @@ public class AllUsers {
     private ArrayList<String> allgenres;
     public static Matrix V;
     private Connection connection;
+    public static boolean updating;
     
     public AllUsers() {
         
@@ -76,6 +77,15 @@ public class AllUsers {
         //V = readMatrix("conf/Vmatrix3users.txt");
         connection = DB.getConnection("default");
         shortlist = new ArrayList<String>();
+        updating = false;
+    }
+    
+    public static void updateNow() {
+        updating = true;
+    }
+    
+    public static void updateFinish() {
+        updating = false;
     }
     
     public int getSizeOfAll() {
@@ -819,49 +829,22 @@ public void updateSVD()throws IOException{
 
 public void updateSVDsmall()throws IOException{
     
-        /*DenseMatrix M = readM("conf/M.txt",3);
-    
-        System.out.println("SMALL Grouplens DONE");
-    
-        System.out.println("Calculating SVD");
-	
-	    //long start_time = System.currentTimeMillis();
-        SingularValueDecomposition t = new SingularValueDecomposition(M);
-	
-	    System.out.println("SVD Done");
-	
-	    //long end_time = System.currentTimeMillis();
-	    //long time = end_time-start_time;
-	    //time = time/1000;
-
-        //System.out.println("The time of SVD in seconds is " + time);
-	
-	    writeMatrix(t.getV(),"conf/Vmatrix3usersfull.txt","This is a result of SVD 3 recalculation");
-        Matrix newV = reduceMatrixV("conf/Vmatrix3usersfull.txt",100);
-        File f = new File("conf/Vmatrix3usersfull.txt");
-	
-	    System.out.println("Was the file deleted? " + f.delete());//we need to delete the matrix because it is very large and useless at this point
-	
-	    writeMatrix(newV,"conf/Vmatrix3users.txt","(SVD Recalculation)This the reduced matrix of the original centered Million ratings");
-        V = readMatrix("conf/Vmatrix3users.txt");	
-	
-	    System.out.println("SVD UPDATE IS COMPLETE");*/
         Timer timer = new Timer();
         Calendar date = Calendar.getInstance();
         date.set(
           Calendar.DAY_OF_WEEK,
           Calendar.MONDAY
         );
-        date.set(Calendar.HOUR, 4);
-        date.set(Calendar.MINUTE, 50);
+        date.set(Calendar.HOUR, 5);
+        date.set(Calendar.MINUTE, 40);
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 0);
         System.out.println(date.getTime());
         // Schedule to run every Sunday in midnight
         timer.schedule(
           new Update(),
-          date.getTime(),
-          1000 * 60 //* 60 * 24 * 7
+          date.getTime()//,
+          //1000 * 60 //* 60 * 24 * 7
         );
 }
 

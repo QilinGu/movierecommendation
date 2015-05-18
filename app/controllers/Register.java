@@ -37,13 +37,24 @@ public class Register extends Controller {
     static int count = 0;
 
     public static Result home() throws IOException {
+        
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
+        
         if(count == 0){
             System.out.println("THIS IS A NEW INSTANCE");
             File file = new File("conf/moviesout.txt");
             //File userfile = new File("conf/users.txt");
             allusers.movieParse(file);
             //allusers.userParse(userfile);
+            if(allusers.updating == false){
+                System.out.println("FALSE");
+            }
             allusers.updateSVDsmall();
+            if(allusers.updating == true){
+                System.out.println("TRUE");
+            }
             count++;
         }
         //allusers.updateSVDsmall();
@@ -51,7 +62,14 @@ public class Register extends Controller {
         return ok(home.render(userForm, null));
     }
     
+    public static Result updating(){
+        return ok(update.render());
+    }
+    
     public static Result signin() throws IOException {
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
         
         Form<User> filledForm = userForm.bindFromRequest();
         User created = filledForm.get();
@@ -65,11 +83,17 @@ public class Register extends Controller {
     }
     
     public static Result signout() {
-
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
         return redirect("/");
     }
 
     public static Result register() {
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
+        
         if(movieIds.size() > 0){
             movieIds.clear();
         } 
@@ -83,6 +107,9 @@ public class Register extends Controller {
     }
     
     public static Result submit() {
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
         
         Form<User> filledForm = userForm.bindFromRequest();
         User created = filledForm.get();
@@ -130,6 +157,9 @@ public class Register extends Controller {
     }
     
     public static Result addMovies(String username) {
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
         
         Form<User> filledForm = userForm.bindFromRequest();
         User created = filledForm.get();
@@ -159,13 +189,18 @@ public class Register extends Controller {
     
 
     public static Result user(String name) {
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
         ArrayList<String> recentmovies = allusers.getLastTen(name);
         int moviesrated = allusers.tableSize(name);
         return ok(user.render(name, recentmovies, moviesrated));
     }
     
     public static Result recommend(String user) {
-        
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
         if(!movieIds.isEmpty()) {
             
             movieIds.clear();
@@ -190,7 +225,9 @@ public class Register extends Controller {
     }
     
     public static Result submitrec(String user) throws IOException {
-        
+        if(allusers.updating){
+            return redirect(controllers.routes.Register.updating());
+        } 
         //Added by Daniel
         PrintWriter outw = null;
         

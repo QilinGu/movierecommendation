@@ -1,13 +1,13 @@
-New log file opened at Sun May 17 21:43:40 PDT 2015 by 6672@Thomass-MacBook-Pro.local
-jvm 6672@Thomass-MacBook-Pro.local
+New log file opened at Sun May 17 22:31:17 PDT 2015 by 6818@Thomass-MacBook-Pro.local
+jvm 6818@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
+Waiting for sbt command engine
 Command engine arguments=List()
 Command engine baseDirectory=/Users/Tommie/Desktop/movierecommendation
-Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/Desktop/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/Desktop/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2307d07e, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6b55c809, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -65,9 +65,9 @@ Set current project to actiontest (in build file:/Users/Tommie/Desktop/moviereco
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@5d2f9a44, check cycles: false
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d68ff37, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -84,18 +84,40 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed May 17, 2015 9:43:53 PM
+Total time: 4 s, completed May 17, 2015 10:31:33 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1366d05f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 2 s, completed May 17, 2015 10:31:35 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@193c1a08, check cycles: false
-Total time: 0 s, completed May 17, 2015 9:43:54 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@595b6a4c, check cycles: false
+Total time: 0 s, completed May 17, 2015 10:31:35 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@4ed36243, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@795f62f9, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -112,62 +134,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed May 17, 2015 9:43:55 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3b4b6dbe, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 17, 2015 9:43:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@e5fbdd2, check cycles: false
-Total time: 0 s, completed May 17, 2015 9:43:57 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/Desktop/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@32ae2c6f, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 17, 2015 9:43:58 PM
+Total time: 1 s, completed May 17, 2015 10:31:36 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@557cda4f, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@76f5e22b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -186,16 +158,16 @@ All initially invalidated sources: Set(/Users/Tommie/Desktop/movierecommendation
 
 Read from stdout: Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
 Compiling 1 Java source to /Users/Tommie/Desktop/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2347ad5f directly...
-Java compilation took 1.502059111 s
-Java analysis took 0.161016363 s
-Java compile + analysis took 1.685601565 s
+Attempting to call com.sun.tools.javac.api.JavacTool@ed5b42f directly...
+Java compilation took 1.663058082 s
+Java analysis took 0.175459155 s
+Java compile + analysis took 1.862220758 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed May 17, 2015 9:45:29 PM
+Total time: 3 s, completed May 17, 2015 10:31:41 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
