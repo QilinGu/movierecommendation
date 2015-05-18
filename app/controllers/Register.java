@@ -84,12 +84,12 @@ public class Register extends Controller {
             return ok(home.render(userForm, "true"));
         
         }
-        r.setHeader("curr", created.username);
+        r.setHeader(created.username, created.username);
         return redirect(controllers.routes.Register.user(created.username));
     }
     
-    public static Result signout() {
-        r.setHeader("curr", null);
+    public static Result signout(String user) {
+        r.setHeader(user, null);
         if(allusers.updating){
             return redirect(controllers.routes.Register.updating());
         } 
@@ -160,7 +160,7 @@ public class Register extends Controller {
             return ok(loadmore.render(userForm, allusers.shortlist, created.username));
         }
         
-        r.setHeader("curr", created.username);
+        r.setHeader(created.username, created.username);
         return redirect(controllers.routes.Register.user(created.username));
     }
     
@@ -191,14 +191,14 @@ public class Register extends Controller {
             movieIds = allusers.getTenRandomIDS(username, baddummymovies);//Daniel
             return ok(loadmore.render(userForm, allusers.shortlist, username));
         }
-        r.setHeader("curr", username);
+        r.setHeader(username, username);
         return redirect(controllers.routes.Register.user(username));
     }
     
 
     public static Result user(String name) {
         Map<String, String> map = r.getHeaders();
-        if(!map.containsKey("curr") || !map.containsValue(name)){
+        if(!map.containsKey(name) || !map.containsValue(name)){
             return redirect(controllers.routes.Register.home());
         }
         if(allusers.updating){
@@ -211,7 +211,7 @@ public class Register extends Controller {
     
     public static Result recommend(String user) {
         Map<String, String> map = r.getHeaders();
-        if(!map.containsKey("curr") || !map.containsValue(user)){
+        if(!map.containsKey(user) || !map.containsValue(user)){
             return redirect(controllers.routes.Register.home());
         }
         if(allusers.updating){

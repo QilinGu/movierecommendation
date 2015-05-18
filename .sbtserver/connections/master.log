@@ -1,13 +1,35 @@
-New log file opened at Mon May 18 11:54:15 PDT 2015 by 7970@Thomass-MacBook-Pro.local
-Taking next connection to: 63587
-New client attempting to connect on port: 63588-63587
-  Address = /10.0.0.10:63587
-This client on port 63588 has uuid 4c9cb439-a08f-4ad7-bebb-bc8605b1ec4c configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-4c9cb439-a08f-4ad7-bebb-bc8605b1ec4c
-Taking next connection to: 63587
-New client attempting to connect on port: 63589-63587
-  Address = /10.0.0.10:63587
-Handshake exception on socket: 63589
+New log file opened at Mon May 18 12:02:08 PDT 2015 by 8045@Thomass-MacBook-Pro.local
+Taking next connection to: 63663
+New client attempting to connect on port: 63665-63663
+  Address = /10.0.0.10:63663
+This client on port 63665 has uuid 13f9d563-de7e-422f-a61a-528659ab8f7f configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-13f9d563-de7e-422f-a61a-528659ab8f7f
+Taking next connection to: 63663
+New client attempting to connect on port: 63666-63663
+  Address = /10.0.0.10:63663
+Handshake exception on socket: 63666
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:189)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 63663
+New client attempting to connect on port: 63667-63663
+  Address = /10.0.0.10:63663
+This client on port 63667 has uuid 5f030bf9-de53-4bb6-b849-4b1e731e63c5 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-13f9d563-de7e-422f-a61a-528659ab8f7f, activator-5f030bf9-de53-4bb6-b849-4b1e731e63c5
+Taking next connection to: 63663
+New client attempting to connect on port: 63673-63663
+  Address = /10.0.0.10:63663
+Handshake exception on socket: 63673
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,27 +39,9 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 63587
-New client attempting to connect on port: 63590-63587
-  Address = /10.0.0.10:63587
-This client on port 63590 has uuid d9f2b66b-02b2-4983-8de6-d8d4e0e12189 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-4c9cb439-a08f-4ad7-bebb-bc8605b1ec4c, activator-d9f2b66b-02b2-4983-8de6-d8d4e0e12189
-Taking next connection to: 63587
-New client attempting to connect on port: 63600-63587
-  Address = /10.0.0.10:63587
-Handshake exception on socket: 63600
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 63587
-New client attempting to connect on port: 63601-63587
-  Address = /10.0.0.10:63587
-This client on port 63601 has uuid 89d5f614-7e56-4043-9bcf-21f44f3094ba configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-d9f2b66b-02b2-4983-8de6-d8d4e0e12189, play-fork-run-89d5f614-7e56-4043-9bcf-21f44f3094ba
-Taking next connection to: 63587
+Taking next connection to: 63663
+New client attempting to connect on port: 63674-63663
+  Address = /10.0.0.10:63663
+This client on port 63674 has uuid a4de8631-bb34-497a-930c-65eb4140d862 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-5f030bf9-de53-4bb6-b849-4b1e731e63c5, play-fork-run-a4de8631-bb34-497a-930c-65eb4140d862
+Taking next connection to: 63663
