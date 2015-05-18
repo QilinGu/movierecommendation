@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.util.Map.Entry;
 import java.util.List;
 import java.util.TreeMap;
+import play.mvc.Http.Response;
+import java.util.Map;
 
 //Added by Daniel
 import java.io.FileNotFoundException;
@@ -32,6 +34,7 @@ public class Register extends Controller {
     final static ArrayList<String> lastTen = new ArrayList<String>();
     final static ArrayList<Integer> simmovies = new ArrayList<Integer>();
     final static ArrayList<Integer> baddummymovies = allusers.readArrayList("conf/badmoviesout.txt");
+    final static Http.Response r = new Http.Response();
 
     static ArrayList<Integer> movieIds = new ArrayList<Integer>();
     static int count = 0;
@@ -57,11 +60,7 @@ public class Register extends Controller {
             System.out.println("THIS IS A NEW INSTANCE");
             File file = new File("conf/moviesout.txt");
             allusers.movieParse(file);
-            allusers.updateSVDsmall();
-            if(allusers.updating == true){
-                System.out.println("TRUE");
-            }
-
+            //allusers.updateSVDsmall();
             count++;
         }
 
@@ -85,10 +84,12 @@ public class Register extends Controller {
             return ok(home.render(userForm, "true"));
         
         }
+        r.setHeader("curr", created.username);
         return redirect(controllers.routes.Register.user(created.username));
     }
     
     public static Result signout() {
+        r.setHeader("curr", null);
         if(allusers.updating){
             return redirect(controllers.routes.Register.updating());
         } 
@@ -159,6 +160,7 @@ public class Register extends Controller {
             return ok(loadmore.render(userForm, allusers.shortlist, created.username));
         }
         
+        r.setHeader("curr", created.username);
         return redirect(controllers.routes.Register.user(created.username));
     }
     
@@ -189,12 +191,16 @@ public class Register extends Controller {
             movieIds = allusers.getTenRandomIDS(username, baddummymovies);//Daniel
             return ok(loadmore.render(userForm, allusers.shortlist, username));
         }
-        
+        r.setHeader("curr", username);
         return redirect(controllers.routes.Register.user(username));
     }
     
 
     public static Result user(String name) {
+        Map<String, String> map = r.getHeaders();
+        if(!map.containsKey("curr") || !map.containsValue(name)){
+            return redirect(controllers.routes.Register.home());
+        }
         if(allusers.updating){
             return redirect(controllers.routes.Register.updating());
         } 

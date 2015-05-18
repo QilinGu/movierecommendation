@@ -1,5 +1,5 @@
-New log file opened at Sun May 17 23:49:54 PDT 2015 by 4816@BASHTOP
-jvm 4816@BASHTOP
+New log file opened at Mon May 18 01:10:02 PDT 2015 by 5880@BASHTOP
+jvm 5880@BASHTOP
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.40-b25
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\project, returning: (movierecommendation-build)
 Loading project definition from C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6d5e737d, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@796e9de2, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,340 +67,7 @@ Set current project to actiontest (in build file:/C:/Users/BASHBABA/Desktop/OLGA
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@679888ff, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala)
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Read from stdout: Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 6a0f77af, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_40\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_40\jre\classes;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
-	-classpath
-	C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\commons-math3-3.4.1.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\guava-18.0.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-core-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-integration-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-math-0.9.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\BASHBABA\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\BASHBABA\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\BASHBABA\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\BASHBABA\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\BASHBABA\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\BASHBABA\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.27.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar
-Scala compilation took 16.785890171 s
-Attempting to call com.sun.tools.javac.api.JavacTool@2b4b151 directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: > expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: > expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: illegal start of type
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: illegal start of type
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: not a statement
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: not a statement
-Read from stdout: usercount
-usercount
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: ';' expected
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 25 s, completed May 17, 2015 11:50:29 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@6b902b9, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala)
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Read from stdout: Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 5e8a21ed, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_40\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_40\jre\classes;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
-	-classpath
-	C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\commons-math3-3.4.1.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\guava-18.0.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-core-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-integration-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-math-0.9.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\BASHBABA\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\BASHBABA\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\BASHBABA\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\BASHBABA\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\BASHBABA\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\BASHBABA\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.27.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar
-Scala compilation took 7.021012929 s
-Attempting to call com.sun.tools.javac.api.JavacTool@94f9b19 directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: > expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: > expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: illegal start of type
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: illegal start of type
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: not a statement
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: not a statement
-Read from stdout: usercount
-usercount
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: ';' expected
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 9 s, completed May 17, 2015 11:50:39 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@183ef76d, check cycles: false
-Total time: 0 s, completed May 17, 2015 11:50:39 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@7e20923, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala)
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Read from stdout: Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler 586c3e33, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_40\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_40\jre\classes;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
-	-classpath
-	C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\commons-math3-3.4.1.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\guava-18.0.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-core-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-integration-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-math-0.9.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\BASHBABA\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\BASHBABA\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\BASHBABA\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\BASHBABA\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\BASHBABA\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\BASHBABA\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.27.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar
-Scala compilation took 2.337139085 s
-Attempting to call com.sun.tools.javac.api.JavacTool@358752b9 directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:55: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: > expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: > expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: illegal start of type
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: illegal start of type
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: not a statement
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: not a statement
-Read from stdout: usercount
-usercount
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:56: ';' expected
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:62: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: illegal start of expression
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: ';' expected
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java:63: ';' expected
-Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
-(compile:compileIncremental) javac returned nonzero exit code
-Total time: 4 s, completed May 17, 2015 11:50:43 PM
-> server-post-command-error-handler
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@11b67204, check cycles: false
-Total time: 0 s, completed May 17, 2015 11:50:43 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@763f26ff, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala)
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-
-Read from stdout: Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 3 Scala sources and 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Getting compiler-interface from component compiler for Scala 2.11.1
-Other repositories:
-Default repositories:
-Running cached compiler f1c336, interfacing (CompilerInterface) with Scala compiler version 2.11.1
-Calling Scala compiler with arguments  (CompilerInterface):
-	-deprecation
-	-unchecked
-	-encoding
-	utf8
-	-bootclasspath
-	C:\Program Files\Java\jdk1.8.0_40\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_40\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_40\jre\classes;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.1.jar
-	-classpath
-	C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\commons-math3-3.4.1.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\guava-18.0.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-core-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-integration-0.9.jar;C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\lib\mahout-math-0.9.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.6.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.3.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\io.netty\netty\bundles\netty-3.9.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.6.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.9.jar;C:\Users\BASHBABA\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\BASHBABA\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\BASHBABA\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.yaml\snakeyaml\bundles\snakeyaml-1.13.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate\hibernate-validator\jars\hibernate-validator-5.0.3.Final.jar;C:\Users\BASHBABA\.ivy2\cache\javax.validation\validation-api\jars\validation-api-1.1.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.fasterxml\classmate\bundles\classmate-1.0.0.jar;C:\Users\BASHBABA\.ivy2\cache\org.jboss.logging\jboss-logging\jars\jboss-logging-3.2.0.Final.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-context\jars\spring-context-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-core\jars\spring-core-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.springframework\spring-beans\jars\spring-beans-4.0.3.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\BASHBABA\.ivy2\cache\org.reflections\reflections\jars\reflections-0.9.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.guava\guava\bundles\guava-16.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\dom4j\dom4j\jars\dom4j-1.6.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-2.0.3.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.tomcat\tomcat-servlet-api\jars\tomcat-servlet-api-8.0.5.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\BASHBABA\.ivy2\cache\com.h2database\h2\jars\h2-1.3.175.jar;C:\Users\BASHBABA\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ebean_2.11\jars\play-java-ebean_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-3.3.4.jar;C:\Users\BASHBABA\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-3.2.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.hibernate.javax.persistence\hibernate-jpa-2.0-api\jars\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.3.8.jar;C:\Users\BASHBABA\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.8.15.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\BASHBABA\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\BASHBABA\.ivy2\cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.27.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\bootstrap\jars\bootstrap-3.0.2.jar;C:\Users\BASHBABA\.ivy2\cache\org.webjars\jquery\jars\jquery-1.9.0.jar
-Scala compilation took 2.23417582 s
-Attempting to call com.sun.tools.javac.api.JavacTool@51fe408a directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 1.343902867 s
-Java analysis took 0.437714032 s
-Java compile + analysis took 1.814611144 s
-Invalidating C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala...
-Invalidating (transitively) by inheritance from C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala...
-Initial set of included nodes: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala)
-Invalidated by transitive inheritance dependency: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala)
-The C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala source file has the following regular definitions changed:
-	notify, format, mainupdate, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
-All member reference dependencies will be considered within this context.
-The following modified names cause invalidation of C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala: Set(format, mainupdate, _display_, apply)
-New invalidations:
-	Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala)
-Initial set of included nodes: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala)
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Application.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\index.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\submitrec.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\home.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\submit.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainuser.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainuser.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainreg.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\regpage.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainreg.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainload.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\loadmore.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainload.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainrec.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\somethingelse.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainrec.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 6 s, completed May 17, 2015 11:51:03 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@122ec0e0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6caf57e9, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -417,170 +84,62 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed May 17, 2015 11:51:07 PM
+Total time: 4 s, completed May 18, 2015 1:10:17 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5640e8b3, check cycles: false
+> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@17aeb14, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@6066d815 directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.995704416 s
-Java analysis took 0.476014166 s
-Java compile + analysis took 1.497663445 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 4 s, completed May 18, 2015 12:01:52 AM
+Total time: 2 s, completed May 18, 2015 1:10:20 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@8838e1d, check cycles: false
+> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@5773b493, check cycles: false
+Total time: 0 s, completed May 18, 2015 1:10:20 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@5ccdbcec, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@211529dc directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.299887635 s
-Java analysis took 0.143024741 s
-Java compile + analysis took 0.45631856 s
-Invalidating C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java...
-Invalidating (transitively) by inheritance from C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java...
-Initial set of included nodes: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-Invalidated by transitive inheritance dependency: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-The C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java source file has the following regular definitions changed:
-	setusercount.
-All member reference dependencies will be considered within this context.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java
-None of the modified names appears in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala. This dependency is not being considered for invalidation.
-Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java
-None of the modified names appears in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala. This dependency is not being considered for invalidation.
-New invalidations:
-	Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
-Initial set of included nodes: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Application.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\index.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\submitrec.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\home.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\submit.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainuser.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainuser.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainreg.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\regpage.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainreg.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainload.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\loadmore.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainload.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainrec.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
-Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\somethingelse.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainrec.template.scala
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
-All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
-Read from stdout: Compiling 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@211529dc directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.295428278 s
-Java analysis took 0.163045215 s
-Java compile + analysis took 0.481702044 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed May 18, 2015 12:04:31 AM
+Total time: 1 s, completed May 18, 2015 1:10:21 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@33867ad3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
-
-Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@4fd2e45 directly...
-Java compilation took 0.167157391 s
-Java analysis took 0.022750173 s
-Java compile + analysis took 0.208887834 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed May 18, 2015 12:04:59 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@6cd9e6fd, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1dc2c3fd, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -599,98 +158,117 @@ All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecom
 
 Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@7b6e044a directly...
-Java compilation took 0.636702298 s
-Java analysis took 0.098645815 s
-Java compile + analysis took 0.749545496 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed May 18, 2015 12:28:45 AM
+Attempting to call com.sun.tools.javac.api.JavacTool@6e3073b2 directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 2 s, completed May 18, 2015 1:11:06 AM
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1998aeac, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e2898e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
 
 Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@253f9d14 directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.235600243 s
-Java analysis took 0.197318406 s
-Java compile + analysis took 0.454619694 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed May 18, 2015 12:29:18 AM
+Attempting to call com.sun.tools.javac.api.JavacTool@11d78cc2 directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 1:13:10 AM
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@26572ebe, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@49906811, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
 
 Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
 Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2beef8cd directly...
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
-Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 0.199303763 s
-Java analysis took 0.133823998 s
-Java compile + analysis took 0.349258737 s
+Attempting to call com.sun.tools.javac.api.JavacTool@4bb57c91 directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java:851: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 1:13:14 AM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@39d07116, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5ee7ed2a directly...
+Java compilation took 1.597342325 s
+Java analysis took 0.203300807 s
+Java compile + analysis took 1.81586287 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 1 s, completed May 18, 2015 12:29:28 AM
+
+Canceling execution...
+Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@5c9a7535 rejected from java.util.concurrent.ThreadPoolExecutor@3f38ad8d[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 114]
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@5c9a7535 rejected from java.util.concurrent.ThreadPoolExecutor@3f38ad8d[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 114]
+Use 'last' for the full log.
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1683917c, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@18b8007b, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -707,122 +285,6 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed May 18, 2015 12:31:00 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@5ec11bfc, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed May 18, 2015 12:45:10 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@6d1a8dff, check cycles: false
-Total time: 2 s, completed May 18, 2015 12:45:21 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@663e7bc, check cycles: false
-Total time: 4 s, completed May 18, 2015 12:45:31 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@14609db2, check cycles: false
-Total time: 0 s, completed May 18, 2015 12:45:32 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@495202b4, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\application.conf,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\application.conf)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\badmoviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\badmoviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset2.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset2.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\datasetcopyme.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\datasetcopyme.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\M.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\M.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\movies.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\movies.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\moviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\moviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\routes,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\routes)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\users.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\users.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\Vmatrix3users.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\Vmatrix3users.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\VMatrixMillion6040reduced.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\VMatrixMillion6040reduced.txt)
-Total time: 10 s, completed May 18, 2015 12:45:46 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@3767419b, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\application.conf,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\application.conf)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\badmoviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\badmoviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\dataset2.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\dataset2.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\datasetcopyme.csv,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\datasetcopyme.csv)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\M.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\M.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\movies.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\movies.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\moviesout.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\moviesout.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\routes,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\routes)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\users.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\users.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\Vmatrix3users.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\Vmatrix3users.txt)
-	(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\conf\VMatrixMillion6040reduced.txt,C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes\VMatrixMillion6040reduced.txt)
-Total time: 9 s, completed May 18, 2015 12:47:33 AM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 1
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@6908d07e, check cycles: false
-Total time: 0 s, completed May 18, 2015 12:48:03 AM
+Total time: 1 s, completed May 18, 2015 1:13:30 AM
 > server-post-command-cleanup
 > server-handle-next-server-request

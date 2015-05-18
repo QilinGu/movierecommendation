@@ -5,7 +5,7 @@
 # Home page
 GET     /                           controllers.Register.home()
 GET     /register                   controllers.Register.register()
-GET     /user/:username             controllers.Register.user(username)
+GET     /user                        controllers.Register.user(user)
 GET     /recommendations/:user      controllers.Register.recommend(user)
 POST    /                           controllers.Register.signin()
 POST    /register                   controllers.Register.submit()

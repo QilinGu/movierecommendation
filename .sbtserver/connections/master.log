@@ -1,34 +1,52 @@
-New log file opened at Mon May 18 01:10:02 PDT 2015 by 5880@BASHTOP
-Taking next connection to: 63532
-New client attempting to connect on port: 63533-63532
-  Address = /169.254.254.68:63532
-This client on port 63533 has uuid 6aca7278-b725-4570-b535-8fa04172ea92 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-6aca7278-b725-4570-b535-8fa04172ea92
-Taking next connection to: 63532
-New client attempting to connect on port: 63534-63532
-  Address = /169.254.254.68:63532
-Handshake exception on socket: 63534
+New log file opened at Mon May 18 11:35:41 PDT 2015 by 7867@Thomass-MacBook-Pro.local
+Taking next connection to: 63387
+New client attempting to connect on port: 63388-63387
+  Address = /10.0.0.10:63387
+This client on port 63388 has uuid 7b0844c2-c1ec-4c00-a9fe-91566fb2006c configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-7b0844c2-c1ec-4c00-a9fe-91566fb2006c
+Taking next connection to: 63387
+New client attempting to connect on port: 63389-63387
+  Address = /10.0.0.10:63387
+Handshake exception on socket: 63389
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
 	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:170)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 63532
-New client attempting to connect on port: 63535-63532
-  Address = /169.254.254.68:63532
-This client on port 63535 has uuid dd01728f-4c87-4f54-b38c-e4be1cf53860 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-6aca7278-b725-4570-b535-8fa04172ea92, activator-dd01728f-4c87-4f54-b38c-e4be1cf53860
-Taking next connection to: 63532
+Taking next connection to: 63387
+New client attempting to connect on port: 63390-63387
+  Address = /10.0.0.10:63387
+This client on port 63390 has uuid 40dafc00-deca-474a-9db8-cf5967e78cac configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-7b0844c2-c1ec-4c00-a9fe-91566fb2006c, activator-40dafc00-deca-474a-9db8-cf5967e78cac
+Taking next connection to: 63387
+New client attempting to connect on port: 63405-63387
+  Address = /10.0.0.10:63387
+Handshake exception on socket: 63405
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 63387
+New client attempting to connect on port: 63406-63387
+  Address = /10.0.0.10:63387
+This client on port 63406 has uuid 334eb939-2e9a-4045-ac5e-02af32c56766 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-40dafc00-deca-474a-9db8-cf5967e78cac, play-fork-run-334eb939-2e9a-4045-ac5e-02af32c56766
+Taking next connection to: 63387
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 63532
+Taking next connection to: 63387
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 63387
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 63387
