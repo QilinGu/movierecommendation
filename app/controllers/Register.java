@@ -45,20 +45,11 @@ public class Register extends Controller {
         if(count == 0){
             System.out.println("THIS IS A NEW INSTANCE");
             File file = new File("conf/moviesout.txt");
-            //File userfile = new File("conf/users.txt");
             allusers.movieParse(file);
-            //allusers.userParse(userfile);
-            if(allusers.updating == false){
-                System.out.println("FALSE");
-            }
             allusers.updateSVDsmall();
-            if(allusers.updating == true){
-                System.out.println("TRUE");
-            }
             count++;
         }
-        //allusers.updateSVDsmall();
-        allusers.loginGetUsers();
+
         return ok(home.render(userForm, null));
     }
     

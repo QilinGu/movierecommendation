@@ -1,0 +1,32 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+        <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+        
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">JAVATAR</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            @content
+        </div>
+        
+        <div align="center">
+    <img src="@routes.Assets.at("images/movie-collage.jpg")"
+            alt="MOVIES" width="1400" height="750">
+    </div>
+    </body>
+</html>
