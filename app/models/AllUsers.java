@@ -840,7 +840,7 @@ public void updateSVDsmall()throws IOException{
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 0);
         System.out.println(date.getTime());
-        // Schedule to run every Sunday in midnight
+        // Schedule to run every Sunday in 10 PM
         timer.schedule(
           new Update(),
           date.getTime(),
