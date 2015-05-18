@@ -39,13 +39,14 @@ public class Register extends Controller {
     public static Result home() throws IOException {
         if(count == 0){
             File file = new File("conf/moviesout.txt");
-            File userfile = new File("conf/users.txt");
+            //File userfile = new File("conf/users.txt");
             allusers.movieParse(file);
-            allusers.userParse(userfile);
+            //allusers.userParse(userfile);
+            allusers.updateSVDsmall();
             count++;
         }
+        //allusers.updateSVDsmall();
         allusers.loginGetUsers();
-        allusers.updateSVDsmall();
         return ok(home.render(userForm, null));
     }
     
@@ -59,7 +60,7 @@ public class Register extends Controller {
             return ok(home.render(userForm, "true"));
         
         }
-        
+        System.out.println("before");
         return redirect(controllers.routes.Register.user(created.username));
     }
     

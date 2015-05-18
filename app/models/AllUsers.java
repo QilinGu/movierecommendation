@@ -1,7 +1,6 @@
 package models;
 import java.util.ArrayList;
 import java.util.TreeMap;
-import models.User;
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -16,6 +15,13 @@ import java.util.NavigableMap;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.PrintWriter;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import models.Update;
+import models.User;
 
 
 
@@ -52,7 +58,7 @@ public class AllUsers {
     private TreeMap<String, User> allusers;
     private ArrayList<String> allmovies;
     private ArrayList<String> allgenres;
-    private Matrix V;
+    public static Matrix V;
     private Connection connection;
     
     public AllUsers() {
@@ -66,17 +72,20 @@ public class AllUsers {
         /*ArrayList<genres> index would be movieID*/
         allgenres = new ArrayList<String>();
         
-        //V = readMatrix("conf/VMatrixMillion6040reduced.txt");
-         V = readMatrix("conf/Vmatrix3users.txt");
+        V = readMatrix("conf/VMatrixMillion6040reduced.txt");
+        //V = readMatrix("conf/Vmatrix3users.txt");
         connection = DB.getConnection("default");
         shortlist = new ArrayList<String>();
     }
     
     public int getSizeOfAll() {
         
-        return allusers.size();
+        return allmovies.size();
     }
     
+    public static void setV(Matrix newV){
+        V = newV;
+    }
     
     public void movieParse(File moviefile) throws IOException {
         
@@ -468,6 +477,7 @@ public class AllUsers {
     }
     //Change by Daniel
     public String findMovie(int id){
+        System.out.println(allmovies.size());
         return allmovies.get(id-1);
     }
     
@@ -809,24 +819,51 @@ public void updateSVD()throws IOException{
 }
 
 public void updateSVDsmall()throws IOException{
-    DenseMatrix M = readM("conf/M.txt",3);
-    System.out.println("SMALL Grouplens DONE");
-   
-    	 System.out.println("Calculating SVD");
-	     long start_time = System.currentTimeMillis();
-		SingularValueDecomposition t = new SingularValueDecomposition(M);
-		System.out.println("SVD Done");
-		long end_time = System.currentTimeMillis();
-		long time = end_time-start_time;
-		 time = time/1000;
-		System.out.println("The time of SVD in seconds is " + time);
-		writeMatrix(t.getV(),"conf/Vmatrix3usersfull.txt","This is a result of SVD 3 recalculation");
+    
+        /*DenseMatrix M = readM("conf/M.txt",3);
+    
+        System.out.println("SMALL Grouplens DONE");
+    
+        System.out.println("Calculating SVD");
+	
+	    long start_time = System.currentTimeMillis();
+        SingularValueDecomposition t = new SingularValueDecomposition(M);
+	
+	    System.out.println("SVD Done");
+	
+	    long end_time = System.currentTimeMillis();
+	    long time = end_time-start_time;
+	    time = time/1000;
+
+        System.out.println("The time of SVD in seconds is " + time);
+	
+	    writeMatrix(t.getV(),"conf/Vmatrix3usersfull.txt","This is a result of SVD 3 recalculation");
         Matrix newV = reduceMatrixV("conf/Vmatrix3usersfull.txt",100);
-     	File f = new File("conf/Vmatrix3usersfull.txt");
-		System.out.println("Was the file deleted? " + f.delete());//we need to delete the matrix because it is very large and useless at this point
-		writeMatrix(newV,"conf/Vmatrix3users.txt","(SVD Recalculation)This the reduced matrix of the original centered Million ratings");
+        File f = new File("conf/Vmatrix3usersfull.txt");
+	
+	    System.out.println("Was the file deleted? " + f.delete());//we need to delete the matrix because it is very large and useless at this point
+	
+	    writeMatrix(newV,"conf/Vmatrix3users.txt","(SVD Recalculation)This the reduced matrix of the original centered Million ratings");
         V = readMatrix("conf/Vmatrix3users.txt");	
-		System.out.println("SVD UPDATE IS COMPLETE"); 
+	
+	    System.out.println("SVD UPDATE IS COMPLETE");*/
+        Timer timer = new Timer();
+        Calendar date = Calendar.getInstance();
+        date.set(
+          Calendar.DAY_OF_WEEK,
+          Calendar.SUNDAY
+        );
+        date.set(Calendar.HOUR, 9);
+        date.set(Calendar.MINUTE, 5);
+        date.set(Calendar.SECOND, 0);
+        date.set(Calendar.MILLISECOND, 0);
+        
+        // Schedule to run every Sunday in midnight
+        timer.schedule(
+          new Update(),
+          date.getTime()
+          //1000 * 60 //* 60 * 24 * 7
+        );
 }
 
 
