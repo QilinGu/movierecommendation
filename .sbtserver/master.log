@@ -578,3 +578,113 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 1 s, completed May 18, 2015 12:04:59 AM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6cd9e6fd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7b6e044a directly...
+Java compilation took 0.636702298 s
+Java analysis took 0.098645815 s
+Java compile + analysis took 0.749545496 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed May 18, 2015 12:28:45 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1998aeac, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@253f9d14 directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.235600243 s
+Java analysis took 0.197318406 s
+Java compile + analysis took 0.454619694 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:29:18 AM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@26572ebe, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2beef8cd directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java uses unchecked or unsafe operations.
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.199303763 s
+Java analysis took 0.133823998 s
+Java compile + analysis took 0.349258737 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:29:28 AM
+> server-post-command-cleanup
+> server-handle-next-server-request

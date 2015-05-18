@@ -35,7 +35,7 @@ public class Register extends Controller {
 
     static ArrayList<Integer> movieIds = new ArrayList<Integer>();
     static int count = 0;
-    static int usercount = 300;
+    static int usercount = 400;
     
     public static int getusercount(){
         return usercount;
@@ -43,7 +43,7 @@ public class Register extends Controller {
     
     public static void setusercount(){
         if (usercount < 800){
-        usercount = usercount + 20;
+        usercount = usercount + 50;
         }
     }
     
