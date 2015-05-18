@@ -845,7 +845,9 @@ public void updateSVDsmall()throws IOException{
           new Update(),
           date.getTime(),
           //1000 * 60 * 60 * 24 * 7
-        1000 * 60 * 5
+        
+        //every 5 minutes
+        //1000 * 60 * 5
         );
 }
 
