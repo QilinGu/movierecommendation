@@ -1,13 +1,13 @@
-New log file opened at Mon May 18 11:54:15 PDT 2015 by 7970@Thomass-MacBook-Pro.local
-jvm 7970@Thomass-MacBook-Pro.local
+New log file opened at Mon May 18 12:11:34 PDT 2015 by 8117@Thomass-MacBook-Pro.local
+jvm 8117@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
+Waiting for sbt command engine
 Command engine arguments=List()
 Command engine baseDirectory=/Users/Tommie/Documents/movierecommendation
-Waiting for sbt command engine
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/Documents/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/Documents/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@60cccc08, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@43cc9b95, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to actiontest (in build file:/Users/Tommie/Documents/moviere
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@65bf17b9, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@68bbdc0e, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -84,12 +84,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 3 s, completed May 18, 2015 11:54:31 AM
+Total time: 2 s, completed May 18, 2015 12:11:47 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@20b8d074, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6d23f138, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -106,18 +106,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed May 18, 2015 11:54:33 AM
+Total time: 2 s, completed May 18, 2015 12:11:48 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@6e5a8afb, check cycles: false
-Total time: 0 s, completed May 18, 2015 11:54:34 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a6695d8, check cycles: false
+Total time: 0 s, completed May 18, 2015 12:11:49 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@3d35ec90, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7b308853, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -134,12 +134,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed May 18, 2015 11:54:35 AM
+Total time: 1 s, completed May 18, 2015 12:11:50 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@1007ce83, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1677992d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -158,44 +158,510 @@ All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendati
 
 Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
 Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@a4a62ce directly...
+Attempting to call com.sun.tools.javac.api.JavacTool@3ec4a23b directly...
 Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
 /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
 Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
 /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 1.28693557 s
-Java analysis took 0.30485165 s
-Java compile + analysis took 1.607664043 s
+Java compilation took 1.710121919 s
+Java analysis took 0.479759312 s
+Java compile + analysis took 2.216283231 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed May 18, 2015 11:55:13 AM
+Total time: 3 s, completed May 18, 2015 12:17:20 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@44b22765, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@260e62e5 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:201:  java.lang.Iterable<play.mvc.Http.Cookie> cannot be converted to play.mvc.Http.Cookie
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:201:  java.lang.Iterable<play.mvc.Http.Cookie> cannot be converted to play.mvc.Http.Cookie
+Read from stdout: r.cookies()
+r.cookies()
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 12:17:47 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@179b121a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5378c62e directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:202:  java.lang.Iterable<play.mvc.Http.Cookie> cannot be converted to play.mvc.Http.Cookie
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:202:  java.lang.Iterable<play.mvc.Http.Cookie> cannot be converted to play.mvc.Http.Cookie
+Read from stdout: r.cookies()
+r.cookies()
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 12:18:07 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@54250eee, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@75b5f554 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:202: cannot find symbol
+Read from stdout: symbol:   method value()
+Read from stdout: location: interface java.lang.Iterable<play.mvc.Http.Cookie>
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:202: cannot find symbol
+  symbol:   method value()
+  location: interface java.lang.Iterable<play.mvc.Http.Cookie>
+Read from stdout: r.cookies().value
+r.cookies().value
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 12:18:23 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5b305a77, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@40ee289e directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:17: cannot find symbol
+Read from stdout: symbol:   class iterable
+Read from stdout: location: package java.lang
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:17: cannot find symbol
+  symbol:   class iterable
+  location: package java.lang
+Read from stdout: java.lang.iterable
+java.lang.iterable
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:203: cannot find symbol
+Read from stdout: symbol:   method value()
+Read from stdout: location: interface java.lang.Iterable<play.mvc.Http.Cookie>
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:203: cannot find symbol
+  symbol:   method value()
+  location: interface java.lang.Iterable<play.mvc.Http.Cookie>
+Read from stdout: r.cookies().value
+r.cookies().value
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 12:19:51 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@75ef48a7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6c7883b9 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:203: cannot find symbol
+Read from stdout: symbol:   method value()
+Read from stdout: location: interface java.lang.Iterable<play.mvc.Http.Cookie>
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:203: cannot find symbol
+  symbol:   method value()
+  location: interface java.lang.Iterable<play.mvc.Http.Cookie>
+Read from stdout: r.cookies().value
+r.cookies().value
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 12:20:02 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4929663, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@609e8fb7 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:203:  java.lang.Iterable<play.mvc.Http.Cookie> cannot be converted to java.lang.Iterable<play.mvc.Http.Cookies>
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:203:  java.lang.Iterable<play.mvc.Http.Cookie> cannot be converted to java.lang.Iterable<play.mvc.Http.Cookies>
+Read from stdout: r.cookies()
+r.cookies()
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 0 s, completed May 18, 2015 12:20:28 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3912fc2f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@3aef5235 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.132852297 s
+Java analysis took 0.134575041 s
+Java compile + analysis took 0.274213117 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:20:49 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@115c468, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@6bcebab4 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:204: cannot find symbol
+Read from stdout: symbol:   method value()
+Read from stdout: location: variable c of type java.lang.Iterable<play.mvc.Http.Cookie>
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:204: cannot find symbol
+  symbol:   method value()
+  location: variable c of type java.lang.Iterable<play.mvc.Http.Cookie>
+Read from stdout: c.value
+c.value
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 0 s, completed May 18, 2015 12:21:04 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@19b5a59d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@78802644 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.149527009 s
+Java analysis took 0.097462317 s
+Java compile + analysis took 0.252805097 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:21:32 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4a2daba8, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2f538c6d directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.122325936 s
+Java analysis took 0.080931977 s
+Java compile + analysis took 0.20838241 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:21:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@506823ee, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@65dc044f directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.10180818 s
+Java analysis took 0.098040192 s
+Java compile + analysis took 0.206043451 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:22:05 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4b1cc32b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@31b5ccab directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.107317452 s
+Java analysis took 0.098392732 s
+Java compile + analysis took 0.210510104 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:22:15 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@1c5eae13, check cycles: false
-Total time: 1 s, completed May 18, 2015 11:55:17 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@7c6b9ea0, check cycles: false
+Total time: 0 s, completed May 18, 2015 12:22:24 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@6d162c1c, check cycles: false
-Total time: 1 s, completed May 18, 2015 11:55:21 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@2c2fd228, check cycles: false
+Total time: 0 s, completed May 18, 2015 12:22:28 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@781309ba, check cycles: false
-Total time: 0 s, completed May 18, 2015 11:55:23 AM
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d712bb1, check cycles: false
+Total time: 0 s, completed May 18, 2015 12:22:29 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@427773f0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@6d9e8dd9, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -225,6 +691,159 @@ Copy resource mappings:
 	(/Users/Tommie/Documents/movierecommendation/conf/users.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/users.txt)
 	(/Users/Tommie/Documents/movierecommendation/conf/Vmatrix3users.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/Vmatrix3users.txt)
 	(/Users/Tommie/Documents/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
-Total time: 2 s, completed May 18, 2015 11:55:26 AM
+Total time: 1 s, completed May 18, 2015 12:22:32 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3bb97d29, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2ff940cf directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:204: cannot find symbol
+Read from stdout: symbol:   method contains()
+Read from stdout: location: interface java.util.Iterator<play.mvc.Http.Cookie>
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:204: cannot find symbol
+  symbol:   method contains()
+  location: interface java.util.Iterator<play.mvc.Http.Cookie>
+Read from stdout: c.iterator().contains
+c.iterator().contains
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 12:24:13 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@29c23539, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@21f7734d directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:204: cannot find symbol
+Read from stdout: symbol:   method contains(java.lang.String)
+Read from stdout: location: interface java.util.Iterator<play.mvc.Http.Cookie>
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java:204: cannot find symbol
+  symbol:   method contains(java.lang.String)
+  location: interface java.util.Iterator<play.mvc.Http.Cookie>
+Read from stdout: c.iterator().contains
+c.iterator().contains
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:31mcompileIncremental0m) javac returned nonzero exit code
+Total time: 1 s, completed May 18, 2015 12:24:39 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5c7156c2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7c01e789 directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.205990548 s
+Java analysis took 0.13320849 s
+Java compile + analysis took 0.348843335 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 12:27:34 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/Tommie/Documents/movierecommendation/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@56197f07, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/Tommie/Documents/movierecommendation/conf/application.conf,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/application.conf)
+	(/Users/Tommie/Documents/movierecommendation/conf/badmoviesout.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/badmoviesout.txt)
+	(/Users/Tommie/Documents/movierecommendation/conf/dataset.csv,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/dataset.csv)
+	(/Users/Tommie/Documents/movierecommendation/conf/dataset2.csv,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/dataset2.csv)
+	(/Users/Tommie/Documents/movierecommendation/conf/datasetcopyme.csv,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/datasetcopyme.csv)
+	(/Users/Tommie/Documents/movierecommendation/conf/M.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/M.txt)
+	(/Users/Tommie/Documents/movierecommendation/conf/movies.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/movies.txt)
+	(/Users/Tommie/Documents/movierecommendation/conf/moviesout.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/moviesout.txt)
+	(/Users/Tommie/Documents/movierecommendation/conf/routes,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/routes)
+	(/Users/Tommie/Documents/movierecommendation/conf/users.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/users.txt)
+	(/Users/Tommie/Documents/movierecommendation/conf/Vmatrix3users.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/Vmatrix3users.txt)
+	(/Users/Tommie/Documents/movierecommendation/conf/VMatrixMillion6040reduced.txt,/Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes/VMatrixMillion6040reduced.txt)
+Total time: 1 s, completed May 18, 2015 12:28:12 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
