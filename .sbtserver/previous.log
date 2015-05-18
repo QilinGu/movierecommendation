@@ -1,5 +1,5 @@
-New log file opened at Mon May 18 12:40:57 PDT 2015 by 8315@Thomass-MacBook-Pro.local
-jvm 8315@Thomass-MacBook-Pro.local
+New log file opened at Mon May 18 13:11:06 PDT 2015 by 8403@Thomass-MacBook-Pro.local
+jvm 8403@Thomass-MacBook-Pro.local
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.31-b07
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/Tommie/Documents/movierecommendation/project, returning: (movierecommendation-build)
 Loading project definition from /Users/Tommie/Documents/movierecommendation/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6fa8bb26, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@17b51d48, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,7 +67,7 @@ Set current project to actiontest (in build file:/Users/Tommie/Documents/moviere
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@23f53d0c, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@3a0af817, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -84,12 +84,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 3 s, completed May 18, 2015 12:41:11 PM
+Total time: 3 s, completed May 18, 2015 1:11:18 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@7718e0, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@51a2a88d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -106,18 +106,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed May 18, 2015 12:41:13 PM
+Total time: 2 s, completed May 18, 2015 1:11:19 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@349cd132, check cycles: false
-Total time: 0 s, completed May 18, 2015 12:41:13 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@15cd9265, check cycles: false
+Total time: 0 s, completed May 18, 2015 1:11:20 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/Tommie/Documents/movierecommendation/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@2b8522a5, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@108bf9a8, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -134,18 +134,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed May 18, 2015 12:41:14 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/Tommie/Documents/movierecommendation/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@3c8c8269, check cycles: false
-Total time: 0 s, completed May 18, 2015 12:41:14 PM
+Total time: 1 s, completed May 18, 2015 1:11:21 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@62a22741, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7f46aaa2, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -164,20 +158,198 @@ All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendati
 
 Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
 Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@2499b9d9 directly...
+Attempting to call com.sun.tools.javac.api.JavacTool@2f1f6430 directly...
 Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
 /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
 Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
 /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
-Java compilation took 1.281528827 s
-Java analysis took 0.383535403 s
-Java compile + analysis took 1.679327527 s
+Java compilation took 2.185775941 s
+Java analysis took 0.587227279 s
+Java compile + analysis took 2.80764161 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 3 s, completed May 18, 2015 12:46:30 PM
+Total time: 4 s, completed May 18, 2015 1:11:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1a94ec6b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5091ca9d directly...
+Java compilation took 0.759591283 s
+Java analysis took 0.045296088 s
+Java compile + analysis took 0.811809745 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 1:16:48 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5ce871b4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/models/Update.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/models/Update.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/models/Update.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7d5bb279 directly...
+Java compilation took 0.135055952 s
+Java analysis took 0.016536526 s
+Java compile + analysis took 0.158687579 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 1:21:15 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@587db464, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/models/AllUsers.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/models/AllUsers.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/models/AllUsers.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2d65c0f4 directly...
+Java compilation took 0.304466806 s
+Java analysis took 0.056818454 s
+Java compile + analysis took 0.368201575 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 1:26:38 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@64e05ffc, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@5cc02b5f directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.178157369 s
+Java analysis took 0.107022255 s
+Java compile + analysis took 0.290186297 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 1:27:18 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@30bf8897, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java)
+
+Read from stdout: Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/Tommie/Documents/movierecommendation/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@66f2383d directly...
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java uses unchecked or unsafe operations.
+Read from stdout: /Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+/Users/Tommie/Documents/movierecommendation/app/controllers/Register.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 0.173327748 s
+Java analysis took 0.108017114 s
+Java compile + analysis took 0.28909139 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed May 18, 2015 1:27:22 PM
 > server-post-command-cleanup
 > server-handle-next-server-request

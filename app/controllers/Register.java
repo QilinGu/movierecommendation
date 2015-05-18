@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.TreeMap;
 import play.mvc.Http.Response;
 import java.util.Map;
+import models.Algorithms;
 
 //Added by Daniel
 import java.io.FileNotFoundException;
@@ -33,7 +34,9 @@ public class Register extends Controller {
 	final static AllUsers allusers = new AllUsers();
     final static ArrayList<String> lastTen = new ArrayList<String>();
     final static ArrayList<Integer> simmovies = new ArrayList<Integer>();
-    final static ArrayList<Integer> baddummymovies = allusers.readArrayList("conf/badmoviesout.txt");
+    
+    final static Algorithms algorithms  = new Algorithms(allusers);
+    final static ArrayList<Integer> baddummymovies = algorithms.readArrayList("conf/badmoviesout.txt");
     final static Http.Response r = new Http.Response();
 
     static ArrayList<Integer> movieIds = new ArrayList<Integer>();
@@ -58,9 +61,9 @@ public class Register extends Controller {
         
         if(count == 0){
             System.out.println("THIS IS A NEW INSTANCE");
-            File file = new File("conf/moviesout.txt");
+            File file = new File("conf/movies.txt");
             allusers.movieParse(file);
-            allusers.updateSVDsmall();
+            algorithms.updateSVDsmall();
             count++;
         }
 
@@ -228,7 +231,7 @@ public class Register extends Controller {
             simmovies.clear();
         }
         
-        allusers.checkForSimUsers(user, simmovies,baddummymovies);
+        algorithms.recommendMovies(user, simmovies,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
 
         for(int i = 0; i < simmovies.size(); i++) {
@@ -283,7 +286,7 @@ public class Register extends Controller {
         
     	simmovies.clear();
     	movieIds.clear();
-    	allusers.checkForSimUsers(user, simmovies,baddummymovies);
+    	algorithms.recommendMovies(user, simmovies,baddummymovies);
         ArrayList<String> recMovies = new ArrayList<String>();
         
         for(int i = 0; i < simmovies.size(); i++) {

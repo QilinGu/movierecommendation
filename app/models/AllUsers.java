@@ -26,20 +26,6 @@ import models.User;
 
 
 
-import org.apache.mahout.cf.taste.common.TasteException;
-import org.apache.mahout.cf.taste.impl.common.LongPrimitiveIterator;
-import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
-import org.apache.mahout.cf.taste.impl.neighborhood.ThresholdUserNeighborhood;
-import org.apache.mahout.cf.taste.impl.recommender.GenericItemBasedRecommender;
-import org.apache.mahout.cf.taste.impl.recommender.GenericUserBasedRecommender;
-import org.apache.mahout.cf.taste.impl.similarity.LogLikelihoodSimilarity;
-import org.apache.mahout.cf.taste.impl.similarity.PearsonCorrelationSimilarity;
-import org.apache.mahout.cf.taste.model.DataModel;
-import org.apache.mahout.cf.taste.neighborhood.UserNeighborhood;
-import org.apache.mahout.cf.taste.recommender.RecommendedItem;
-import org.apache.mahout.cf.taste.recommender.UserBasedRecommender;
-import org.apache.mahout.cf.taste.similarity.ItemSimilarity;
-import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 
 //SVD
 import org.apache.mahout.math.DenseMatrix;
@@ -56,9 +42,9 @@ public class AllUsers {
     
     public ArrayList<String> shortlist;
     private TreeMap<String, User> allusers;
-    private ArrayList<String> allmovies;
+    public static ArrayList<String> allmovies;
     private ArrayList<String> allgenres;
-    public static Matrix V;
+
     private Connection connection;
     public static boolean updating;
     
@@ -73,12 +59,17 @@ public class AllUsers {
         /*ArrayList<genres> index would be movieID*/
         allgenres = new ArrayList<String>();
         
-        V = readMatrix("conf/VMatrixMillion6040reduced.txt");
+
         //V = readMatrix("conf/Vmatrix3users.txt");
         connection = DB.getConnection("default");
         shortlist = new ArrayList<String>();
         updating = false;
     }
+    
+    public static int getMoviesize(){
+       return allmovies.size();
+    }
+    
     
     public static void updateNow() {
         updating = true;
@@ -92,25 +83,40 @@ public class AllUsers {
         
         return allmovies.size();
     }
-    
-    public static void setV(Matrix newV){
-        V = newV;
-    }
+  
     
     public void movieParse(File moviefile) throws IOException {
         
-		String line;
+		String line,finalline;
 		BufferedReader input = null;
-
+        int count = 1;
 		try {
 		    
 			input = new BufferedReader(new FileReader(moviefile));
-
-			while((line = input.readLine()) != null) {
-			    
-				allmovies.add(line);
-			}
 			
+			while ((line = input.readLine()) != null) {
+					if (!(line.isEmpty()) && startsWithNumber(line)) {
+						StringBuilder outLine = new StringBuilder();
+						StringBuilder countindex = new StringBuilder();
+						int begin = line.indexOf("::")+ 2;
+						countindex.append(line, 0, begin-2);
+						int filecount = Integer.parseInt(countindex.toString());
+						while(count < filecount){
+					    	allmovies.add("Dummy Movie part "+count + " (2015)");	
+							count++;
+						}
+						int end = line.lastIndexOf("::");
+						while(begin < end){
+							outLine.append(line.charAt(begin++));
+						}
+						//finalline =removeYears(outLine.toString());
+						finalline =outLine.toString();
+						allmovies.add(finalline);
+						count++;
+					}
+				}
+				
+		
 		} catch(FileNotFoundException e) {
 		    
 			System.out.println("File Not Found");
@@ -124,30 +130,47 @@ public class AllUsers {
 			input.close();
 		}
 	}
-	
+   
+   
 	public void userParse(File userfile) throws IOException {
 	    
-	    String line;
+
+        String line,finalline;
 		BufferedReader input = null;
+
+        int count = 1;
+
 
 		try {
 		    
 			input = new BufferedReader(new FileReader(userfile));
 
-			while((line = input.readLine()) != null) {
-			    
-				String[] wordArray = line.split("[\t]+");
-				String user = wordArray[0];
-				User newuserdata = new User();
-				addToAll(user, newuserdata);
-				newuserdata.setUserName(user);
-				
-				for(int i = 1; i < wordArray.length; i++) {
-				    
-						String[] rating = wordArray[i].split("[,]");
-						allusers.get(user).userdata.put(Integer.parseInt(rating[0]), Integer.parseInt(rating[1]));
+			
+			while ((line = input.readLine()) != null) {
+					if (!(line.isEmpty()) && startsWithNumber(line)) {
+						StringBuilder outLine = new StringBuilder();
+						StringBuilder countindex = new StringBuilder();
+						int begin = line.indexOf("::")+ 2;
+						countindex.append(line, 0, begin-2);
+						int filecount = Integer.parseInt(countindex.toString());
+						while(count < filecount){
+					    	allmovies.add("Dummy Movie part "+count + " (2015)");	
+							count++;
+						}
+						int end = line.lastIndexOf("::");
+						while(begin < end){
+							outLine.append(line.charAt(begin++));
+						}
+						//finalline =removeYears(outLine.toString());
+						finalline =outLine.toString();
+						allmovies.add(finalline);
+						count++;
+					}
 				}
-			}
+				
+			
+			
+			
 
 		} catch(FileNotFoundException e) {
 			
@@ -267,7 +290,7 @@ public class AllUsers {
         return true;
     }
     
-    public ArrayList<String> loginGetUsers(){
+    public static ArrayList<String> loginGetUsers(){
         ArrayList<String> users = new ArrayList<String>();
         
         try{
@@ -552,291 +575,20 @@ public class AllUsers {
 		}
     	return allusers.get(userid).userdata.get(movieindex) ;
       }
-    
-    
-    // Added by Daniel  //implementing Apache
-    public void checkForSimUsers(String user, ArrayList<Integer> movies,ArrayList baddummymovies){
-        
-         //try {
-           // Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
-           
-           
-           int randy;
-        	HashMap<String, MovieObject> pearsonmap = new HashMap<String, MovieObject>();
-        	TreeMap<Integer, Integer> userMap = tableGetMap(user);
-        	//int count = 0;
-	    	//TreeMap<Integer, Integer> userMap = allusers.get(user).userdata;
-	    	
-	    	DenseMatrix q = new DenseMatrix(1,3952);
-		    for (Entry<Integer, Integer> t: userMap.entrySet()){
-            	q.setQuick(0,t.getKey()-1,t.getValue());
-            }
-          
-	        int usersize = allusers.size(); //neww
-	        int moviesize = allmovies.size(); //neww
-            Matrix  qV = q.times(V);
-            Matrix qVbyVT = qV.times(V.transpose());
-            
-              int  columns = qVbyVT.columnSize();
-             HashMap<Integer, Movie> map = new HashMap<Integer, Movie>();
-             for(int j = 0; j<columns; j++){
-	         map.put(j, new Movie(j, qVbyVT.get(0, j)));
-            }
-            ArrayList<Movie> finalsvd = new ArrayList<Movie>(
-			map.values());
-            Collections.sort(finalsvd);
-            int count = 0;
-            int j = 0;
-            while (count < 10){
-	          if (!userMap.containsKey(finalsvd.get(j).getID()+1) && !baddummymovies.contains(finalsvd.get(j).getID()+1)){
-             	 //System.out.println("User:  we want you to see movie with index " + (finalsvd.get(j).getID()+1)); //Because our movie index ratigns doesn't start from 0;
-                 movies.add(finalsvd.get(j).getID()+1);
-                 count++;
-                 j++;
-	             }
-	             else{
-		         j++;
-	             }
-            }
-         }
-            
-/*            while (count<10){
-             randy = (int)(Math.random() * allmovies.size()) + 1;
-             if (!userMap.containsKey(randy) && !baddummymovies.contains(randy)){
-             	 //System.out.println("User:  we want you to see movie with index " + (finalsvd.get(j).getID()+1)); //Because our movie index ratigns doesn't start from 0;
-                 movies.add(randy);
-                 count++;
 
-	             }
-           
-        }
-            
-            
-        
-        
-        
-    }
-	        */
-	  
-public static void writeMatrix(Matrix inputM, String filename, String title) throws IOException
-	{
-		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
-		
-		int rows = inputM.numRows();
-		int columns = inputM.numCols();
-		double value;
-		out.println(title);
-		out.println(rows);
-		out.println(columns);
-		for (int i = 0; i<rows; i++){
-			for (int j = 0; j < columns; j++){
-				if ((value = inputM.getQuick(i, j)) !=0){
-					out.println(i + "," + j + "," +value );
-				}
-			}
+
+
+
+
+private static boolean startsWithNumber(String first) {
+		first = String.valueOf(first.charAt(0));
+
+		first = first.replaceAll("[0-9]", "X");
+		if (first.charAt(0) == 'X')
+		{
+			return true;
 		}
-		out.close();
-	}
-	  
-	  public static Matrix readMatrix(String filename){
-		String line;
-		int rows;
-		int columns;
-		DenseMatrix newMatrix = null;
-
-		try {
-			BufferedReader input = null;
-			
-			try {
-			 input = new BufferedReader(new FileReader(filename));
-			 input.readLine();//done necessarily and intentionally to skip the one line documentation
-			 rows = Integer.parseInt(input.readLine());
-			 columns = Integer.parseInt(input.readLine());
-			 newMatrix = new DenseMatrix(rows,columns);
-			while ((line = input.readLine()) != null) {
-				if (!(line.isEmpty())) {
-					String lineArray[] = line.split(",");
-					if (lineArray.length == 3){
-						newMatrix.set(Integer.parseInt(lineArray[0]), Integer.parseInt(lineArray[1]), Double.parseDouble(lineArray[2]));
-				}
-				}
-			}
-		}
-		finally {
-			
-			input.close();
-			
-		}
-	} catch (FileNotFoundException e) {
-		System.out.println("Directory is invalid/Directory does not consist a file");
-	} catch (IOException e) {
-		System.out.println("Input/Output Exception");
-	}
-		catch(NullPointerException e){
-			System.out.println("An Error occured");
-		}
-		return newMatrix;
-		
-		
-	}
-
-public static ArrayList readArrayList(String filename){
-    ArrayList<Integer> list = new ArrayList<Integer>();
-    String line;
-    
-
-		try {
-			BufferedReader input = null;
-			
-			try {
-		    input = new BufferedReader(new FileReader(filename));
-			while ((line = input.readLine()) != null) {
-				if (!(line.isEmpty())) {
-				
-				list.add(Integer.parseInt(line));
-						}
-			}
-		}
-		finally {
-			
-			input.close();
-			
-		}
-	} catch (FileNotFoundException e) {
-		System.out.println("Directory is invalid/Directory does not consist a file");
-	} catch (IOException e) {
-		System.out.println("Input/Output Exception");
-	}
-		catch(NullPointerException e){
-			System.out.println("An Error occured");
-		}
-    
-    
-    return list;
-}
-
-public static DenseMatrix readM(String filename, int newrow) {
-        BufferedReader reader = null;
-        DenseMatrix m = null;
-        try {
-            reader = new BufferedReader(new FileReader(filename));
-            String line;
-            try {
-                int row = Integer.parseInt(reader.readLine());
-                int column = Integer.parseInt(reader.readLine());
-                m = new DenseMatrix(newrow, column);
-                line = reader.readLine();
-                int i = 0;
-                while (line != null && i < newrow) {// don't forget to change this after debugging
-                    String[] numbers = line.split(",");
-                    for (int j = 0; j < numbers.length; j++) {
-                        m.setQuick(i, j, Double.parseDouble(numbers[j]));
-                    }
- 
-                    line = reader.readLine();
-                    i++;
-                }
-            } catch (IOException e) {
-                //ignored
-            }
-        } catch (FileNotFoundException e) {
-            //ignored
-        } finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }   
-        return m;
-    }
-
-public static Matrix reduceMatrixV(String filename,double percentkept){
-		String line;
-		int rows;
-		int columns;
-		DenseMatrix newMatrix = null;
-		try {
-			BufferedReader input = null;
-			
-			try {
-			 input = new BufferedReader(new FileReader(filename));
-			 input.readLine();//done necessarily and intentionally to skip the one line documentation
-			 rows = Integer.parseInt(input.readLine());
-			 columns = Integer.parseInt(input.readLine());
-			 int newcolumns = (int) ((percentkept/100) * columns); 
-			 newMatrix = new DenseMatrix(rows,newcolumns);
-			while ((line = input.readLine()) != null) {
-				if (!(line.isEmpty())) {
-					String lineArray[] = line.split(",");
-					if (lineArray.length == 3 && Integer.parseInt(lineArray[1]) < newcolumns){
-						newMatrix.set(Integer.parseInt(lineArray[0]), Integer.parseInt(lineArray[1]), Double.parseDouble(lineArray[2]));
-				}
-				}
-			}
-		}
-		finally {
-			
-			input.close();
-			
-		}
-	} catch (FileNotFoundException e) {
-		System.out.println("Directory is invalid/Directory does not consist a file");
-	} catch (IOException e) {
-		System.out.println("Input/Output Exception");
-	}
-		catch(NullPointerException e){
-			System.out.println("An Error occured");
-		}
-		
-		return newMatrix;
-	}
-
-
-public void updateSVD()throws IOException{
-
-    Timer timer = new Timer();
-        Calendar date = Calendar.getInstance();
-        date.set(
-          Calendar.DAY_OF_WEEK,
-          Calendar.MONDAY
-        );
-        date.set(Calendar.HOUR, 5);
-        date.set(Calendar.MINUTE, 0);
-        date.set(Calendar.SECOND, 0);
-        date.set(Calendar.MILLISECOND, 0);
-        System.out.println(date.getTime());
-        // Schedule to run every Sunday in 11 PM
-        timer.schedule(
-          new Update(),
-          date.getTime(),
-          1000 * 60 * 60 * 24 * 7
-        );
-		
-}
-
-public void updateSVDsmall()throws IOException{
-    
-        Timer timer = new Timer();
-        Calendar date = Calendar.getInstance();
-        date.set(
-          Calendar.DAY_OF_WEEK,
-          Calendar.MONDAY
-        );
-        date.set(Calendar.HOUR, 23);
-        date.set(Calendar.MINUTE, 0);
-        date.set(Calendar.SECOND, 0);
-        date.set(Calendar.MILLISECOND, 0);
-        System.out.println(date.getTime());
-        // Schedule to run every Sunday in 10 PM
-        timer.schedule(
-          new Update(),
-          date.getTime(),
-        //every 5 minutes
-          1000 * 60 * 5
-        );
-}
-
-
+		return false;
      
+}
 }
