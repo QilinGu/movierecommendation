@@ -26285,3 +26285,37 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 34 s, completed May 18, 2015 2:36:34 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@19b8e941, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@38a06d48 directly...
+Java compilation took 30.277917056 s
+Java analysis took 9.709550959 s
+Java compile + analysis took 40.527454074 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 100 s, completed May 18, 2015 3:48:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

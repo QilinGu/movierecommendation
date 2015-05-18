@@ -304,11 +304,11 @@ public void updateSVDsmall()throws IOException{
         // Schedule to run every Sunday in 10 PM
         timer.schedule(
           new Update(),
-          date.getTime()//,
+          date.getTime(),
           //1000 * 60 * 60 * 24 * 7
         
         //every 5 minutes
-        //1000 * 60 * 5
+        1000 * 60 * 5
         );
     }
 
