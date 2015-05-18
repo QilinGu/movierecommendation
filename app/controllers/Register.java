@@ -52,15 +52,13 @@ public class Register extends Controller {
             File file = new File("conf/moviesout.txt");
             allusers.movieParse(file);
             allusers.updateSVDsmall();
-<<<<<<< HEAD
             if (usercount< 800){
             usercount = usercount + 20;
             }
             if(allusers.updating == true){
                 System.out.println("TRUE");
             }
-=======
->>>>>>> origin/master
+
             count++;
         }
 
