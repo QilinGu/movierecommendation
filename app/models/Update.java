@@ -16,7 +16,7 @@ public class Update extends TimerTask {
 
   public void run() {
     try {
-        DenseMatrix M = AllUsers.readM("conf/M.txt",3);
+        DenseMatrix M = AllUsers.readM("conf/M.txt",30);
     
         System.out.println("SMALL Grouplens DONE");
     

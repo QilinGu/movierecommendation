@@ -477,7 +477,6 @@ public class AllUsers {
     }
     //Change by Daniel
     public String findMovie(int id){
-        System.out.println(allmovies.size());
         return allmovies.get(id-1);
     }
     
@@ -802,10 +801,10 @@ public void updateSVD()throws IOException{
 	     long start_time = System.currentTimeMillis();
 		SingularValueDecomposition t = new SingularValueDecomposition(M);
 		System.out.println("SVD Done");
-		long end_time = System.currentTimeMillis();
-		long time = end_time-start_time;
-		 time = time/1000;
-		System.out.println("The time of SVD in seconds is " + time);
+		//long end_time = System.currentTimeMillis();
+		//long time = end_time-start_time;
+		 //time = time/1000;
+		//System.out.println("The time of SVD in seconds is " + time);
 		
 		writeMatrix(t.getV(),"conf/VmatrixMillion6040full.txt","This is a result of SVD recalculation");
 		Matrix newV = reduceMatrixV("conf/VmatrixMillion6040full.txt",20);
@@ -826,16 +825,16 @@ public void updateSVDsmall()throws IOException{
     
         System.out.println("Calculating SVD");
 	
-	    long start_time = System.currentTimeMillis();
+	    //long start_time = System.currentTimeMillis();
         SingularValueDecomposition t = new SingularValueDecomposition(M);
 	
 	    System.out.println("SVD Done");
 	
-	    long end_time = System.currentTimeMillis();
-	    long time = end_time-start_time;
-	    time = time/1000;
+	    //long end_time = System.currentTimeMillis();
+	    //long time = end_time-start_time;
+	    //time = time/1000;
 
-        System.out.println("The time of SVD in seconds is " + time);
+        //System.out.println("The time of SVD in seconds is " + time);
 	
 	    writeMatrix(t.getV(),"conf/Vmatrix3usersfull.txt","This is a result of SVD 3 recalculation");
         Matrix newV = reduceMatrixV("conf/Vmatrix3usersfull.txt",100);
@@ -854,7 +853,7 @@ public void updateSVDsmall()throws IOException{
           Calendar.SUNDAY
         );
         date.set(Calendar.HOUR, 9);
-        date.set(Calendar.MINUTE, 5);
+        date.set(Calendar.MINUTE, 33);
         date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND, 0);
         
