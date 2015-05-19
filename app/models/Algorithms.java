@@ -64,12 +64,7 @@ import models.SQL;
  * If the date inputed has past this method would call the newUpdate() and then
  * reschedule the SVD update 7 days after the recently specified date
  *
- *updateSVDsmall()
- *same logic as the predecessor function. 
- * However the frequency of scheduling is higher since we reupdate a small dataset every 5 minutes
- *
-
-**/
+ **/
 
 
 
@@ -315,30 +310,6 @@ public class Algorithms {
 				new Update(),
 				date.getTime(),
 				1000 * 60 * 60 * 24 * 7
-				);
-	}
-    
-    /**
-     * For Testing Purposes Only, Updates Small SVD File.
-     * */
-	public void updateSVDsmall()throws IOException{ 
-
-		Timer timer = new Timer();
-		Calendar date = Calendar.getInstance();
-		date.set(
-				Calendar.DAY_OF_WEEK,
-				Calendar.MONDAY
-				);
-		date.set(Calendar.HOUR, 10);
-		date.set(Calendar.MINUTE, 10);
-		date.set(Calendar.SECOND, 0);
-		date.set(Calendar.MILLISECOND, 0);
-		System.out.println(date.getTime());
-
-		timer.schedule(
-				new Update(),
-				date.getTime(),
-				1000 * 60 * 5
 				);
 	}
 

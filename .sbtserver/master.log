@@ -347,3 +347,173 @@ All newly invalidated sources after taking into account (previously) recompiled 
 Total time: 3 s, completed May 18, 2015 10:49:35 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@363c2848, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@126edeb5 directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java uses unchecked or unsafe operations.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java uses unchecked or unsafe operations.
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: Recompile with -Xlint:unchecked for details.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 27.899441565 s
+Java analysis took 1.69879638 s
+Java compile + analysis took 30.701820603 s
+Invalidating C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java...
+Invalidating (transitively) by inheritance from C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java...
+Initial set of included nodes: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java)
+The C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java source file has the following regular definitions changed:
+	getusercount, usercount, setusercount.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java
+None of the modified names appears in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 173 s, completed May 18, 2015 11:01:38 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@38464363, check cycles: false
+
+Canceling execution...
+Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@1d35da77 rejected from java.util.concurrent.ThreadPoolExecutor@36e89b4[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 85]
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@1d35da77 rejected from java.util.concurrent.ThreadPoolExecutor@36e89b4[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 85]
+Use 'last' for the full log.
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4afa0550, check cycles: false
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+Use 'last' for the full log.
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@16f1dc28, check cycles: false
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+Use 'last' for the full log.
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@7030c7a8, check cycles: false
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+registered more than once? Task((taskDefinitionKey: ScopedKey(Scope(Select(ProjectRef(file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/,root)),Select(ConfigKey(compile)),Global,Global),compile)))
+Use 'last' for the full log.
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/BASHBABA/Desktop/OLGA/movierecommendation/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@515cd4d3, check cycles: false
+Total time: 1 s, completed May 18, 2015 11:02:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3966eaf6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+
+Read from stdout: Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 1 Java source to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@568d4b2a directly...
+Java compilation took 3.265986614 s
+Java analysis took 0.089036309 s
+Java compile + analysis took 3.370142701 s
+Invalidating C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java...
+Invalidating (transitively) by inheritance from C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java...
+Initial set of included nodes: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+The C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java source file has the following regular definitions changed:
+	updateSVDsmall.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java
+New invalidations:
+	Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
+Initial set of included nodes: Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_routing.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\submitrec.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\home.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\submit.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainuser.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\user.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainuser.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainreg.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\regpage.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainreg.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\routes_reverseRouting.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainload.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\loadmore.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainload.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\update.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainupdate.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainrec.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\src_managed\main\controllers\routes.java
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\recpage.template.scala by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\twirl\main\views\html\mainrec.template.scala
+Including C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java by C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Algorithms.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java, C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\models\Update.java)
+Read from stdout: Compiling 3 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Compiling 3 Java sources to C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\target\scala-2.11\classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@568d4b2a directly...
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java uses unchecked or unsafe operations.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java uses unchecked or unsafe operations.
+Read from stdout: C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: Recompile with -Xlint:unchecked for details.
+C:\Users\BASHBABA\Desktop\OLGA\movierecommendation\app\controllers\Javatar.java: Recompile with -Xlint:unchecked for details.
+Java compilation took 4.61284186 s
+Java analysis took 1.646152048 s
+Java compile + analysis took 6.277957219 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 19 s, completed May 18, 2015 11:04:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

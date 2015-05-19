@@ -39,18 +39,6 @@ public class Javatar extends Controller {
 
 	static ArrayList<Integer> movieIds = new ArrayList<Integer>();
 	static int count = 0;
-	
-	static int usercount = 400;
-
-	public static int getusercount() {
-		return usercount;
-	}
-
-	public static void setusercount() {
-		if (usercount < 800){
-			usercount = usercount + 50;
-		}
-	}
 
     /**
      * Method is called when on home page of web appliction.
@@ -68,8 +56,7 @@ public class Javatar extends Controller {
 		if(count == 0) {
 			File file = new File("conf/movies.txt");
 			allusers.movieParse(file);
-			//algorithms.updateSVD();
-			algorithms.updateSVDsmall();
+			algorithms.updateSVD();
 			count++;
 		}
 
