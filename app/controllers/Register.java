@@ -39,6 +39,7 @@ public class Register extends Controller {
 
 	static ArrayList<Integer> movieIds = new ArrayList<Integer>();
 	static int count = 0;
+	
 	static int usercount = 400;
 
 	public static int getusercount() {
@@ -67,7 +68,7 @@ public class Register extends Controller {
 		if(count == 0) {
 			File file = new File("conf/movies.txt");
 			allusers.movieParse(file);
-			//algorithms.updateSVDsmall();
+			algorithms.updateSVD();
 			count++;
 		}
 
