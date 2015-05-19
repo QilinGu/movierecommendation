@@ -1,14 +1,19 @@
 package models;
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
+
 import org.apache.mahout.math.DenseMatrix;
 import org.apache.mahout.math.Matrix;
 import org.apache.mahout.math.SingularValueDecomposition;
 import org.apache.mahout.math.SparseMatrix;
+
 import models.Algorithms;
+
 import controllers.Register;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -53,7 +58,7 @@ public class Update extends TimerTask {
 	    Register.setusercount();
 	    AllUsers.updateFinish();
 	    
-    } catch (IOException e){
+    } catch (IOException e) {
         //do nothing
     }
   }

@@ -41,11 +41,11 @@ public class Register extends Controller {
 	static int count = 0;
 	static int usercount = 400;
 
-	public static int getusercount(){
+	public static int getusercount() {
 		return usercount;
 	}
 
-	public static void setusercount(){
+	public static void setusercount() {
 		if (usercount < 800){
 			usercount = usercount + 50;
 		}
@@ -60,11 +60,11 @@ public class Register extends Controller {
      * */
 	public static Result home() throws IOException {
 
-		if(allusers.updating){
+		if(allusers.updating) {
 			return redirect(controllers.routes.Register.updating());
 		} 
 
-		if(count == 0){
+		if(count == 0) {
 			File file = new File("conf/movies.txt");
 			allusers.movieParse(file);
 			//algorithms.updateSVDsmall();
@@ -79,8 +79,8 @@ public class Register extends Controller {
      * First : it checks to make sure files are being updated, if not, then we are 
      *         redirected to the home page.
      * */
-	public static Result updating(){
-		if(!allusers.updating){
+	public static Result updating() {
+		if(!allusers.updating) {
 			return redirect(controllers.routes.Register.home());
 		}
 		return ok(update.render());
@@ -94,7 +94,7 @@ public class Register extends Controller {
      * Fourth: Redirects to the User page of the one who signed in. 
      * */
 	public static Result signin() throws IOException {
-		if(allusers.updating){
+		if(allusers.updating) {
 			return redirect(controllers.routes.Register.updating());
 		} 
 
@@ -117,7 +117,7 @@ public class Register extends Controller {
      * */
 	public static Result signout(String user) {
 		r.setHeader(user, null);
-		if(allusers.updating){
+		if(allusers.updating) {
 			return redirect(controllers.routes.Register.updating());
 		} 
 		return redirect("/");
@@ -131,15 +131,15 @@ public class Register extends Controller {
      * Fourth: renders the Registration page.
      * */
 	public static Result register() {
-		if(allusers.updating){
+		if(allusers.updating) {
 			return redirect(controllers.routes.Register.updating());
 		} 
 
-		if(movieIds.size() > 0){
+		if(movieIds.size() > 0) {
 			movieIds.clear();
 		} 
 
-		if(allusers.shortlist.size() > 0){
+		if(allusers.shortlist.size() > 0) {
 			allusers.shortlist.clear();
 		}
 		movieIds = allusers.getTenRandomIDS(baddummymovies);//Daniel
@@ -159,7 +159,7 @@ public class Register extends Controller {
      * Eighth : redirects to the new Users page if ten movies have been rated.
      * */
 	public static Result submit() {
-		if(allusers.updating){
+		if(allusers.updating) {
 			return redirect(controllers.routes.Register.updating());
 		} 
 
@@ -259,10 +259,10 @@ public class Register extends Controller {
 	public static Result user(String name) {
 
 		Map<String, String> map = r.getHeaders();
-		if(!map.containsKey(name) || !map.containsValue(name)){
+		if(!map.containsKey(name) || !map.containsValue(name)) {
 			return redirect(controllers.routes.Register.home());
 		}
-		if(allusers.updating){
+		if(allusers.updating) {
 			return redirect(controllers.routes.Register.updating());
 		} 
 		ArrayList<String> recentmovies = allusers.getLastTen(name);
@@ -281,10 +281,10 @@ public class Register extends Controller {
      * */
 	public static Result recommend(String user) {
 		Map<String, String> map = r.getHeaders();
-		if(!map.containsKey(user) || !map.containsValue(user)){
+		if(!map.containsKey(user) || !map.containsValue(user)) {
 			return redirect(controllers.routes.Register.home());
 		}
-		if(allusers.updating){
+		if(allusers.updating) {
 			return redirect(controllers.routes.Register.updating());
 		} 
 		if(!movieIds.isEmpty()) {
