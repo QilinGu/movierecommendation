@@ -27,7 +27,7 @@ import java.io.PrintWriter;
 import org.apache.mahout.math.Matrix;
 
 
-public class Register extends Controller {
+public class Javatar extends Controller {
 
 	final static Form<User> userForm = Form.form(User.class);
 	final static AllUsers allusers = new AllUsers();
@@ -62,13 +62,13 @@ public class Register extends Controller {
 	public static Result home() throws IOException {
 
 		if(allusers.updating) {
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 
 		if(count == 0) {
 			File file = new File("conf/movies.txt");
 			allusers.movieParse(file);
-			algorithms.updateSVD();
+			//algorithms.updateSVD();
 			count++;
 		}
 
@@ -82,7 +82,7 @@ public class Register extends Controller {
      * */
 	public static Result updating() {
 		if(!allusers.updating) {
-			return redirect(controllers.routes.Register.home());
+			return redirect(controllers.routes.Javatar.home());
 		}
 		return ok(update.render());
 	}
@@ -96,7 +96,7 @@ public class Register extends Controller {
      * */
 	public static Result signin() throws IOException {
 		if(allusers.updating) {
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 
 		Form<User> filledForm = userForm.bindFromRequest();
@@ -108,7 +108,7 @@ public class Register extends Controller {
 
 		}
 		r.setHeader(created.username, created.username);
-		return redirect(controllers.routes.Register.user(created.username));
+		return redirect(controllers.routes.Javatar.user(created.username));
 	}
 
     /**
@@ -119,7 +119,7 @@ public class Register extends Controller {
 	public static Result signout(String user) {
 		r.setHeader(user, null);
 		if(allusers.updating) {
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 		return redirect("/");
 	}
@@ -133,7 +133,7 @@ public class Register extends Controller {
      * */
 	public static Result register() {
 		if(allusers.updating) {
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 
 		if(movieIds.size() > 0) {
@@ -161,7 +161,7 @@ public class Register extends Controller {
      * */
 	public static Result submit() {
 		if(allusers.updating) {
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 
 		Form<User> filledForm = userForm.bindFromRequest();
@@ -207,7 +207,7 @@ public class Register extends Controller {
 		}
 
 		r.setHeader(created.username, created.username);
-		return redirect(controllers.routes.Register.user(created.username));
+		return redirect(controllers.routes.Javatar.user(created.username));
 	}
 
     /**
@@ -220,7 +220,7 @@ public class Register extends Controller {
      * */
 	public static Result addMovies(String username) {
 		if(allusers.updating){
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 
 		Form<User> filledForm = userForm.bindFromRequest();
@@ -246,7 +246,7 @@ public class Register extends Controller {
 			return ok(loadmore.render(userForm, allusers.shortlist, username));
 		}
 		r.setHeader(username, username);
-		return redirect(controllers.routes.Register.user(username));
+		return redirect(controllers.routes.Javatar.user(username));
 	}
 
     /**
@@ -261,10 +261,10 @@ public class Register extends Controller {
 
 		Map<String, String> map = r.getHeaders();
 		if(!map.containsKey(name) || !map.containsValue(name)) {
-			return redirect(controllers.routes.Register.home());
+			return redirect(controllers.routes.Javatar.home());
 		}
 		if(allusers.updating) {
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 		ArrayList<String> recentmovies = allusers.getLastTen(name);
 		int moviesrated = allusers.sql.tableSize(name);
@@ -283,10 +283,10 @@ public class Register extends Controller {
 	public static Result recommend(String user) {
 		Map<String, String> map = r.getHeaders();
 		if(!map.containsKey(user) || !map.containsValue(user)) {
-			return redirect(controllers.routes.Register.home());
+			return redirect(controllers.routes.Javatar.home());
 		}
 		if(allusers.updating) {
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 		if(!movieIds.isEmpty()) {
 
@@ -308,7 +308,7 @@ public class Register extends Controller {
 			recMovies.add(movie);
 		}
 
-		return ok(somethingelse.render(userForm, recMovies, user));
+		return ok(recpage.render(userForm, recMovies, user));
 	}
 
     /**
@@ -322,7 +322,7 @@ public class Register extends Controller {
      * */
 	public static Result submitrec(String user) throws IOException {
 		if(allusers.updating){
-			return redirect(controllers.routes.Register.updating());
+			return redirect(controllers.routes.Javatar.updating());
 		} 
 
 		PrintWriter outw = null;
@@ -370,6 +370,6 @@ public class Register extends Controller {
 			recMovies.add(movie);
 		}
 
-		return ok(somethingelse.render(userForm, recMovies, user));
+		return ok(recpage.render(userForm, recMovies, user));
 	}
 }

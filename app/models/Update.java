@@ -17,7 +17,7 @@ import org.apache.mahout.math.SparseMatrix;
 import models.Algorithms;
 import models.AllUsers;
 
-import controllers.Register;
+import controllers.Javatar;
 
 import java.io.File;
 import java.io.IOException;

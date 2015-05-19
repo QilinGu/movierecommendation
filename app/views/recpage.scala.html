@@ -7,15 +7,15 @@
                     <a class="navbar-brand" href="/">JAVATAR</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                     <li><a href="@routes.Register.signout(username)">Logout</a></li>
-                     <li><a href="@routes.Register.user(username)">My Profile</a></li>
+                     <li><a href="@routes.Javatar.signout(username)">Logout</a></li>
+                     <li><a href="@routes.Javatar.user(username)">My Profile</a></li>
                 </ul>
             </div>
         </nav>
 
 @mainrec("Recommendations") {
 
-    @helper.form(action = routes.Register.submitrec(username)){
+    @helper.form(action = routes.Javatar.submitrec(username)){
 		<h1 class="text-success">Movies Recommended For You</h1>
 		<p><br/></p>
 		

@@ -67,12 +67,6 @@ public class AllUsers {
 		updating = false;
 	}
 
-	public int getSizeOfAll() {
-
-		return allmovies.size();
-	}
-
-
 	public void movieParse(File moviefile) throws IOException {
 
 		String line,finalline;
@@ -117,16 +111,6 @@ public class AllUsers {
 
 			input.close();
 		}
-	}
-
-	public void addToAll(String username, User user) {
-
-		if(user.username == null) {
-			user.setUserName(username);
-		}
-		user.setUserID(allusers.size()+1);
-		allusers.put(username, user);  
-
 	}
 
 	public String findMovie(int id) {

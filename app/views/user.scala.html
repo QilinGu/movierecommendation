@@ -6,7 +6,7 @@
                     <a class="navbar-brand" href="/">JAVATAR</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="@routes.Register.signout(username)">Logout</a></li>
+                    <li><a href="@routes.Javatar.signout(username)">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +42,7 @@
 	}
     </ul></ul>
     <p><br/></p>
-    @helper.form(action = routes.Register.recommend(username)){
+    @helper.form(action = routes.Javatar.recommend(username)){
         <div align="center"><button class="btn btn-primary" type="submit">Find Recommendations</button></div>
     }
     <p><br/></p>
