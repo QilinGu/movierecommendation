@@ -69,6 +69,7 @@ public class Javatar extends Controller {
 			File file = new File("conf/movies.txt");
 			allusers.movieParse(file);
 			//algorithms.updateSVD();
+			algorithms.updateSVDsmall();
 			count++;
 		}
 

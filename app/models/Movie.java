@@ -3,7 +3,7 @@ package models;
 
 
 /**
- * This class creates a MovieObject which stores the user ID and the dotproduct
+ * This class creates a Movie Object which stores the movie and the svdvalue
  * 
  * @author Daniel Obaseyi Buraimo
  * 
@@ -16,21 +16,21 @@ public class Movie implements Comparable<Movie> {
 	/**
 	 * This is the dot product
 	 */
-	private double dotproduct;
+	private double svdvalue;
 
 	/**
-	 * This constructor initializes the MovieObject
+	 * This constructor initializes the Movie Object
 	 * 
 	 */
-	public Movie(int id,double product) {
+	public Movie(int id,double svdvalue) {
 		this.movieid = id;
-		this.dotproduct = product;
+		this.svdvalue = svdvalue;
 	}
 
 	/**
 	 */
-	public double getProduct() {
-		return this.dotproduct;
+	public double getsvdvalue() {
+		return this.svdvalue;
 	}
 	
 	/**
@@ -46,41 +46,34 @@ public class Movie implements Comparable<Movie> {
 	 *            the new initial position
 	 */
 
-	public void setProduct(double newProduct) {
-		this.dotproduct = newProduct;
+	public void setsvdvalue(double newsvdvalue) {
+		this.svdvalue = newsvdvalue;
 	}
 
 
-	/**
-	 * This method overrides the Object's toString method. It creates a format
-	 * in which this SearchResultObject can be easily read. Either into the
-	 * console or a file.
-	 * 
-	 * @return the format of the output of this SearchResultObject
-	 */
 	@Override
 	public String toString() {
 
-		return "Movie: " + movieid + " has a value of " + dotproduct;
+		return "Movie: " + movieid + " has a value of " + svdvalue;
 	}
 
 
 
 	public int compareTo(Movie arg0) {
-		if (this.dotproduct > arg0.dotproduct)
+		if (this.svdvalue > arg0.svdvalue)
 			return -1;
-		else if (this.dotproduct == arg0.dotproduct)
+		else if (this.svdvalue == arg0.svdvalue)
 			return lastCompareTo(arg0);
 		else
 			return 1;
 	}
 
 	/**
-	 * This method is used to compare different SerachResultObjects by their
-	 * filename
+	 * This method is used to compare different Movie Objects by their
+	 * movieids
 	 * 
 	 * @param arg0
-	 *            the other SearchResultObject being compared with
+	 *            the other Movie Object being compared with
 	 * 
 	 * @return the value of the comparisons
 	 */

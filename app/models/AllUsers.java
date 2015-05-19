@@ -33,6 +33,50 @@ import org.apache.mahout.math.SingularValueDecomposition;
 import org.apache.mahout.math.SparseMatrix;
 
 
+/** 
+ * ALLUSERS OPERATIONS
+ *
+ *
+ *getMoviesize()
+ *  returns the size of the movies
+ *
+ *updateNow()
+ *  Sets the updating boolean to true which means we are updating svd
+ *
+ *
+ *movieParse(moviefile)
+ *  Parses the movie file and stores the results in an array
+ *
+ *
+ *findMovie(id)
+ *  returns the movie name with the specified id
+ *
+ * 
+ *getTenRandomIDS(baddummymovies)
+ *get ten random movies that are not empty movie slots in the grouplens dataset(dummymovies)
+ * for the first register page
+ *
+ *getTenRandomIDS(username, baddummymovies)
+ *gets ten random movies that the user hasn't rated on previous registration pages
+ * (on the load-more pages)
+ *
+ * 
+ *getLastTen(username)
+ *  gets the ten most recent movies a user has seen
+ *
+ * 
+ *makeRandomList(movieIds)
+ *  makes random movies for the registeration page
+ * 
+ *
+ startsWithNumber(first)
+ *  movie parsing method that ensures a line starts with a number
+ *
+ **/
+
+
+
+
 public class AllUsers {
 
 	private TreeMap<String, User> allusers;
@@ -167,22 +211,6 @@ public class AllUsers {
 		}
 	}
 
-	public int CheckUserID(TreeMap<Integer, Integer> usermap, int movieindex) {
-
-		if (usermap.get(movieindex) == null) {
-			return 0;
-		}
-		return usermap.get(movieindex);
-	}
-
-	public int CheckUserID(String userid, int movieindex) {
-
-		if (allusers.get(userid).userdata.get(movieindex) == null) {
-			return 0;
-		}
-		return allusers.get(userid).userdata.get(movieindex) ;
-	}
-	
 
 	private static boolean startsWithNumber(String first) {
 		first = String.valueOf(first.charAt(0));

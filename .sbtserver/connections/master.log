@@ -1,58 +1,34 @@
-New log file opened at Mon May 18 21:32:14 PDT 2015 by 9274@Thomass-MacBook-Pro.local
-Taking next connection to: 49706
-New client attempting to connect on port: 49707-49706
-  Address = /10.0.0.10:49706
-This client on port 49707 has uuid 8cd0c321-dc23-405e-99e4-00a3cde5aab3 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-8cd0c321-dc23-405e-99e4-00a3cde5aab3
-Taking next connection to: 49706
-New client attempting to connect on port: 49708-49706
-  Address = /10.0.0.10:49706
-Handshake exception on socket: 49708
+New log file opened at Mon May 18 22:45:58 PDT 2015 by 832@BASHTOP
+Taking next connection to: 53789
+New client attempting to connect on port: 53790-53789
+  Address = /169.254.254.68:53789
+This client on port 53790 has uuid 7739f319-a3b5-46b3-9223-f2f30752492a configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-7739f319-a3b5-46b3-9223-f2f30752492a
+Taking next connection to: 53789
+New client attempting to connect on port: 53791-53789
+  Address = /169.254.254.68:53789
+Handshake exception on socket: 53791
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
 	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 49706
-New client attempting to connect on port: 49709-49706
-  Address = /10.0.0.10:49706
-This client on port 49709 has uuid b0865725-6463-499d-93db-6e53b245a2a6 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
-Connected Clients: activator-8cd0c321-dc23-405e-99e4-00a3cde5aab3, activator-b0865725-6463-499d-93db-6e53b245a2a6
-Taking next connection to: 49706
+Taking next connection to: 53789
+New client attempting to connect on port: 53792-53789
+  Address = /169.254.254.68:53789
+This client on port 53792 has uuid c4ef92e8-843b-4158-b8b1-7e44e8dbb458 configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-7739f319-a3b5-46b3-9223-f2f30752492a, activator-c4ef92e8-843b-4158-b8b1-7e44e8dbb458
+Taking next connection to: 53789
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 49706
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 49706
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 49706
-New client attempting to connect on port: 49803-49706
-  Address = /10.0.0.10:49706
-Handshake exception on socket: 49803
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 49706
-New client attempting to connect on port: 49804-49706
-  Address = /10.0.0.10:49706
-This client on port 49804 has uuid 7e00c562-7803-4935-a6bb-949c2a7c1cf5 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-b0865725-6463-499d-93db-6e53b245a2a6, play-fork-run-7e00c562-7803-4935-a6bb-949c2a7c1cf5
-Taking next connection to: 49706
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 49706
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 49706
+Taking next connection to: 53789

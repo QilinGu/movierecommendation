@@ -30,7 +30,7 @@ public class Update extends TimerTask {
 
     try {
         AllUsers.updateNow();
-	    int count = Algorithms.grouplensUsers;
+	    /*int count = Algorithms.grouplensUsers;
 		ArrayList<String> users = AllUsers.sql.loginGetUsers();
 		int usercount = Algorithms.grouplensUsers + users.size();
 		DenseMatrix M = Algorithms.readM("conf/M.txt",usercount, AllUsers.getMoviesize());
@@ -60,15 +60,15 @@ public class Update extends TimerTask {
 		Algorithms.setV(Algorithms.readMatrix("conf/VMatrixMillion6040reduced.txt"));
 		System.out.println("SVD UPDATE IS COMPLETE");
 	    AllUsers.updateFinish();
-	    
+	    */
 	    
 	    /**
 	     * FOR TESTING SMALL SVD UPDATE
 	     * */
 	   
-	  /*System.out.println("Usercount is currently " + Register.getusercount());
+	  System.out.println("Usercount is currently " + Javatar.getusercount());
         System.out.println("Moviecount is currently " + AllUsers.getMoviesize());
-        DenseMatrix M = Algorithms.readM("conf/M.txt",Register.getusercount(), AllUsers.getMoviesize());
+        DenseMatrix M = Algorithms.readM("conf/M.txt",Javatar.getusercount(), AllUsers.getMoviesize());
         
 
         System.out.println("SMALL Grouplens DONE");
@@ -96,7 +96,8 @@ public class Update extends TimerTask {
         Algorithms.setV(Algorithms.readMatrix("conf/Vmatrix3users.txt"));	
 	
 	    System.out.println("SVD UPDATE IS COMPLETE"); 
-	    Register.setusercount();*/
+	    Javatar.setusercount();
+	    AllUsers.updateFinish();
 	    
     } catch (IOException e) {
         //do nothing

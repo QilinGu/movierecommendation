@@ -3,7 +3,6 @@ package models;
 import org.apache.mahout.math.DenseMatrix;
 import org.apache.mahout.math.Matrix;
 import org.apache.mahout.math.SingularValueDecomposition;
-import org.apache.mahout.math.SparseMatrix;
 
 import java.util.ArrayList;
 import java.util.TreeMap;
@@ -31,6 +30,50 @@ import java.math.*;
 import models.AllUsers;
 import models.SQL;
 
+/**
+ * ALGORITHMS OPERATIONS
+ * 
+ * 
+ * setV(newV)
+ * resets the V matrix after update
+ *
+ *
+ * recommendMovies(user,movies, baddummymovies)
+ * creates a vector based on a user's ratings and provides a recommendation
+ *	SVD calculations. We also ignore dummymovies
+ *
+ *writeMatrix(inputM,filename,title)
+ * writes an inputM matrix into a filename
+ *
+ *readMatrix(filename)
+ * reads a matrix file into a returned matrix 
+ *
+ *readArrayList(filename)
+ *reads the movieids for the empty movie slots in the grouplens data(dummy movies)
+ *
+ *readM(filename,newrow,newcolumn)
+ * reads in the grouplens data movie ratings file into a newly sized matrix with *"newrow" rowsize and "newcolumn" columnsize
+ *
+ *reduceMatrixV(filename,percentkept)
+ * We reduce the V matrix stored file stored in the filename by 100-percentkept. 
+ * so taking away 80% of eigen values would mean percentkept =20
+ *
+ *
+ *updateSVD()
+ * a timer schedule function that updates SVD 7 days after whatever time is set.
+ * If the date inputed has past this method would call the newUpdate() and then
+ * reschedule the SVD update 7 days after the recently specified date
+ *
+ *updateSVDsmall()
+ *same logic as the predecessor function. 
+ * However the frequency of scheduling is higher since we reupdate a small dataset every 5 minutes
+ *
+
+**/
+
+
+
+
 
 public class Algorithms { 
 
@@ -52,15 +95,11 @@ public class Algorithms {
 	}
 
 	public void recommendMovies(String user, ArrayList<Integer> movies,ArrayList baddummymovies){
-
-		HashMap<String, MovieObject> pearsonmap = new HashMap<String, MovieObject>();
 		TreeMap<Integer, Integer> userMap = aU.sql.tableGetMap(user);
 		DenseMatrix q = new DenseMatrix(vector,aU.getMoviesize());
 		for (Entry<Integer, Integer> t: userMap.entrySet()){
 			q.setQuick(0,t.getKey()-1,t.getValue());
 		}
-		// int usersize = aU.allusers.size(); //neww
-		// int moviesize = aU.allmovies.size(); //neww
 		Matrix  qV = q.times(V);
 		Matrix qVbyVT = qV.times(V.transpose());
 		int columns = qVbyVT.columnSize();
