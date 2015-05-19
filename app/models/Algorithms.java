@@ -300,7 +300,7 @@ public class Algorithms {
 				Calendar.DAY_OF_WEEK,
 				Calendar.TUESDAY
 				);
-		date.set(Calendar.HOUR, 7);
+		date.set(Calendar.HOUR, 19);
 		date.set(Calendar.MINUTE, 0);
 		date.set(Calendar.SECOND, 0);
 		date.set(Calendar.MILLISECOND, 0);
