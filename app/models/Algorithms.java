@@ -25,6 +25,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import models.AllUsers;
+import models.SQL;
 
 
  
@@ -50,7 +51,7 @@ public class Algorithms {
  public void recommendMovies(String user, ArrayList<Integer> movies,ArrayList baddummymovies){
       
         HashMap<String, MovieObject> pearsonmap = new HashMap<String, MovieObject>();
-        TreeMap<Integer, Integer> userMap = aU.tableGetMap(user);
+        TreeMap<Integer, Integer> userMap = aU.sql.tableGetMap(user);
 	    DenseMatrix q = new DenseMatrix(vector,aU.getMoviesize());
 		for (Entry<Integer, Integer> t: userMap.entrySet()){
             q.setQuick(0,t.getKey()-1,t.getValue());
@@ -257,12 +258,12 @@ public static Matrix reduceMatrixV(String filename,double percentkept){
 public void updateSVD()throws IOException{
 
     int count = grouplensUsers;
-    ArrayList<String> users = aU.loginGetUsers();
+    ArrayList<String> users = aU.sql.loginGetUsers();
     int usercount = grouplensUsers + users.size();
     DenseMatrix M = readM("conf/M.txt",usercount,aU.getMoviesize());
     System.out.println("Grouplens DONE");
     for (String user: users){
-       TreeMap<Integer, Integer> userMap = aU.tableGetMap(user);
+       TreeMap<Integer, Integer> userMap = aU.sql.tableGetMap(user);
       for (Entry<Integer, Integer> t: userMap.entrySet()){
             	M.setQuick(count,t.getKey()-1,t.getValue());
             }
